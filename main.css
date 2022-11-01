@@ -1,0 +1,141 @@
+* {
+  box-sizing: border-box;
+  margin:  0px;
+  padding: 0px;
+  font-family: arial;
+}
+
+body {
+ background-color: white;
+}
+a {
+  text-decoration: none;
+  font-family: arial;
+  font-weight: bold;
+}
+ 
+img {
+  vertical-align: middle;
+  border: 0;
+}
+img.displayed{
+  width: 120px; height: 50px;
+}
+
+nav li {
+  list-style-type: none;
+}
+
+h1 {
+  font-family: arial;
+  font-weight: bold;
+}
+h2 {
+  font-family: arial;
+  font-size: 16px;
+}
+
+p {
+  font-family: arial;
+  
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  margin: 0px;
+  padding: 0px;
+}
+
+.flex-main-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* padding: 0 7% 0 15px; */
+}
+
+.flex-main-content p{
+  color: #00b14f;
+}
+ 
+
+.flex-card{
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.flex-card-follow {
+  display:
+  flex;
+}
+
+.card-follow > div  {
+  border-radius: 5px;
+  border: 1px solid white;
+  box-shadow: -1px 1px 4px rgba(0,0,0,.051);
+  margin: 5px;
+}
+
+.card-follow p {
+  color: lightgray;
+  margin: 0px;
+  padding: 5px;
+}
+.grid-jobs img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+.details-tag div{
+  display: inline-block;
+  margin-right: 15px;
+  margin-top: 15px;
+  
+}
+.details-tag div {
+  float:left;
+}
+
+.img-responsive {
+  display: inline-block;
+  max-width: 100%;
+}
+
+.img-companies   {
+  display: flex;
+  align-items: center;
+  margin: 0px 15px;
+  height: 64px;
+}
+
+.img-companies > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 104px;
+  height: 64px;
+}
+.img-companies img{
+  max-height: 30px;
+  max-width: 58px;
+}
+
+.clearfix::after {
+  content:"";
+  clear: both;
+  display: table;
+}
+
+.txt-tag {
+  display: inline-block;
+  color: #27ae60;
+  padding: 10px 15px;
+  background-color: #e5f7ed;
+  border-radius: 18px;
+}
+
+ 
+

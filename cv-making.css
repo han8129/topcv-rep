@@ -1,0 +1,50 @@
+.two-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+.two-cards > * {
+ display: grid;
+ grid-template-columns: 1fr 1fr;
+ gap: 15px;
+  background: transparent linear-gradient(67deg,#e5fff1,#f5f2ff) 0 0 no-repeat padding-box;
+  border-radius: 10px;
+  padding-left: 20px;
+}
+
+.two-cards h1 {
+  margin: 15px 0px;
+  font-size: 18px;
+  color: #00b14f;
+  text-align: left;
+}
+
+.two-cards p {
+  margin: 15px 0px; 
+}
+
+.cv-two-cards a {margin: 0px;}
+
+.cv-two-cards img{
+  height: 234px;
+ 
+}
+
+.cv-two-cards label {
+  font-size: 16px;
+  padding:1px 5px; 
+ display:inline; 
+ background: #de4637;
+ vertical-align: middle; 
+ border-radius: 0.25em; 
+ white-space:nowrap; 
+ font-weight:normal; 
+ color: white;
+}
+
+.single-card {
+ display: grid;
+ grid-template-columns: 1pr;
+ justify-content: space-between;
+}

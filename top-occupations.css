@@ -1,0 +1,29 @@
+.top-occupations {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+}
+
+.top-occupations h1 {
+  color: #00b14f;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.top-occupations h2 {
+	color: #212f3f;
+	font-size: 20px;
+	font-weight: 700;
+}
+.grid-ocupations div {
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #e9f7ef;
+}
+.grid-ocupations p{
+  margin: 15px 15px;
+}
+
+.grid-ocupations h2{
+  margin: 15px 15px;
+}

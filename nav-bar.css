@@ -1,0 +1,36 @@
+
+.nav-bar {
+  display:grid;
+  grid-template-columns: 65% auto;
+  padding: 20px;
+}
+
+.nav-bar img {
+  height: 50px;
+  width: 120px;
+}
+.nav-bar-left{
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.nav-bar-right {
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-end;
+}
+
+/* .nav-bar-right .nav-bar-left  > *{
+  
+} */
+nav  a {
+  display: inline-block;
+  color: black;
+  font-family: arial;
+  font-weight: bold;
+  font-size: 14px;
+  font-weight: bold;
+  background-color: white;
+}
+
