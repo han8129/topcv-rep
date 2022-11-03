@@ -28,7 +28,7 @@
   justify-content: center;
   border: 2px solid #00b14f;
   grid-column: 1 / span 2;
-  margin-right: 30px;
+  margin-right: 50px;
   z-index: 1;
 }
 
@@ -38,7 +38,7 @@
   justify-content: center;
   border: 2px solid #00b14f;
   grid-column: 4 / span 2;
-  margin-left: 30px;
+  margin-left: 50px;
 }
 
  .grid-jobs, .jobs-list-left, .jobs-list-right {
