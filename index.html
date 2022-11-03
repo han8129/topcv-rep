@@ -12,8 +12,8 @@
       @import url("./nav-bar.css");
       @import url("./jobs.css");
       @import url("./top-occupations.css");
+      @import url("./main.css");
     </style>
-    <link rel="stylesheet" href="main.css" type="text/css">
     <meta name="keywords" content="HTML, CSS, JavaScript">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <base href="" target="_blank">
@@ -44,7 +44,7 @@
                 <a href="https://www.topcv.vn/">Công cụ</a>
               </li>
               <li>
-                <a href="https://www.topcv.vn/">Infinity Gift Box</a>
+                <a href="https://www.topcv.vn/">Infinity Gift Box <i class="fa-solid fa-gift"></i></a>
               </li>
             </ul>
           </nav>
@@ -71,8 +71,13 @@
               <h1>Tìm việc phù hợp với bạn</h1>
             </div>
             <div class="search-bar-left-input">
-              <div >
-                <input type="text" placeholder="Tên công việc vị trí ứng tuyển">
+              <div class="search-bar-left-input-bar">
+                <div class="search-bar-magnifying-glass">
+                  <p>O-</p>
+                </div>
+                <div class="search-bar-input-bar">
+                  <input type="text" placeholder="Tên công việc vị trí ứng tuyển">
+                </div>
               </div>
               <div>
                 <p class="btn btn-filled">Tìm việc ngay</p>
@@ -176,7 +181,7 @@
         <section class="jobs-list">
           <div class="jobs-list-left">
             <div>
-            <p><-</p>
+              <i class="fa-solid fa-arrow-left"></i>
             </div>
           </div>
           <div class="grid-jobs">
@@ -444,7 +449,9 @@
             
           </div>
           <div class="jobs-list-right">
-            <p>-></p>
+            <div>
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
           </div>
         </section>
       </article>
