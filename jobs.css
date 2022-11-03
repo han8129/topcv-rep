@@ -1,40 +1,37 @@
 .jobs {
   background: #edfff5;
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: auto repeat(3, 21.67%) auto;
 }
 
 .jobs-box {
-  width: 65%;
+  grid-column: 2 /span 3;
   display:flex;
-  gap: 1rem;
   flex-direction: column;
-  justify-content: center;
-  margin: 15px;
+  gap: 1rem;
+  margin: 15px 0px;
   padding: 10px;
   border-radius: 15px;
+  box-shadow: -1px 1px 4px rgba(0,0,0,0.3);
   background-color: white;
 }
 
 .jobs-heading {
-  width: 65%;
+  justify-self: start;
   display: grid;
   gap: 1rem;
 }
 
 .jobs-list {
-  width: 100%;
   display: grid;
-  grid-template-columns: auto repeat(3, 21.67%) auto;
-  gap: 1px;
-  align-items: stretch;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
 }
 
-.jobs-list-left{
+/* .jobs-list-left{
   display:flex;
   align-items: center;
   justify-content: center;
-  grid-column: 1 / span 2;
   margin-right: 75px;
   z-index: 2;
 }
@@ -43,12 +40,7 @@
   display:flex;
   align-items: center;
   justify-content: center;
-  grid-column: 4 / span 2;
   margin-left: 75px;
-}
-
- .grid-jobs, .jobs-list-left, .jobs-list-right {
-  grid-row: 1 ;
 }
 
 .jobs-list-right > div{
@@ -57,7 +49,7 @@
 
 .jobs-list-left > div{
  color: #00b14f;
-}
+} */
 .location-cards {
   display: flex;
   gap: 1rem;
@@ -85,15 +77,8 @@
   border: none; 
 }
 
-.grid-jobs {
-  display: grid;
-  gap: 15px;
-  grid-template-columns: 1fr 1fr 1fr;
-  background-color: white;
-  grid-column: 2 / span 3;
-}
 
-.grid-jobs > div {   
+.jobs-list > div {   
    box-shadow: -1px 1px 4px rgba(0,0,0,0.3);
    padding: 15px;
   border-radius: 5px;
@@ -105,30 +90,47 @@
   gap: 1rem;
 }
 
-.single-job-title {
-  display: grid;
-  grid-template-columns: 80% 10%;
+.job-title {
+  display: flex;
   gap: 1rem;
   justify-content: space-between;
 }
 
-.single-job-title-left {
+.job-title-left {
   display: flex;
   gap: 1rem;
-}
-
-.single-job-title-left > * {
   justify-content:flex-start;
 }
 
-.single-job-details {
+.job-title-left-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.job-title-left-text * {
+  font-size: 14px;
+}
+
+.job-follow {
+  color: lightgray;
+}
+
+.job-follow > * {
+  padding: 5px;
+  border-radius: 5px;
+  box-shadow: -1px 1px 4px rgba(0,0,0,0.3);
+}
+
+.job-details {
  display: flex;
   gap: 1rem;
   
 }
 
-.single-job-details > div {
-  padding: 10px;
+.job-details > div {
+  font-size: 12px;
+  padding: 5px;
   color: #999;
   border: 1px solid #eee;
   background-color: #f4f4f4;
