@@ -25,7 +25,7 @@
   align-items: center;
   justify-content: center;
   grid-column: 1 / span 2;
-  margin-right: 50px;
+  margin-right: 60px;
   z-index: 2;
 }
 
@@ -34,7 +34,7 @@
   align-items: center;
   justify-content: center;
   grid-column: 4 / span 2;
-  margin-left: 50px;
+  margin-left: 60px;
 }
 
  .grid-jobs, .jobs-list-left, .jobs-list-right {
