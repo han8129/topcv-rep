@@ -17,9 +17,17 @@
 }
 
 .jobs-heading {
-  justify-self: start;
   display: grid;
   gap: 1rem;
+}
+
+.jobs-heading-second-child {
+  display: flex;
+  justify-content: space-between;
+}
+
+.jobs-heading-second-child p {
+  color: #00b14f;
 }
 
 .jobs-list {
@@ -52,11 +60,11 @@
 } */
 .location-cards {
   display: flex;
-  gap: 1rem;
+  gap: 10px;
 }
 
 .location-cards p{
-  display: inline-block;
+  font-size: 14px;
   padding: 10px 15px;
   color: #999;
   border: 1px solid #eee;
