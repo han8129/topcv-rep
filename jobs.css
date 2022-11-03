@@ -42,19 +42,11 @@
 }
 
 .jobs-list-right > div{
-  display: flex;
-  padding: 15px;
-  background-color: #00b14f;
-  color: white;
-  border-radius: 50%;
+ color: #00b14f;
 }
 
 .jobs-list-left > div{
-  display: flex;
-  padding: 15px;
-  background-color: #00b14f;
-  color: white;
-  border-radius: 50%;
+ color: #00b14f;
 }
 .location-cards {
   display: flex;
@@ -92,7 +84,7 @@
 }
 
 .grid-jobs > div {   
-   box-shadow: -1px 1px 4px rgba(0,0,0,.051);
+   box-shadow: -1px 1px 4px rgba(0,0,0,0.3);
    padding: 15px;
   border-radius: 5px;
 }

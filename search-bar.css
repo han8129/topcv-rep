@@ -6,8 +6,6 @@
 #top-companies {
   font-family: arial;
   font-size: 16px;
-  /* height: 105px; */
-  /* padding-top: 50px; */
   text-align: left;
 }
 
@@ -49,14 +47,34 @@
   background-color: rgba(220,220,220,0.3);
 }
 
-.search-bar-left-input > *:first-child {
+.search-bar-left-input-bar{
+  display: grid;
+  gap: 5px;
+  grid-template-columns: 30px repeat(4, 1fr);
   flex-grow: 2;
+  align-items: center;
+  justify-content: center;
 }
 
+.magnifying-glass {
+  display: flex;
+  grid-column: 1 ;
+  color: rgba(113,113,113,0.7);
+  z-index: 1;
+  justify-content: center;
+}
+
+.search-bar-input-bar {
+  grid-column: 1 /span 5;
+}
+
+.search-bar-input-bar, .magnifying-glass {
+  grid-row: 1 / span 2;
+}
 
 input[type=text]{
   justify-items: center;
-  padding-left: 15px;
+  padding-left: 30px;
   text-align: left;
   font-size: 14px;
   border: none;
