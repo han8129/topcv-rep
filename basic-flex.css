@@ -5,26 +5,6 @@
   align-items: center;
 }
 
-.basic-flex > * {
-  width: 65%;
-}
-
-.basic-flex > *:first-child{
-  width: 100%;
-  display: grid;
-  grid-template-columns: 65%;
-  justify-content: center;
-  background-color: white;
-  background-image: url("linear_web.png");
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-}
-
-.basic-flex >*:nth-child(3) {
-  width: 100%;
-  background: transparent linear-gradient(179deg,#edfff5,#fff) 0 0 no-repeat padding-box;
-}
-
 
 
 
