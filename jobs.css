@@ -10,9 +10,9 @@
   flex-direction: column;
   gap: 1rem;
   margin: 15px 0px;
-  padding: 10px;
+  padding: 15px;
   border-radius: 15px;
-  box-shadow: -1px 1px 4px rgba(0,0,0,0.3);
+  box-shadow: -1px 1px 4px rgba(0,0,0,0.1);
   background-color: white;
 }
 
@@ -33,31 +33,33 @@
 .jobs-list {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 15px;
+  gap: 10px;
 }
 
-/* .jobs-list-left{
-  display:flex;
-  align-items: center;
-  justify-content: center;
-  margin-right: 75px;
+.jobs-list-left, .jobs-list-right {
+  align-self: center;
+  justify-self: center;
+  margin-top: 23%;
+}
+
+.jobs-list-left{
+  grid-column: 1 / span 2;
   z-index: 2;
+  padding-right: 10%;
 }
 
 .jobs-list-right {
-  display:flex;
-  align-items: center;
-  justify-content: center;
-  margin-left: 75px;
+  grid-column: 4 / span 2;
+  padding-left: 10%;
 }
 
-.jobs-list-right > div{
- color: #00b14f;
+.jobs > * {
+  grid-row: 1;
 }
 
-.jobs-list-left > div{
- color: #00b14f;
-} */
+.jobs-list-left, .jobs-list-right > *{
+  color: #00b14f;
+}
 .location-cards {
   display: flex;
   gap: 10px;

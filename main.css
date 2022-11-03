@@ -52,7 +52,6 @@ p {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  /* padding: 0 7% 0 15px; */
 }
 
 .flex-main-content p{
@@ -65,24 +64,6 @@ p {
   justify-content: space-between;
 }
 
-
-.flex-card-follow {
-  display:
-  flex;
-}
-
-.card-follow > div  {
-  border-radius: 5px;
-  border: 1px solid white;
-  box-shadow: -1px 1px 4px rgba(0,0,0,.051);
-  margin: 5px;
-}
-
-.card-follow p {
-  color: lightgray;
-  margin: 0px;
-  padding: 5px;
-}
 .grid-jobs img {
   height: 100%;
   width: 100%;

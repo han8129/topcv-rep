@@ -1,12 +1,16 @@
+.search-box {
+  display: flex;
+  justify-content: center;
+  background-image: url("linear_web.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
 .search-bar{
   width: 65%;
   display: grid;
   gap: 2px;
   grid-template-columns: 65% auto;
-  background-color: white;
-  background-image: url("linear_web.png");
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
 }
 #search-bar-heading {
   font-size: 24px;

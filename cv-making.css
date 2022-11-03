@@ -1,9 +1,6 @@
-.cv-making {
-  width: 65%;
-  display:flex;
-}
 .two-cards {
   width: 65%;
+  align-self: center;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 15px;
