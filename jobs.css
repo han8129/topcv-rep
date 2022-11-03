@@ -1,5 +1,4 @@
 .jobs {
-  width: 100%;
   display: flex;
   flex-direction: column;
   gap: 1rem;
@@ -14,7 +13,6 @@
 }
 
 .jobs-list {
-  border: 2px solid red;
   width: 100%;
   display: grid;
   grid-template-columns: auto repeat(3, 21.67%) auto;
@@ -26,23 +24,37 @@
   display:flex;
   align-items: center;
   justify-content: center;
-  border: 2px solid #00b14f;
   grid-column: 1 / span 2;
   margin-right: 50px;
-  z-index: 1;
+  z-index: 2;
 }
 
 .jobs-list-right {
   display:flex;
   align-items: center;
   justify-content: center;
-  border: 2px solid #00b14f;
   grid-column: 4 / span 2;
   margin-left: 50px;
 }
 
  .grid-jobs, .jobs-list-left, .jobs-list-right {
   grid-row: 1 ;
+}
+
+.jobs-list-right > div{
+  display: flex;
+  padding: 15px;
+  background-color: #00b14f;
+  color: white;
+  border-radius: 50%;
+}
+
+.jobs-list-left > div{
+  display: flex;
+  padding: 15px;
+  background-color: #00b14f;
+  color: white;
+  border-radius: 50%;
 }
 .location-cards {
   display: flex;
@@ -77,7 +89,6 @@
   grid-template-columns: 1fr 1fr 1fr;
   background-color: white;
   grid-column: 2 / span 3;
-  border: 1px solid yellow;
 }
 
 .grid-jobs > div {   
