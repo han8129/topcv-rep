@@ -46,8 +46,7 @@
 }
 
 .career-single-card-content  p {
-  color: #999;
-  font-size: 13px;
+  display: none;
 }
 
 .career-card-tags > a{
@@ -78,5 +77,10 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1rem;
+}
+.career-single-card-content p{
+  display:inline;
+  color: gray;
+  font-size: 13px;
 }
 }
