@@ -45,7 +45,7 @@
 
 .top-occupations-single-card {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   gap: 15px;
   align-items: center;
 }
@@ -91,9 +91,12 @@
   gap: 15px;
 }
 
-.top-occupations-content > *:last-child {
-  display: block;
-}
+ .top-occupations-content > *:last-child {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  align-items: center;
+ }
 
 .top-occupations-content{
   display: grid;
@@ -103,12 +106,12 @@
 
 .top-occupations-arrow-left {
   grid-column: 1 / span 2;
-  margin-right: 45px;
+  margin-right: 87px;
 }
 
 .top-occupations-arrow-right {
   grid-column: 4 / span 2;
-  margin-left: 45px;
+  margin-left: 87px;
 }
 
 }

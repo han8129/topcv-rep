@@ -1,6 +1,5 @@
 .career {
-  width: 65%;
-  align-self: center;
+  padding: 35px;
   display: flex;
   gap: 15px;
   flex-direction: column;
@@ -8,7 +7,7 @@
 
 .career-cards {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   gap: 1rem;
 
 }
@@ -61,4 +60,22 @@
 
 .career-card-tags > *:hover{
   background-color: #c0eed4;
+}
+
+
+@media (min-width: 40em) {
+
+  .career {
+  width: 65%;
+  align-self: center;
+  display: flex;
+  gap: 15px;
+  flex-direction: column;
+}
+
+.career-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
 }
