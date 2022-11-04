@@ -1,6 +1,5 @@
 .app-download{
-  width: 65%;
-  align-self: center;
+  padding: 35px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 15px;
@@ -32,4 +31,13 @@
   width: 65;
   display: flex;
   gap: 15px;
+}
+
+@media (min-width:40em) {
+  .app-download {
+    padding: 0px;
+    width: 65%;
+    align-self: center;
+
+  }
 }

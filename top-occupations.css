@@ -79,6 +79,7 @@
 @media (min-width: 40em) {
   
 .top-occupations {
+  padding: 0px;
 	display: grid;
   grid-template-columns: auto repeat(3, 21.67%) auto;
 	gap: 1px;
