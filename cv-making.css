@@ -50,3 +50,7 @@
  grid-template-columns: 1pr;
  justify-content: space-between;
 }
+
+@media (min-width: 40em ) {
+
+}
