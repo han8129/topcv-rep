@@ -1,8 +1,7 @@
 .two-cards {
-  width: 65%;
-  align-self: center;
+  padding: 35px;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   gap: 15px;
 }
 
@@ -52,5 +51,11 @@
 }
 
 @media (min-width: 40em ) {
-
+.two-cards {
+  width: 65%;
+  align-self: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
 }
