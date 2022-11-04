@@ -7,11 +7,7 @@
 .search-bar > *:last-child {
   display: none;
 }
-#search-bar-heading {
-  font-size: 24px;
-  text-align: left;
-  height: 105px;
-}
+
 #top-companies {
   font-family: arial;
   font-size: 16px;
@@ -44,14 +40,23 @@
 }
 
 .search-bar-left h1{
-  font-size: 32px
+  font-size: 24px;
+  text-align: center;
 }
 
+.search-bar-btn p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 7px;
+  flex-grow: 2;
+}
 
 .search-bar-left-input {
   display: flex;
   gap: 1rem;
-  align-items: center;
+  justify-content: center;
   padding: 20px;
   font-size: 14px;
   border-radius: 5px;
@@ -59,6 +64,7 @@
 }
 
 .search-bar-left-input-bar{
+  width: 55%;
   display: grid;
   gap: 5px;
   grid-template-columns: 30px repeat(4, 1fr);
@@ -125,5 +131,16 @@ input:hover {
     background-image: url("linear_web.png");
     background-repeat: no-repeat;
     background-size: 99% 100%;
+  }
+
+  .search-bar-left-input p {
+    font-size: 13px;
+    vertical-align: middle;
+    flex-grow: 2;
+  }
+
+  .search-bar-left h1{
+    font-size: 32px;
+    text-align: left;
   }
 }
