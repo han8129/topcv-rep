@@ -1,9 +1,14 @@
 .basic-flex {
   display: flex;
   flex-direction: column;
-  gap: 3rem;
+  gap: 1rem;
 }
 
+@media (min-width: 40em) {
+.basic-flex {
+  gap: 3rem;
+}
+}
 
 
 

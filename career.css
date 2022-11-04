@@ -13,7 +13,7 @@
 }
 .career-cards > div {
   display: grid;
-  grid-template-columns: 15% auto;
+  grid-template-columns: 33% auto;
   gap: 1rem;
   box-shadow: -1px 1px 7px rgb(0 0 0 / 10%);
   padding: 15px;
@@ -36,7 +36,8 @@
 }
 .career-card-tags {
   display: flex;
-  gap: 5px;
+  flex-direction: column;
+  gap: 15px;
 }
 
 .career-single-card-content  h2{
@@ -65,7 +66,7 @@
 @media (min-width: 40em) {
 
   .career {
-    padding: 0px;
+  padding: 0px;
   width: 65%;
   align-self: center;
   display: flex;
@@ -82,5 +83,14 @@
   display:inline;
   color: gray;
   font-size: 13px;
+}
+
+.career-cards > div {
+  grid-template-columns: 15% auto;
+}
+.career-card-tags {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
 }
 }
