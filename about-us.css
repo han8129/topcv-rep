@@ -1,11 +1,8 @@
 .about-us-box {
-  display: flex;
-  justify-content: center;
   background-color: #deffe2;
 }
 .about-us {
-  width: 65%;
-  align-self: center;
+  padding: 35px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -21,14 +18,15 @@
 }
 
 .about-us p {
-  font-size: 13px;
+  font-size: 14px;
   color: black;
 }
 .about-us-text-box{
   width: 100%;
 
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 1fr;
+  gap: 15px;
 
   padding: 15px;
   background-color: white;
@@ -45,4 +43,20 @@
   color: #3d6089;
 
   
+}
+
+@media (min-width: 40em) {
+  .about-us-box {
+    display: flex;
+    justify-content: center;
+  }
+ 
+  .about-us {
+    padding: 0px;
+    width: 65%;
+  }
+
+  .about-us-text-box {
+     grid-template-columns: repeat(3, 1fr); 
+  }
 }
