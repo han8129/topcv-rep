@@ -40,7 +40,7 @@
   color: #00b14f;
 
   z-index: 1;
-  border: 1px dashed crimson;
+  /* border: 1px dashed crimson; */
 }
 
 .top-occupations-arrow-left, .top-occupations-arrow-right, .top-occupations-content-box{
