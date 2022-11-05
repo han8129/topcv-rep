@@ -1,10 +1,11 @@
 .jobs {
   background: #edfff5;
   display: grid;
+  grid-template-columns: 35px repeat(5, 1fr) 35px;
 }
 
 .jobs-box {
-  grid-column: 2 /span 3;
+  grid-column: 2 /span 5;
   display:flex;
   flex-direction: column;
   gap: 1rem;
@@ -40,12 +41,13 @@
 }
 
 .jobs-list-left, .jobs-list-right {
-  height: 66%;
+  height: 70%;
+  width: 66%;
   align-self: flex-end;
-  justify-self: center;
 
   display: flex;
   align-items: center;
+  justify-content: center;
 
   color: #00b14f;
 }
@@ -53,14 +55,13 @@
 
 
 .jobs-list-left{
-  grid-column: 1 / span 2;
-  z-index: 2;
-  padding-right: 10%;
+  grid-column: 1 / span 2 ;
+  z-index: 1;
 }
 
 .jobs-list-right {
-  grid-column: 4 / span 2;
-  padding-left: 10%;
+  grid-column: 6 / span 2;
+  justify-self: flex-end;
 }
 
 .jobs > * {
@@ -75,12 +76,14 @@
 
 .location-cards > *{
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 
 .location-cards p{
+  padding: 10px;
   font-size: 14px;
-  padding: 5px;
   color: #999;
   border: 1px solid #eee;
   background-color: #f4f4f4;
@@ -90,10 +93,11 @@
 .location-cards div:first-child p{
   color: white;
   background-color: #00b14f;
-  border: none;
-    
-}
+  border: none; }
 
+.location-cards div:last-child {
+  display: none;
+}
 .location-cards p:hover {
  color: white;
   background-color: #00b14f;
@@ -162,13 +166,14 @@
 
 @media (min-width: 40em) {
   .jobs {
-    background: #edfff5;
-    display: grid;
-    grid-template-columns: auto repeat(3, 21.67%) auto;
+    padding: 0px;
+
+    grid-template-columns: 17.5% repeat(5, 1fr) 17.5%;
   }
   
   .jobs-box {
-    grid-column: 2 /span 3;
+    grid-column: 2 / span 5;
+    
     display:flex;
     flex-direction: column;
     gap: 1rem;
@@ -187,7 +192,26 @@
   .jobs-list-left{
     grid-column: 1 / span 2;
     z-index: 2;
-    padding-right: 10%;
+    width: 63%;
+    justify-self: start;
+
+    justify-content: flex-end;
+  }
+
+  .jobs-list-right{
+    grid-column: 6 / span 2;
+    
+    width: 63%;
+    justify-self: end;
+
+    justify-content: flex-start;
+  }
+
+  .jobs-list-right, .jobs-list-left {
+    height: 50%;
+  }
+  .jobs-list-left, .jobs-list-right, .jobs-list {
+    grid-row: 1;
   }
 .jobs-heading-second-child {
   display: flex;
@@ -200,6 +224,12 @@
 .location-cards p{
   font-size: 14px;
   padding: 10px;
+}
+
+.location-cards > div:last-child{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 }
 

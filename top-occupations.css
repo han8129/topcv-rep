@@ -23,15 +23,18 @@
 }
 .top-occupations-arrow-left {
   grid-column: 1 / span 2;
-  margin-left: 10px;
 }
 
 .top-occupations-arrow-right {
   grid-column: 4 / span 2;
-  margin-right: 10px;
 }
 
-.top-occupations-arrow-left, .top-occupations-arrow-right > * {
+.top-occupations-arrow-left, .top-occupations-arrow-right {
+  height: 66%;
+  display: flex;
+  align-self: end;
+
+  align-items: center;
   color: #00b14f;
 }
 .top-occupations-arrow-left, .top-occupations-arrow-right {

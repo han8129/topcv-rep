@@ -58,6 +58,7 @@
 
 @media (min-width: 40em ) {
 .two-cards {
+  padding: 0px;
   width: 65%;
   align-self: center;
 
