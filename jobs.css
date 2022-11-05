@@ -22,7 +22,10 @@
 
 .jobs-heading-second-child {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  gap: 15px;
+
+  font-size: 14px;
 }
 
 .jobs-heading-second-child p {
@@ -61,11 +64,17 @@
 .location-cards {
   display: flex;
   gap: 10px;
+  overflow: hidden;
 }
+
+.location-cards > *{
+  display: flex;
+}
+
 
 .location-cards p{
   font-size: 14px;
-  padding: 10px 15px;
+  padding: 5px;
   color: #999;
   border: 1px solid #eee;
   background-color: #f4f4f4;
@@ -180,5 +189,17 @@
     z-index: 2;
     padding-right: 10%;
   }
+.jobs-heading-second-child {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  font-size: 14px;
+}
+
+.location-cards p{
+  font-size: 14px;
+  padding: 10px;
+}
 }
 
