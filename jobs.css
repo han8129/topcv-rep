@@ -24,8 +24,10 @@
   display: flex;
   flex-direction: column;
   gap: 15px;
+}
 
-  font-size: 14px;
+.jobs-heading-second-child h1 {
+  font-size: 18px;
 }
 
 .jobs-heading-second-child p {
@@ -38,10 +40,17 @@
 }
 
 .jobs-list-left, .jobs-list-right {
-  align-self: center;
+  height: 66%;
+  align-self: flex-end;
   justify-self: center;
-  margin-top: 23%;
+
+  display: flex;
+  align-items: center;
+
+  color: #00b14f;
 }
+
+
 
 .jobs-list-left{
   grid-column: 1 / span 2;
@@ -58,9 +67,6 @@
   grid-row: 1;
 }
 
-.jobs-list-left, .jobs-list-right > *{
-  color: #00b14f;
-}
 .location-cards {
   display: flex;
   gap: 10px;
@@ -176,12 +182,6 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 10px;
-  }
-  
-  .jobs-list-left, .jobs-list-right {
-    align-self: center;
-    justify-self: center;
-    margin-top: 23%;
   }
   
   .jobs-list-left{
