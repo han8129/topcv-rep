@@ -1,8 +1,8 @@
 /* block-name__elem-name_mod-name_mod-val */
 
 .nav-bar-box{
-  min-width: none;
   min-height: 13vh;
+  padding-left: 9vw;
 
   display:grid;
 }
@@ -15,20 +15,24 @@
   grid-template-columns: 25% 25%;
   justify-content: space-between;
 
-  color: var(--color-primary);
 }
 
 .nav-bar__icon > * {
   display: flex;
   align-items: center;
   justify-content: center;
+
+  border: 1px dashed orange;
+}
+
+.nav-bar__icon i {
+  font-size: max(15px, 1.5rem);
+  color: var(--color-primary);
 }
 
 .nav-bar__btn{
-  border: 1px dashed var(--color-primary);   
-
-    display: none;
-  }
+  display: none;
+}
 
 .nav-bar-left > * {
   padding: 15px;
