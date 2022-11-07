@@ -110,10 +110,6 @@ input:hover {
     display: flex;
     
     justify-content: center;
-    background-image: url("linear_web.png");
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-
   }
   .search-bar{
     width: 65%;

@@ -1,3 +1,10 @@
+:root {
+  font-size: 16px; 
+  font-family: Arial, Helvetica, sans-serif;
+  --color-primary: #00b14f;  
+  --color-primary-light: #e9f7ef;  
+}
+
 * {
   box-sizing: border-box;
   margin:  0px;
@@ -8,6 +15,7 @@
 body {
  background-color: white;
 }
+
 a {
   text-decoration: none;
   font-family: arial;
@@ -43,9 +51,6 @@ p {
 .page {
   display: flex;
   flex-direction: column;
-  gap: 1px;
-  margin: 0px;
-  padding: 0px;
 }
 
 .flex-main-content {
@@ -64,25 +69,9 @@ p {
   justify-content: space-between;
 }
 
-.grid-jobs img {
-  height: 100%;
-  width: 100%;
-  object-fit: contain;
-}
-
-.details-tag div{
-  display: inline-block;
-  margin-right: 15px;
-  margin-top: 15px;
-  
-}
-.details-tag div {
-  float:left;
-}
-
 .img-responsive {
-  display: inline-block;
   max-width: 100%;
+  height: auto;
 }
 
 
