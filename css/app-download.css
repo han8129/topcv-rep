@@ -1,0 +1,45 @@
+.app-download{
+  padding: 35px;
+  display: grid;
+  gap: 15px;
+}
+
+.app-download > *:first-child {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+
+}
+
+.app-download-text-box h2 {
+  font-size: 14px;
+}
+
+.app-download-text-box > *:nth-child(2){
+  font-size: 13px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.app-download-text-box i {
+  color: #00b14f;
+}
+.app-download-text-box >*:last-child {
+  width: 65%;
+  display: flex;
+  gap: 15px;
+}
+
+@media (min-width:40em) {
+  .app-download {
+    padding: 0px;
+    width: 65%;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    align-self: center;
+  }
+}
