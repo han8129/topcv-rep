@@ -1,0 +1,38 @@
+.btn a:link a:visited {
+  margin-bottom: 0px;
+  font-size: 14px;
+  font-weight: bold; 
+  text-align: center; 
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.btn-outline {
+  background-color: white;
+  color: #00b14f;
+  border: 1px solid #00b14f;
+  border-radius: 7px;
+  padding: 15px;
+  text-align: center;
+}
+
+.btn-filled {
+  padding: 15px 10px;
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+  background-color: #00b14f;
+  border-radius: 7px;
+
+  text-align: center;
+}
+
+.btn-dark {
+  color: white;
+  padding: 15px 10px;
+  background-color: #212f3f;
+  border-radius: 7px;
+  text-align: center;
+}
