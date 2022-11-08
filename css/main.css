@@ -12,10 +12,6 @@
   font-family: arial;
 }
 
-body {
- background-color: white;
-}
-
 a {
   text-decoration: none;
   font-family: arial;
@@ -23,29 +19,8 @@ a {
 }
  
 img {
-  vertical-align: middle;
-  border: 0;
-}
-img.displayed{
-  width: 120px; height: 50px;
-}
-
-nav li {
-  list-style-type: none;
-}
-
-h1 {
-  font-family: arial;
-  font-weight: bold;
-}
-h2 {
-  font-family: arial;
-  font-size: 16px;
-}
-
-p {
-  font-family: arial;
-  
+  max-width: 100%;
+  height: auto;
 }
 
 .page {
@@ -53,20 +28,8 @@ p {
   flex-direction: column;
 }
 
-.flex-main-content {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.flex-main-content p{
-  color: #00b14f;
-}
- 
-
-.flex-card{
-  display: flex;
-  justify-content: space-between;
+.page > * {
+  border: 1px solid crimson;
 }
 
 .img-responsive {
