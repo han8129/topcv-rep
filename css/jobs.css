@@ -16,23 +16,12 @@
   background-color: white;
 }
 
-.jobs-heading {
-  display: grid;
-  gap: 1rem;
+.content .txt-tag{
+  width: fit-content;
 }
 
-.jobs-heading-second-child {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
-
-.jobs-heading-second-child h1 {
-  font-size: 18px;
-}
-
-.jobs-heading-second-child p {
-  color: #00b14f;
+.jobs-box__content__tag {
+  color: var(--color-primary);
 }
 
 .jobs-list {

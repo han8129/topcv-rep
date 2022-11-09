@@ -1,5 +1,5 @@
 .btn{
-  height: max(45px, 7vw);
+  height: clamp(37px, 5vw, 50px);
   border-radius: 7px;
   font-weight: bold; 
   
