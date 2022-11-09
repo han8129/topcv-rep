@@ -2,6 +2,7 @@
   font-size: 16px; 
   font-family: Arial, Helvetica, sans-serif;
   --color-primary: #00b14f;  
+  --color-secondary:#212f3f;
   --color-primary-light: #e9f7ef;  
 }
 
@@ -26,6 +27,8 @@ img {
 .page {
   display: flex;
   flex-direction: column;
+  
+  gap: max(15px, 2.5vw);
 }
 
 .page > * {
@@ -37,12 +40,21 @@ img {
   height: auto;
 }
 
+.box {
+  width: 82vw;
+  align-self: center;
+}
+.content {
+  display: flex;
+  flex-direction: column;
 
+  gap: max(15px, 2.5vw);
+}
 
-.clearfix::after {
-  content:"";
-  clear: both;
-  display: table;
+.card {
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: -1px 1px 4px rgba(0,0,0,0.3);
 }
 
 .txt-tag {

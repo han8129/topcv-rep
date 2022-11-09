@@ -1,59 +1,44 @@
-.search-box {
+.search-box-bg {
   background-image: url("../images/linear_web.png");
   background-repeat: no-repeat;
   background-size: 100% 100%;
+
+  display: flex;
+  justify-content: center;
 }
 
-.search-bar- > *:last-child {
+.search-box {
+  width: 82vw;
+}
+
+.search-box > *:last-child {
   display: none;
 }
 
-.search-bar-left {
-  margin: 35px;
-  display:flex;
-  flex-direction: column;
-
-  gap: 15px;
-  justify-content: space-evenly
-} 
-
-.img-companies   {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  gap: 30px;
-  margin: 0px 15px;
-  height: 64px;
-}
-
-.img-companies img{
-  max-height: 30px;
-  max-width: 58px;
-}
-
-.search-bar-left h1{
-  font-size: 24px;
-  text-align: center;
-}
-
-.search-bar_big-btn {
-  display:none;
-}
-
-.input-box{
-  width: 95%;
-  height: 15%; 
-
-  align-self: center;
+.search-bar{
+  min-height: 35px; 
 
   display: grid;
-  gap: 5vw;
+  gap: max(15px, 2.5vw);
   grid-template-columns: 55% 1fr;
   align-items: stretch;
-  justify-content: space-between;
 }
 
-.input-box__input {
+.search-bar > *:last-child{
+  display: none;
+}
+
+.content__imgs{
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.content__imgs img{
+  max-height: 30px;
+}
+
+.search-bar__input {
   display: grid;
   grid-template-columns: 15% 1fr;
 }
@@ -62,17 +47,16 @@
   grid-column: 1 / span 2;
 
   display: flex;
-  justify-content: center;
-  align-items: stretch;
 }
 
 .input__mag-glass {
   z-index: 1; grid-column: 1 ;
 
   display: flex;
-  color: rgba(113,113,113,0.7);
   justify-content: center;
   align-items: center;
+
+  color: rgba(113,113,113,0.7);
 }
 
 .input__input, .input__mag-glass {
@@ -95,37 +79,5 @@ text:hover {
 }
 
 @media ( min-width: 40em) {
-  .search-box {
-    display: flex;
-    
-    justify-content: center;
-  }
-  .search-bar{
-    width: 65%;
-    display: grid;
-    gap: 2px;
-    grid-template-columns: 65% auto;
-  } 
 
-  .search-bar  > *:last-child {
-    display: block;
-  }
-
-  #page-welcome {
-    background-color: white;
-    background-image: url("linear_web.png");
-    background-repeat: no-repeat;
-    background-size: 99% 100%;
-  }
-
-  .search-bar-left-input p {
-    font-size: 13px;
-    vertical-align: middle;
-    flex-grow: 2;
-  }
-
-  .search-bar-left h1{
-    font-size: 32px;
-    text-align: left;
-  }
 }
