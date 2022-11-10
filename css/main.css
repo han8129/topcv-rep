@@ -38,14 +38,19 @@ a, p {
   gap: clamp(15px, 2.5vw, 33px);
 }
 
-.img-responsive {
-  max-width: 100%;
-  height: auto;
+.page-inline {
+  width: 82vw;
+  align-self: center;
+}
+ 
+.container-inline {
+  padding-inline: clamp(15px, 7vw, 100px);
 }
 
-.container {
-  padding: clamp(15px, 4vw, 35px);
+.container-block {
+  padding-block: clamp(15px, 7vw, 55px);
 }
+
 .column {
   display: flex;
   flex-direction: column;

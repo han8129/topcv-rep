@@ -3,9 +3,6 @@
   grid-template-columns: max(35px, 12vw) repeat(7, 1fr) max(35px, 12vw);
 }
 
-.top-occupations .column{
-  padding-inline: 0px;
-}
 .top-occupations__content{
   grid-column: 2 / span 7;
 }
@@ -19,9 +16,7 @@
 .top-occupations__content .row > *:first-child {
   color: var(--color-primary);
 }
-.top-occupations-content > *:last-child {
-  display: none;
-}
+
 .top-occupations__arrow-left {
   grid-column: 1 / span 2;
 }
@@ -46,8 +41,4 @@
 
 .top-occupations__arrow-left, .top-occupations__arrow-right, .top-occupations__content{
   grid-row: 1;
-}
-
-@media (min-width: 40em) {
-   
 }
