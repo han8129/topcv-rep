@@ -8,7 +8,6 @@
 }
 
 .nav-bar__icon {
-  border: 1px dashed red;
   width: 100%;
 
   display: grid;
@@ -40,47 +39,6 @@
   box-shadow: -1px 1px 4px rgba(0,0,0,0.1);
 }
 
-.nav-bar-left > *:first-child {
-  padding: 0px;
-  justify-self: center;
-  border-radius: none;
-  box-shadow: none;
-}
-.nav-bar-right {
-    display: grid;
-    gap: 1rem;
-    justify-items: stretch;
-  }
-
-div  a {
-  display: inline-block;
-  color: black;
-  font-family: arial;
-  font-weight: bold;
-  font-size: 14px;
-  font-weight: bold;
-  background-color: white;
-}
-
 @media screen and (min-width: 40em) {
-  .nav-bar {
-    display: grid;
-    grid-template-columns: 65% auto;
-    padding: 15px;
-  }
-  .nav-bar-left{
-    display: flex;
-    flex-direction: row;
-    gap: 1rem;
-
-   align-items: center;
-  }
-
-  .nav-bar-right {
-    display: flex;
-
-    gap: 1rem;
-    align-items: center;
-    justify-content: flex-end;
-  }
+  
 }

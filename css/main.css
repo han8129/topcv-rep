@@ -27,7 +27,7 @@ h1 {
   font-size: clamp(16px, 2vw, 27px);
 }
 
-p {
+a, p {
   font-size: clamp(14px, 2vw, 25px);
   
 }
@@ -38,28 +38,35 @@ p {
   gap: clamp(15px, 2.5vw, 33px);
 }
 
-.page > * {
-  border: 1px solid crimson;
-}
-
 .img-responsive {
   max-width: 100%;
   height: auto;
 }
 
-.box {
-  width: 82vw;
-  align-self: center;
+.container {
+  padding: clamp(15px, 4vw, 35px);
 }
-.content {
+.column {
   display: flex;
   flex-direction: column;
+  gap: clamp(15px, 2.5vw, 35px);
+}
 
-  gap: max(15px, 2.5vw);
+.row {
+  display: flex;
+  align-items: center;    
+  gap: clamp(15px, 3.5vw, 35px);
+
+  border-radius: 10px;
+  box-shadow: -1px 1px 4px rgba(0,0,0,0.3);
 }
 
 .card {
-  padding: 15px;
+  display: flex;
+  gap: clamp(15px, 3.5vw, 35px);
+  align-items: center;    
+
+  padding: clamp(15px, 2.5vw, 35px);
   border-radius: 10px;
   box-shadow: -1px 1px 4px rgba(0,0,0,0.3);
 }

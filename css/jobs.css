@@ -1,22 +1,27 @@
 .jobs {
   background: #edfff5;
   display: grid;
-  grid-template-columns: 35px repeat(5, 1fr) 35px;
+  grid-template-columns: max(35px, 9vw) repeat(5, 1fr) max(35px, 8vw);
 }
 
 .jobs-box {
   grid-column: 2 /span 5;
-  display:flex;
-  flex-direction: column;
-  gap: 1rem;
-  margin: 15px 0px;
-  padding: 15px;
+
+  margin-block: clamp(30px, 4.5vw, 45px);
+  padding-inline:clamp( 15px, 4.5vw, 35px);
+
   border-radius: 15px;
   box-shadow: -1px 1px 4px rgba(0,0,0,0.1);
   background-color: white;
 }
 
-.content .txt-tag{
+.jobs > .column {
+  padding-block: clamp(15px, 7vw, 35px);
+}
+.jobs-box > .column {
+  padding-block: 0px;
+}
+.column .txt-tag{
   width: fit-content;
 }
 

@@ -1,37 +1,26 @@
 .app-download{
-  padding: 35px;
-  display: grid;
-  gap: 15px;
+  padding-inline: clamp(35px, 11.5vw, 100px);
+  padding-block: clamp(15px, 4vw, 35px);
+  align-items: center;
 }
 
-.app-download > *:first-child {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 30px;
-
+.app-download > .column {
+  align-items: center;
 }
 
-.app-download-text-box h2 {
-  font-size: 14px;
+.app-download > .column > h1{
+  color: var(--color-primary);
 }
 
-.app-download-text-box > *:nth-child(2){
-  font-size: 13px;
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
+.app-download > .column > h1:nth-child(3) {
+  margin-top: clamp(30px, 5vw, 55px);
 }
-
-.app-download-text-box i {
-  color: #00b14f;
+.app-download i{
+  color: var(--color-primary);
 }
-.app-download-text-box >*:last-child {
-  width: 65%;
-  display: flex;
-  gap: 15px;
+.app-download__img {
+  min-width: 200px;
 }
-
 @media (min-width:40em) {
   .app-download {
     padding: 0px;

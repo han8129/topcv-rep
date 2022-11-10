@@ -1,23 +1,13 @@
-.career {
-  padding: 35px;
-  display: flex;
-  gap: 15px;
-  flex-direction: column;
+.career > .column .column > p{
+  display: none;
 }
 
-.career-cards {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 1rem;
-
+.career__first-card > a{
+  display: none;
 }
-.career-cards > div {
-  display: grid;
-  grid-template-columns: 33% auto;
-  gap: 1rem;
-  box-shadow: -1px 1px 7px rgb(0 0 0 / 10%);
-  padding: 15px;
-  border-radius: 15px;
+
+.career__first-card > a:first-child {
+  display: block;
 }
 .career-single-card-icon {
   display: grid;
@@ -38,6 +28,14 @@
   display: flex;
   flex-direction: column;
   gap: 15px;
+}
+
+.career-card-tags > *{
+  display: none;
+}
+
+.career-card-tags > *:first-child {
+  display: inline
 }
 
 .career-single-card-content  h2{
