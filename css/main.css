@@ -40,7 +40,7 @@ a, p {
 }
 
 .page-inline {
-  padding-inline: max(35px, 17vw);
+  padding-inline: max(15px, 12vw);
 }
  
 .container-inline {

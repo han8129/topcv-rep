@@ -1,6 +1,6 @@
 .top-occupations {
 	display: grid;
-  grid-template-columns: max(35px, 17vw) repeat(4, 1fr) max(35px, 17vw);
+  grid-template-columns: max(15px, 12vw) repeat(4, 1fr) max(15px, 12vw);
 }
 
 .top-occupations__content{
@@ -27,20 +27,22 @@
 
 .top-occupations__arrow-right {
   grid-column: 5 / span 2;
+  justify-self: flex-end;
 }
 
 .top-occupations__arrow-left, .top-occupations__arrow-right {
   height: 90%;
-  width: 100%;
+  width: 66%;
+
   align-self: end;
-  justify-self: center;
 
   display: flex;
   align-items: center;
-  justify-content: center;
   color: #00b14f;
+  justify-content: center;
 
   z-index: 1;
+  border: 1px dashed crimson;
 }
 
 .top-occupations__arrow-left, .top-occupations__arrow-right, .top-occupations__content{
@@ -58,5 +60,7 @@
 
   .top-occupations__arrow-left, .top-occupations__arrow-right {
     height: 77%;
+    width: 77%;
+
   }
 }

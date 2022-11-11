@@ -1,7 +1,7 @@
 .jobs {
   background: #edfff5;
   display: grid;
-  grid-template-columns: max(35px, 17vw) repeat(4, 1fr) max(35px, 17vw);
+  grid-template-columns: max(15px, 12vw) repeat(4, 1fr) max(15px, 12vw);
 }
 
 .jobs-box {
@@ -173,6 +173,7 @@
   }
   .jobs-list-left, .jobs-list-right {
     height: 61%;
+    width: 60%;
   }
 }
 

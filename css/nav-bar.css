@@ -26,7 +26,7 @@
 }
 
 .nav-bar__icon  i {
-  font-size: clamp(16px, 7vw, 36px);
+  font-size: clamp(16px, 7vw, 28px);
   color: var(--color-primary);
 
   display: flex;

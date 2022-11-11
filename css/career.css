@@ -1,6 +1,5 @@
-.career__card__text {
-  font-size: 7px;
-}
+.career__card__text h1, .career__card__text .txt-tag a{
+  font-size: clamp(10px, 3vw, 16px);}
 .career > .column .column > p{
   display: none;
 }
