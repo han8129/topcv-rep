@@ -1,10 +1,12 @@
-/* block-name__elem-name_mod-name_mod-val */
-
 .nav-bar {
   box-shadow: none;
 }
 
-.nav-bar > .row:last-child {
+.nav-bar a:active, a:visited, a:link {
+  color: black;
+}
+
+.nav-bar__bottom-row {
   display: none;
 }
 
@@ -36,12 +38,6 @@
   display: none;
 }
 
-.nav-bar-left > * {
-  padding: 15px;
-  border-radius: 5px;
-  box-shadow: -1px 1px 4px rgba(0,0,0,0.1);
-}
-
-@media screen and (min-width: 40em) {
-
+@media (min-width: 700px) {
+  
 }

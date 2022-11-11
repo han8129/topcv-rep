@@ -17,6 +17,7 @@ a {
   font-family: arial;
   font-weight: bold;
 }
+
  
 img {
   max-width: 100%;
@@ -44,11 +45,11 @@ a, p {
 }
  
 .container-inline {
-  padding-inline: clamp(15px, 7vw, 100px);
+  padding-inline: clamp(15px, 4vw, 100px);
 }
 
 .container-block {
-  padding-block: clamp(15px, 7vw, 55px);
+  padding-block: clamp(15px, 4vw, 55px);
 }
 
 .column {

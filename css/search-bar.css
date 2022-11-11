@@ -76,6 +76,15 @@ text:hover {
   border: 1px solid #00b14f;
 }
 
-@media ( min-width: 40em) {
+@media ( min-width: 700px) {
+  .search-box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
 
+    align-items: center;
+
+  }
+  .search-box > *:last-child{
+    display: block;
+}
 }
