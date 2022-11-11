@@ -18,7 +18,8 @@
 
 .top-occupations__list .row {
   background-color: var(--color-primary-light);
-  color: var(--color-secondary)
+  color: var(--color-secondary);
+  padding: clamp(23px, 4vw,35px);
 }
 
 .top-occupations__arrow-left {
@@ -42,7 +43,6 @@
   justify-content: center;
 
   z-index: 1;
-  border: 1px dashed crimson;
 }
 
 .top-occupations__arrow-left, .top-occupations__arrow-right, .top-occupations__content{

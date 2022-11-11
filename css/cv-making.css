@@ -33,6 +33,7 @@
     grid-template-columns: repeat(5, 1fr);
 
     gap: 0px;
+    padding-block: clamp(15px, 4vw, 25px);
   }
 
   .two-cards__content {
