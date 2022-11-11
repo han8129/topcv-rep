@@ -1,11 +1,11 @@
 .jobs {
   background: #edfff5;
   display: grid;
-  grid-template-columns: max(35px, 9vw) repeat(5, 1fr) max(35px, 8vw);
+  grid-template-columns: max(35px, 17vw) repeat(4, 1fr) max(35px, 17vw);
 }
 
 .jobs-box {
-  grid-column: 2 /span 5;
+  grid-column: 2 /span 4;
 
   margin-block: clamp(30px, 4.5vw, 45px);
 
@@ -40,20 +40,21 @@
 
   display: flex;
   align-items: center;
-  justify-content: center;
 
-  color: #00b14f;
+  color: var(--color-primary);
 }
 
 
 
 .jobs-list-left{
+  justify-content: flex-end;
   grid-column: 1 / span 2 ;
   z-index: 1;
 }
 
 .jobs-list-right {
-  grid-column: 6 / span 2;
+  justify-content: flex-start;
+  grid-column: 5 / span 2;
   justify-self: flex-end;
 }
 
@@ -169,6 +170,9 @@
   
   .jobs-list > .single-job:last-child{
     display: none;
+  }
+  .jobs-list-left, .jobs-list-right {
+    height: 61%;
   }
 }
 
