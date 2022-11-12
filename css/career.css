@@ -2,10 +2,8 @@
   display: grid;
   gap: clamp (15px, 2.5vw, 25px);
 }
-.career__card__text h1, .career__card__text .txt-tag a{
-  font-size: clamp(10px, 3vw, 16px);}
 
-.career > .column .column > p{
+.career > .column p{
   display: none;
 }
 
@@ -39,5 +37,9 @@
 
   .career__first-card > .txt-tag:first-child{
     display: none;
+  }
+
+  .career > .column p {
+    display: block;
   }
 }

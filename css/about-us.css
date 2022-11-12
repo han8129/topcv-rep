@@ -2,14 +2,8 @@
   background-color: var(--color_primary_light);
 }
 .about-us {
-  padding: 35px;
-  display: flex;
-  flex-direction: column;
+  margin-bottom: 25px;
   align-items: center;
-  gap: 30px;
-
-  margin: 15px;
-  margin-bottom: 45px;
 }
 
 .about-us > * {
@@ -21,18 +15,12 @@
   font-size: 14px;
   color: black;
 }
-.about-us-text-box{
-  width: 100%;
-
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 15px;
-
-  padding: 15px;
+.about-us .column{
+  justify-content: center;
   background-color: white;
   border-radius: 15px;
 
-  color: black;
+  color: var(--color_secondary);
 }
 
 .about-us-text-box > * {
@@ -51,12 +39,7 @@
     justify-content: center;
   }
  
-  .about-us {
-    padding: 0px;
-    width: 65%;
-  }
-
-  .about-us-text-box {
-     grid-template-columns: repeat(3, 1fr); 
+  .about-us .column {
+    flex-direction: row;
   }
 }

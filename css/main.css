@@ -30,7 +30,7 @@ h1 {
 }
 
 a, p {
-  font-size: clamp(10px, 2vw, 16px);
+  font-size: clamp(10px, 2vw, 14px);
   
 }
 
@@ -140,14 +140,18 @@ a, p {
 }
 
 @media (min-width: 1000px) {
+  .page_inline {
+    padding-inline: 0px;
+    width: min(1000px, 65vw);
+    align-self: center;
+
+  }
+  .overlap {
+    grid-template-columns: 1fr repeat(4, min(250px, 16.25vw)) 1fr;
+  }
   .overlap_left, .overlap_right {
-    width: 20vw;
+    width: max(calc(17.5vw + 15px), calc(50vw - 488px));
   }
 }
 
-@media (min-width: 1200px) {
-  .overlap_left, .overlap_right {
-    width: 18vw;
-  }
-}
 
