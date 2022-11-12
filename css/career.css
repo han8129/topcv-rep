@@ -39,6 +39,9 @@
     display: none;
   }
 
+}
+
+@media (min-width: 1400px) {
   .career > .column p {
     display: block;
   }
