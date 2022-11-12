@@ -1,38 +1,28 @@
-.btn a:link a:visited {
-  margin-bottom: 0px;
-  font-size: 14px;
+.btn{
+  border-radius: 7px;
   font-weight: bold; 
-  text-align: center; 
-  white-space: nowrap;
-  vertical-align: middle;
+  font-size: clamp(7px, 3.5vw, 16px);
+  
+  display: flex; 
+  align-items: center;
+  justify-content: center;
+
   cursor: pointer;
-  border-radius: 5px;
+  padding: clamp(7px, 2vw, 15px);
 }
 
-.btn-outline {
+.btn_outline{
   background-color: white;
-  color: #00b14f;
-  border: 1px solid #00b14f;
-  border-radius: 7px;
-  padding: 15px;
-  text-align: center;
+  color: var(--color_primary);
+  border: 1px solid var(--color_primary);
 }
 
-.btn-filled {
-  padding: 15px 10px;
-  font-size: 14px;
-  font-weight: bold;
+.btn_filled{
   color: white;
-  background-color: #00b14f;
-  border-radius: 7px;
-
-  text-align: center;
+  background-color: var(--color_primary);
 }
 
-.btn-dark {
+.btn_dark{
   color: white;
-  padding: 15px 10px;
-  background-color: #212f3f;
-  border-radius: 7px;
-  text-align: center;
+  background-color: var(--color_secondary);
 }

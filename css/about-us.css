@@ -1,38 +1,26 @@
 .about-us-box {
-  background-color: #deffe2;
+  background-color: var(--color_primary_light);
 }
 .about-us {
-  padding: 35px;
-  display: flex;
-  flex-direction: column;
+  margin-bottom: 25px;
   align-items: center;
-  gap: 30px;
-
-  margin: 15px;
-  margin-bottom: 45px;
 }
 
 .about-us > * {
   font-size: 16px;
-  color: #00b14f;
+  color: var(--color_primary);
 }
 
 .about-us p {
   font-size: 14px;
   color: black;
 }
-.about-us-text-box{
-  width: 100%;
-
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 15px;
-
-  padding: 15px;
+.about-us .column{
+  justify-content: center;
   background-color: white;
   border-radius: 15px;
 
-  color: black;
+  color: var(--color_secondary);
 }
 
 .about-us-text-box > * {
@@ -40,23 +28,18 @@
   flex-direction: column;
   gap: 15px;
 
-  color: #3d6089;
+  color: var(--color_secondary);
 
   
 }
 
-@media (min-width: 40em) {
+@media (min-width: 700px) {
   .about-us-box {
     display: flex;
     justify-content: center;
   }
  
-  .about-us {
-    padding: 0px;
-    width: 65%;
-  }
-
-  .about-us-text-box {
-     grid-template-columns: repeat(3, 1fr); 
+  .about-us .column {
+    flex-direction: row;
   }
 }

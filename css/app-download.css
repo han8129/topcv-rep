@@ -1,45 +1,56 @@
-.app-download{
-  padding: 35px;
-  display: grid;
-  gap: 15px;
-}
 
-.app-download > *:first-child {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 30px;
-
-}
-
-.app-download-text-box h2 {
-  font-size: 14px;
-}
-
-.app-download-text-box > *:nth-child(2){
-  font-size: 13px;
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
-
-.app-download-text-box i {
-  color: #00b14f;
-}
-.app-download-text-box >*:last-child {
-  width: 65%;
-  display: flex;
-  gap: 15px;
-}
-
-@media (min-width:40em) {
-  .app-download {
-    padding: 0px;
-    width: 65%;
-
+.app-download {
     display: grid;
+    gap: clamp(15px, 2.5vw, 35px);
+    padding-inline: max(15px, 7vw);
+}
+
+.app-download > .column {
+  justify-self: center;
+}
+
+.app-download > .column > h1{
+  color: var(--color_primary);
+}
+
+.app-download > .column > h1:nth-child(3) {
+  margin-top: clamp(30px, 5vw, 55px);
+  align-self: center;
+}
+.app-download i{
+  color: var(--color_primary);
+}
+.app-download__img_app {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(15px, 2.5vw, 35px);
+
+  max-width: 125px;
+  align-self: center;
+}
+@media (min-width:700px) {
+  .app-download {
     grid-template-columns: repeat(2, 1fr);
-    gap: 15px;
-    align-self: center;
+    gap: clamp(15px, 2.5vw, 35px);
+  }
+
+  .app-download__img_main {
+    width: 35vw;
+  }
+
+  .app-download > .column > h1:nth-child(3) {
+    margin-top: clamp(30px, 5vw, 55px);
+    align-self: flex-start;
+  }
+
+  .app-download__img_app {
+    flex-direction: row;
+    align-self: flex-start;
+  }
+}
+
+@media (min-width: 1000px) {
+  .app-download {
+    align-items: center;
   }
 }
