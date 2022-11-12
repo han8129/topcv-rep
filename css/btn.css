@@ -1,5 +1,4 @@
 .btn{
-  height: clamp(37px, 5vw, 50px);
   border-radius: 7px;
   font-weight: bold; 
   font-size: clamp(7px, 3.5vw, 16px);
@@ -9,6 +8,7 @@
   justify-content: center;
 
   cursor: pointer;
+  padding: clamp(7px, 2vw, 15px);
 }
 
 .btn_outline{

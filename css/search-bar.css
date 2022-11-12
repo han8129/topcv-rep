@@ -2,12 +2,6 @@
   background-image: url("../images/linear_web.png");
   background-repeat: no-repeat;
   background-size: 100% 100%;
-
-  display: flex;
-  justify-content: center;
-}
-
-.search-box {
 }
 
 .search-box > *:last-child {
@@ -15,15 +9,12 @@
 }
 
 .search-bar{
-  height: clamp(37px, 3vw, 57px); 
-
   display: grid;
   gap: max(15px, 2.5vw);
   grid-template-columns: 55% 1fr;
-  align-items: stretch;
 }
 
-.search-bar > *:last-child{
+.search-bar__btn_big{
   display: none;
 }
 
@@ -76,9 +67,11 @@ text:hover {
 }
 
 @media ( min-width: 700px) {
+
   .search-box {
+
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 55% auto;
 
     align-items: center;
 
@@ -86,4 +79,20 @@ text:hover {
   .search-box > *:last-child{
     display: block;
 }
+}
+
+@media (min-width: 1000px) {
+  .search-box-bg {
+    display: flex;
+    justify-content: center;
+  }
+  .search-box {
+    width: 65vw;
+  }
+  .search-bar__btn_big{
+    display: flex;
+  } 
+  .search-bar__btn {
+    display: none;
+  }
 }

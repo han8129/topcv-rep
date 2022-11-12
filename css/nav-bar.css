@@ -1,9 +1,7 @@
 .nav-bar {
   box-shadow: none;
-}
-
-.nav-bar a:active, a:visited, a:link {
-  color: black;
+  justify-content: space-between;
+  padding-block: 15px;
 }
 
 .nav-bar__bottom-row {
@@ -22,7 +20,7 @@
 }
 
 .nav-bar__img {
-  width: clamp(75px, 13vw, 175px);
+  width: clamp(75px, 13vw, 100px);
 }
 
 .nav-bar__icon  i {
@@ -38,6 +36,41 @@
   display: none;
 }
 
-@media (min-width: 700px) {
+@media (min-width: 1000px) {
+  .nav-bar {
+    padding-inline: min(7vw, 35px);
+    justify-content: unset;
+    gap: 15px;
+  }
   
+  .nav-bar__icon {
+    margin-left: auto;
+  }
+  .nav-bar__btn {
+    display: flex;
+    box-shadow: none;
+  }
+
+  .nav-bar__btn__left {
+    gap: 25px;
+    box-shadow: none;
+  }
+  .nav-bar__btn__left > .row {
+    padding: 13px;
+  }
+
+  .nav-bar__btn__left > a:visited{
+    color: black;
+  }
+  .nav-bar__btn__left > a:hover{
+    color: black;
+  }
+  .nav-bar__bth__left > a:link{
+    color: black;
+  }
+
+  .nav-bar__btn__right {
+    display: none;
+  }
 }
+

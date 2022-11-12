@@ -1,8 +1,12 @@
 
 .app-download {
-    display: flex;
-    flex-direction: column;
+    display: grid;
     gap: clamp(15px, 2.5vw, 35px);
+    padding-inline: max(15px, 7vw);
+}
+
+.app-download > .column {
+  justify-self: center;
 }
 
 .app-download > .column > h1{
@@ -26,7 +30,7 @@
 }
 @media (min-width:700px) {
   .app-download {
-    flex-direction: row;
+    grid-template-columns: repeat(2, 1fr);
     gap: clamp(15px, 2.5vw, 35px);
   }
 
@@ -42,5 +46,15 @@
   .app-download__img_app {
     flex-direction: row;
     align-self: flex-start;
+  }
+}
+
+@media (min-width: 1000px) {
+  .app-download {
+    width: 65vw;
+    align-self: center;
+
+    padding-inline: 0px;
+    align-items: center;
   }
 }

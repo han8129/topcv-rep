@@ -1,5 +1,11 @@
+.career {
+  display: grid;
+  gap: clamp (15px, 2.5vw, 25px);
+  padding-inline: max(15px, 7vw);
+}
 .career__card__text h1, .career__card__text .txt-tag a{
   font-size: clamp(10px, 3vw, 16px);}
+
 .career > .column .column > p{
   display: none;
 }
@@ -7,10 +13,39 @@
 .career__icon {
   color: var(--color-primary)
 }
-.career__first-card > a{
+.career__first-card {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+.career__first-card > .txt-tag{
   display: none;
 }
 
-.career__first-card > a:first-child {
-  display: block;
+.career__first-card > .txt-tag:first-child {
+  display: flex;
+}
+
+@media (min-width: 1000px) {
+  .career {
+    width: 65vw;
+    align-self: center;
+    padding-inline: 0px;
+
+    gap: 15px;
+  }
+  .career > .column{
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+
+  .career__first-card > .txt-tag {
+    display: flex;
+  }
+
+  .career__first-card > .txt-tag:first-child{
+    display: none;
+  }
 }
