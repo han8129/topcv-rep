@@ -10,7 +10,7 @@
 }
 
 .career__icon {
-  color: var(--color-primary)
+  color: var(--color_primary)
 }
 .career__first-card {
   display: flex;

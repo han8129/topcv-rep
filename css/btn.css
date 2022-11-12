@@ -13,16 +13,16 @@
 
 .btn_outline{
   background-color: white;
-  color: var(--color-primary);
-  border: 1px solid var(--color-primary);
+  color: var(--color_primary);
+  border: 1px solid var(--color_primary);
 }
 
 .btn_filled{
   color: white;
-  background-color: var(--color-primary);
+  background-color: var(--color_primary);
 }
 
 .btn_dark{
   color: white;
-  background-color: var(--color-secondary);
+  background-color: var(--color_secondary);
 }

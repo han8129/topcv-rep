@@ -1,5 +1,5 @@
 .top-occupations__list > .row > *:first-child {
-  color: var(--color-primary);
+  color: var(--color_primary);
 }
 
 .top-occupations__list {
@@ -8,8 +8,8 @@
 }
 
 .top-occupations__list .row {
-  background-color: var(--color-primary-light);
-  color: var(--color-secondary);
+  background-color: var(--color_primary_light);
+  color: var(--color_secondary);
 
 }
 

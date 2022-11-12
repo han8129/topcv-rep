@@ -10,7 +10,7 @@
 }
 
 .app-download > .column > h1{
-  color: var(--color-primary);
+  color: var(--color_primary);
 }
 
 .app-download > .column > h1:nth-child(3) {

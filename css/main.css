@@ -1,9 +1,11 @@
 :root {
   font-size: 16px; 
   font-family: Arial, Helvetica, sans-serif;
-  --color-primary: #00b14f;  
-  --color-secondary:#212f3f;
-  --color-primary-light: #e9f7ef;  
+  --color_primary: #00b14f;  
+  --color_secondary:#212f3f;
+  --color_primary_light: #e9f7ef;  
+  --color_neutral: #999;
+  --color_neutral_light: #eee;
 }
 
 * {
@@ -15,7 +17,6 @@
 a {
   text-decoration: none;
   font-family: arial;
-  font-weight: bold;
 }
 
  
@@ -29,7 +30,7 @@ h1 {
 }
 
 a, p {
-  font-size: clamp(11px, 2vw, 16px);
+  font-size: clamp(10px, 2vw, 16px);
   
 }
 
@@ -48,29 +49,44 @@ a, p {
 .column {
   display: flex;
   flex-direction: column;
-  gap: clamp(7px,4vw, 15px);
+  gap: clamp(7px,2vw, 15px);
 }
 
 .row {
   display: flex;
   align-items: center;    
-  gap: clamp(7px, 4vw, 15px);
+  gap: clamp(7px, 2vw, 15px);
+}
 
+.card {
   border-radius: 10px;
   box-shadow: -1px 1px 4px rgba(0,0,0,0.3);
 }
 
 .txt-tag {
+  font-weight: bold;
   display: flex;
   align-items: center;
   justify-content: center;
 
-  color: var(--color-primary);
   padding: 10px 15px;
-  background-color: var(--color-primary-light);
   border-radius: 18px;
 }
 
+.txt-tag_neutral {
+  background-color: var(--color_neutral_light);
+  color: var(--color_neutral);
+}
+
+.txt-tag_primary {
+  background-color: var(--color_primary);
+  color: white;
+}
+
+.txt-tag_primary_light {
+  background-color: var(--color_primary_light);
+  color: var(--color_primary);
+}
 .overlap {
   display: grid;
   grid-template-columns: max(15px, 7vw) repeat(4, 1fr) max(15px, 7vw);
@@ -92,14 +108,14 @@ a, p {
 }
 
 .overlap_left, .overlap_right {
-  height: 70%;
+  height: 80%;
   width: 40%;
   align-self: flex-end;
 
   display: flex;
   align-items: center;
 
-  color: var(--color-primary);
+  color: var(--color_primary);
 
   z-index: 1;
 }
@@ -125,7 +141,13 @@ a, p {
 
 @media (min-width: 1000px) {
   .overlap_left, .overlap_right {
-    width: 19vw;
+    width: 20vw;
+  }
+}
+
+@media (min-width: 1200px) {
+  .overlap_left, .overlap_right {
+    width: 18vw;
   }
 }
 

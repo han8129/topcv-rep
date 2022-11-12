@@ -4,22 +4,22 @@
   }
 
 .two-cards label {
-  font-size: 16px;
   padding:1px 5px; 
  display:inline; 
- background: #de4637;
  vertical-align: middle; 
- border-radius: 0.25em; 
- white-space:nowrap; 
- font-weight:normal; 
+
  color: white;
+ background: #de4637;
+ font-weight: normal;
+
+ border-radius: 2.5px; 
 }
 
 .two-cards > .row{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 
-  background: transparent linear-gradient(67deg,#e5fff1,#f5f2ff) 0 0 no-repeat padding-box;
+  background: transparent linear-gradient(67deg, var(--color_primary_light),#f5f2ff) 0 0 no-repeat padding-box;
   border-radius: 10px;
 }
 
@@ -60,6 +60,7 @@
 
 @media (min-width: 1000px) {
   .two-cards{
+    gap: 15px;
     grid-template-columns: repeat(2, 1fr);
     padding-inline: 0px;
 
