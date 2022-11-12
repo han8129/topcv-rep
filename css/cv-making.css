@@ -1,7 +1,6 @@
   .two-cards{
     display: grid;
     gap: clamp(15px, 2.5vw, 35px);
-    padding-inline: max(15px, 7vw);
   }
 
 .two-cards label {
@@ -61,10 +60,6 @@
 
 @media (min-width: 1000px) {
   .two-cards{
-    width: 65vw;
-    align-self: center;
-
-    gap: 15px;
     grid-template-columns: repeat(2, 1fr);
     padding-inline: 0px;
 

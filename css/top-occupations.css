@@ -10,7 +10,7 @@
 .top-occupations__list .row {
   background-color: var(--color-primary-light);
   color: var(--color-secondary);
-  padding: clamp(15px, 4vw,25px);
+
 }
 
 @media (min-width: 700px) {

@@ -33,39 +33,29 @@ a, p {
   
 }
 
-.page-inline {
+.page_inline {
   padding-inline: max(15px, 7vw);
 }
  
 .container-inline {
-  padding-inline: clamp(15px, 4vw, 25px);
+  padding-inline: clamp(7px, 4vw, 15px);
 }
 
 .container-block {
-  padding-block: clamp(15px, 4vw, 25px);
+  padding-block: clamp(7px, 4vw, 15px);
 }
 
 .column {
   display: flex;
   flex-direction: column;
-  gap: clamp(15px, 2.5vw, 25px);
+  gap: clamp(7px,4vw, 15px);
 }
 
 .row {
   display: flex;
   align-items: center;    
-  gap: clamp(15px, 3.5vw, 25px);
+  gap: clamp(7px, 4vw, 15px);
 
-  border-radius: 10px;
-  box-shadow: -1px 1px 4px rgba(0,0,0,0.3);
-}
-
-.card {
-  display: flex;
-  gap: clamp(15px, 3.5vw, 35px);
-  align-items: center;    
-
-  padding: clamp(15px, 2.5vw, 35px);
   border-radius: 10px;
   box-shadow: -1px 1px 4px rgba(0,0,0,0.3);
 }
@@ -103,7 +93,7 @@ a, p {
 
 .overlap_left, .overlap_right {
   height: 70%;
-  width: 50%;
+  width: 40%;
   align-self: flex-end;
 
   display: flex;
@@ -119,16 +109,21 @@ a, p {
 }
  
 @media (min-width: 700px) {
+  .page_inline {
+    padding-inline: 17.5vw;
+  }
+  
+  .overlap {
+    grid-template-columns: 17.5vw repeat(4, 1fr) 17.5vw;
+  }
+
   .overlap_left, .overlap_right {
     height: 77%;
-    width: 10vw;
+    width: 20vw;
   }
 }
 
 @media (min-width: 1000px) {
-  .overlap {
-    grid-template-columns: 17.5vw repeat(4, 1fr) 17.5vw;
-  }
   .overlap_left, .overlap_right {
     width: 19vw;
   }

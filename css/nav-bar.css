@@ -51,6 +51,9 @@
     box-shadow: none;
   }
 
+  .nav-bar__btn__right {
+    display: none;
+  }
   .nav-bar__btn__left {
     gap: 25px;
     box-shadow: none;
@@ -59,18 +62,12 @@
     padding: 13px;
   }
 
-  .nav-bar__btn__left > a:visited{
-    color: black;
-  }
-  .nav-bar__btn__left > a:hover{
-    color: black;
-  }
-  .nav-bar__bth__left > a:link{
+  .nav-bar__btn__left > a:link, a:visited {
     color: black;
   }
 
-  .nav-bar__btn__right {
-    display: none;
+  .nav-bar__btn__left > a:hover, a:active {
+    color: var(--color-primary);
   }
 }
 

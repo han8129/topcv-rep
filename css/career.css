@@ -1,7 +1,6 @@
 .career {
   display: grid;
   gap: clamp (15px, 2.5vw, 25px);
-  padding-inline: max(15px, 7vw);
 }
 .career__card__text h1, .career__card__text .txt-tag a{
   font-size: clamp(10px, 3vw, 16px);}
@@ -27,13 +26,6 @@
 }
 
 @media (min-width: 1000px) {
-  .career {
-    width: 65vw;
-    align-self: center;
-    padding-inline: 0px;
-
-    gap: 15px;
-  }
   .career > .column{
 
     display: grid;
