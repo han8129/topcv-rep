@@ -1,4 +1,5 @@
 .jobs {
+<<<<<<< HEAD
   background: #edfff5;
   display: grid;
   grid-template-columns: 35px repeat(5, 1fr) 35px;
@@ -141,6 +142,44 @@
 
 .job-follow {
   color: lightgray;
+=======
+  background: var(--color_primary_light);
+}
+
+.jobs-box {
+
+  border-radius: 15px;
+  background-color: white;
+}
+
+.jobs-box__second-heading {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(15px, 2.5vw, 35px);
+}
+
+.column .txt-tag{
+  width: fit-content;
+}
+
+.jobs-box__content__tag {
+  color: var(--color_primary);
+}
+
+.jobs-box__locations > *:last-child {
+  display: none;
+}
+
+.single-job__details {
+  flex-wrap: wrap;
+}
+
+.job-follow {
+  color: var(--color_neutral);
+  margin-left: auto;
+  align-self: flex-start;
+
+>>>>>>> v2
 }
 
 .job-follow > * {
@@ -149,6 +188,7 @@
   box-shadow: -1px 1px 4px rgba(0,0,0,0.3);
 }
 
+<<<<<<< HEAD
 .job-details {
  display: flex;
   gap: 1rem;
@@ -231,5 +271,30 @@
   justify-content: center;
   align-items: center;
 }
+=======
+@media (min-width: 800px) {
+  .jobs-box__second-heading {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .jobs-box > .column:last-child {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .jobs-box__jobs-list > *:last-child {
+    display: none;
+  }
+}
+
+@media (min-width: 1400px) {
+    .jobs-box > .column:last-child {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    .jobs-box__jobs-list > *:last-child {
+      display: flex;
+    }
+>>>>>>> v2
 }
 

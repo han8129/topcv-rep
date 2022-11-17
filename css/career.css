@@ -1,4 +1,5 @@
 .career {
+<<<<<<< HEAD
   padding: 35px;
   display: flex;
   gap: 15px;
@@ -96,3 +97,52 @@
   gap: 5px;
 }
 }
+=======
+  display: grid;
+  gap: clamp (15px, 2.5vw, 25px);
+}
+
+.career > .column p{
+  display: none;
+}
+
+.career__icon {
+  color: var(--color_primary)
+}
+.career__first-card {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+.career__first-card > .txt-tag{
+  display: none;
+}
+
+.career__first-card > .txt-tag:first-child {
+  display: flex;
+}
+
+@media (min-width: 1000px) {
+  .career > .column{
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+
+  .career__first-card > .txt-tag {
+    display: flex;
+  }
+
+  .career__first-card > .txt-tag:first-child{
+    display: none;
+  }
+
+}
+
+@media (min-width: 1400px) {
+  .career > .column p {
+    display: block;
+  }
+}
+>>>>>>> v2

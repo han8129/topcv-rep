@@ -1,7 +1,21 @@
+<<<<<<< HEAD
+=======
+:root {
+  font-size: 16px; 
+  font-family: Arial, Helvetica, sans-serif;
+  --color_primary: #00b14f;  
+  --color_secondary:#212f3f;
+  --color_primary_light: #e9f7ef;  
+  --color_neutral: #999;
+  --color_neutral_light: #eee;
+}
+
+>>>>>>> v2
 * {
   box-sizing: border-box;
   margin:  0px;
   padding: 0px;
+<<<<<<< HEAD
   font-family: arial;
 }
 
@@ -102,4 +116,147 @@ p {
 }
 
  
+=======
+}
+
+a {
+  text-decoration: none;
+  font-family: arial;
+}
+
+ 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+h1 {
+  font-size: clamp(13px, 2.5vw, 18px);
+}
+
+a, p {
+  font-size: clamp(10px, 2vw, 14px);
+}
+
+.page_inline {
+  padding-inline: max(15px, 7vw);
+}
+ 
+.container-inline {
+  padding-inline: clamp(7px, 4vw, 15px);
+}
+
+.container-block {
+  padding-block: clamp(7px, 4vw, 15px);
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(7px,2vw, 15px);
+}
+
+.row {
+  display: flex;
+  align-items: center;    
+  gap: clamp(7px, 2vw, 15px);
+}
+
+.card {
+  border-radius: 10px;
+  box-shadow: -1px 1px 4px rgba(0,0,0,0.3);
+}
+
+.txt-tag {
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 10px 15px;
+  border-radius: 18px;
+}
+
+.txt-tag_neutral {
+  background-color: var(--color_neutral_light);
+  color: var(--color_neutral);
+}
+
+.txt-tag_primary {
+  background-color: var(--color_primary);
+  color: white;
+}
+
+.txt-tag_primary_light {
+  background-color: var(--color_primary_light);
+  color: var(--color_primary);
+}
+.overlap {
+  display: grid;
+  grid-template-columns: max(15px, 7vw) repeat(4, 1fr) max(15px, 7vw);
+}
+
+.overlap_content{
+  grid-column: 2 / span 4;
+}
+
+.overlap_left {
+  grid-column: 1 / span 2;
+
+  justify-content: flex-end;
+}
+
+.overlap_right {
+  grid-column: 5 / span 2;
+  justify-self: flex-end;
+}
+
+.overlap_left, .overlap_right {
+  height: 80%;
+  width: 40%;
+  align-self: flex-end;
+
+  display: flex;
+  align-items: center;
+
+  color: var(--color_primary);
+
+  z-index: 1;
+}
+
+.overlap_content, .overlap_left, .overlap_right {
+  grid-row: 1;
+}
+ 
+@media (min-width: 700px) {
+  .page_inline {
+    padding-inline: 17.5vw;
+  }
+  
+  .overlap {
+    grid-template-columns: 17.5vw repeat(4, 1fr) 17.5vw;
+  }
+
+  .overlap_left, .overlap_right {
+    height: 77%;
+    width: 20vw;
+  }
+}
+
+@media (min-width: 1000px) {
+  .page_inline {
+    padding-inline: 0px;
+    width: min(1000px, 65vw);
+    align-self: center;
+
+  }
+  .overlap {
+    grid-template-columns: 1fr repeat(4, min(250px, 16.25vw)) 1fr;
+  }
+  .overlap_left, .overlap_right {
+    width: max(calc(17.5vw + 15px), calc(50vw - 488px));
+  }
+}
+
+>>>>>>> v2
 

@@ -1,4 +1,5 @@
 .about-us-box {
+<<<<<<< HEAD
   background-color: #deffe2;
 }
 .about-us {
@@ -10,17 +11,29 @@
 
   margin: 15px;
   margin-bottom: 45px;
+=======
+  background-color: var(--color_primary_light);
+}
+.about-us {
+  margin-bottom: 25px;
+  align-items: center;
+>>>>>>> v2
 }
 
 .about-us > * {
   font-size: 16px;
+<<<<<<< HEAD
   color: #00b14f;
+=======
+  color: var(--color_primary);
+>>>>>>> v2
 }
 
 .about-us p {
   font-size: 14px;
   color: black;
 }
+<<<<<<< HEAD
 .about-us-text-box{
   width: 100%;
 
@@ -33,6 +46,14 @@
   border-radius: 15px;
 
   color: black;
+=======
+.about-us .column{
+  justify-content: center;
+  background-color: white;
+  border-radius: 15px;
+
+  color: var(--color_secondary);
+>>>>>>> v2
 }
 
 .about-us-text-box > * {
@@ -40,17 +61,26 @@
   flex-direction: column;
   gap: 15px;
 
+<<<<<<< HEAD
   color: #3d6089;
+=======
+  color: var(--color_secondary);
+>>>>>>> v2
 
   
 }
 
+<<<<<<< HEAD
 @media (min-width: 40em) {
+=======
+@media (min-width: 700px) {
+>>>>>>> v2
   .about-us-box {
     display: flex;
     justify-content: center;
   }
  
+<<<<<<< HEAD
   .about-us {
     padding: 0px;
     width: 65%;
@@ -58,5 +88,9 @@
 
   .about-us-text-box {
      grid-template-columns: repeat(3, 1fr); 
+=======
+  .about-us .column {
+    flex-direction: row;
+>>>>>>> v2
   }
 }

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .two-cards {
   padding: 35px;
   display: flex;
@@ -99,4 +100,79 @@
 }
 
 
+=======
+  .two-cards{
+    display: grid;
+    gap: clamp(15px, 2.5vw, 35px);
+  }
+
+.two-cards label {
+  padding:1px 5px; 
+ display:inline; 
+ vertical-align: middle; 
+
+ color: white;
+ background: #de4637;
+ font-weight: normal;
+
+ border-radius: 2.5px; 
+}
+
+.two-cards > .row{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  background: transparent linear-gradient(67deg, var(--color_primary_light),#f5f2ff) 0 0 no-repeat padding-box;
+  border-radius: 10px;
+}
+
+.two-cards > .container-inline{
+    padding-right: 0px;
+}
+
+.two-cards__content > .column {
+  display: none;
+}
+
+@media (min-width: 700px ) {
+  .two-cards__content > .column{
+    display: flex;
+  }
+
+  .two-cards > .row {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+
+    gap: 0px;
+  }
+
+  .two-cards__content {
+    grid-column: 1 / span 3;
+    z-index: 1;
+  }
+
+  .two-cards__img {
+    grid-column: 4 / span 2;
+  }
+
+  .two-cards__content .btn {
+    align-self: flex-start;
+    padding: clamp(7px, 2.5vw, 15px);
+  }
+}
+
+@media (min-width: 1000px) {
+  .two-cards{
+    gap: 15px;
+    grid-template-columns: repeat(2, 1fr);
+    padding-inline: 0px;
+
+    
+  }
+
+  .two-cards > .container-inline{
+    padding-right: 0px;
+    padding-block: clamp(15px, 4vw, 25px);
+  }
+>>>>>>> v2
 }

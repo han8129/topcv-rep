@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .top-occupations {
 	display: grid;
   grid-template-columns: 35px repeat(11, 1fr) 35px;
@@ -126,4 +127,42 @@
 	font-size: 18px;
 	font-weight: 700;
 }
+=======
+.top-occupations__list > .row > *:first-child {
+  color: var(--color_primary);
+}
+
+.top-occupations__list {
+  display: grid;
+  gap: clamp(7px, 2.5vw, 15px);
+}
+
+.top-occupations__list .row {
+  min-height: 100px;
+
+  background-color: var(--color_primary_light);
+  color: var(--color_secondary);
+
+}
+
+@media (min-width: 700px) {
+  .top-occupations__list {
+      grid-template-columns: 1fr 1fr;
+  }
+
+  .top-occupations__list > .row:last-child{
+    display: none;
+  }
+}
+
+@media (min-width: 1000px) {
+  .top-occupations__list >.row:last-child {
+    display: flex;
+  }
+
+  .top-occupations__list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+>>>>>>> v2
 }
