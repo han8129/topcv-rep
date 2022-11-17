@@ -70,7 +70,7 @@
   }
 
   .nav-bar__btn__left > a:hover, a:active {
-    color: var(--color-primary);
+    color: var(--color_primary);
   }
 }
 
