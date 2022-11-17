@@ -43,32 +43,28 @@
   box-shadow: -1px 1px 4px rgba(0,0,0,0.3);
 }
 
-@media (min-width: 700px ) {
+@media (min-width: 800px) {
   .jobs-box__second-heading {
     flex-direction: row;
     justify-content: space-between;
   }
-  
   .jobs-box > .column:last-child {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
   
-  .jobs-box__jobs-list > *:last-child{
+  .jobs-box__jobs-list > *:last-child {
     display: none;
   }
 }
 
-@media (min-width: 1000px) {
-  .jobs {
-    grid-template-columns: 17.5vw repeat(4, 1fr) 17.5vw;
-  }
-  .jobs-box > .column:last-child {
-    grid-template-columns: repeat(3, 1fr);
-  }
-  
-  .jobs-box__jobs-list > *:last-child {
-    display: flex;
-  }
+@media (min-width: 1400px) {
+    .jobs-box > .column:last-child {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    .jobs-box__jobs-list > *:last-child {
+      display: flex;
+    }
 }
 
