@@ -16,7 +16,7 @@
     @import url("./css/nav-bar.css");
     @import url("./css/search-bar.css");
     @import url("./css/top-occupations.css");
-    
+
     @import url("css/dropdown.css");
   </style>
 
@@ -34,12 +34,12 @@
           src="https://www.topcv.vn/v3/images/topcv-logo-4.png?v=1.0.1" alt="TopCV tuyen dung tai TopCV"
           title="TopCV tuyển dụng tại TopCV"> </a>
 
-      <button onclick="" class="navbar__user-icon">
+      <button onclick="dropdown()" class="navbar__user-icon dropdown-button">
         <i class="fa-regular fa-user fa-1x"></i>
       </button>
     </div>
-    
-    <div class="navbar__bottom-row dropdown">
+
+    <div id="myDropdown" class="navbar__bottom-row dropdown__content">
       <div class="navbar-buttons column">
 
         <div class="navbar-buttons__top-row column">
@@ -48,13 +48,14 @@
           <a class="btn card container-block container-inline" href="https://www.topcv.vn/">công ty</a>
           <a class="btn card container-block container-inline" href="https://www.topcv.vn/">phát triển sư nghiệp</a>
           <a class="btn card container-block container-inline" href="https://www.topcv.vn/">công cụ</a>
-          <a class="btn card container-block container-inline" href="https://www.topcv.vn/">infinity gift box <i class="fa-solid fa-gift"></i></a>
+          <a class="btn card container-block container-inline" href="https://www.topcv.vn/">infinity gift box <i
+              class="fa-solid fa-gift"></i></a>
         </div>
 
         <div class="nav-bar__btn__right column">
           <button class="row btn btn_outlined container-block container-inline">Tài khoản</button>
           <div class="dropdown column">
-          
+
             <a class=" row btn btn_outline container-block container-inline" href="www.google.com">đăng nhập</a>
             <a class=" row btn btn_filled container-block container-inline" href="">đăng ký</a>
             <a class=" row btn btn_dark container-block container-inline" href="">đăng tyển & tìm hồ sơ</a>
@@ -63,7 +64,7 @@
       </div>
     </div>
   </div>
-  
+
 
   <article class="search-box-bg ">
     <div class="page-inline container-block search-box">

@@ -3,6 +3,9 @@
       overflow: hidden;
 }
 
+.dropdown:hover {
+      background-color: blue;
+}
 .show {
       display: block;
 }

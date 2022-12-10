@@ -8,6 +8,7 @@
 }
 
 .navbar__bottom-row {
+  display: none;
 }
 
 .nav-bar__img {
@@ -28,6 +29,10 @@
   color: var(--color_secondary);
 }
 
+.navbar-buttons__top-row a {
+  font-weight: bold;
+}
+
 @media (min-width: 700px) {
   .nav-bar {
     padding-inline: 7vw;
@@ -43,15 +48,6 @@
     display: flex;
     box-shadow: none;
   }
-
-  .navbar-buttons__top-row a {
-    font-weight: bold;
-  }
-
-  .nav-bar__btn__right {
-    display: none;
-  }
-
   .navbar-buttons__top-row {
     gap: 25px;
     box-shadow: none;
