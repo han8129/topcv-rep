@@ -1,3 +1,8 @@
 .dropdown {
-      display: ;
+      max-height: 0rem;
+      overflow: hidden;
+}
+
+.show {
+      display: block;
 }

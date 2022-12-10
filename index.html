@@ -1,350 +1,387 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <title>TopCV Replica</title>
-    <link rel="icon" href="https://www.topcv.vn/v3/images/new/favicon.ico" type="image/x-icon">
-    <style>
-      @import url("./css/about-us.css"); 
-      @import url("./css/app-download.css"); 
-      @import url("./css/btn.css"); 
-      @import url("./css/career.css");
-      @import url("./css/cv-making.css");
-      @import url("./css/jobs.css");
-      @import url("./css/main.css");
-      @import url("./css/nav-bar.css");
-      @import url("./css/search-bar.css");
-      @import url("./css/top-occupations.css");
-    </style>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <base href="" target="_blank">
-    <script src="https://kit.fontawesome.com/49551556eb.js" crossorigin="anonymous"></script>
-  </head>
-  <body class="column">
-    <div class="nav-bar container-inline row">
-          <a class="nav-bar__img" href="https://www.topcv.vn?ref=you"> <img src="https://www.topcv.vn/v3/images/topcv-logo-4.png?v=1.0.1" alt="TopCV tuyen dung tai TopCV" title="TopCV tuyển dụng tại TopCV"> </a>            
-          <div class="nav-bar__btn row">
-                <div class="nav-bar__btn__left row">
-                  <a class= "" href="https://www.topcv.vn/">Việc làm</a>
-                  <a class= "" href="https://www.topcv.vn/">Hồ sơ &CV</a>
-                  <a class= "" href="https://www.topcv.vn/">Công ty</a>
-                  <a class= ""href="https://www.topcv.vn/">Phát triển sư nghiệp</a>
-                  <a class= ""href="https://www.topcv.vn/">Công cụ</a>
-                  <a class= ""href="https://www.topcv.vn/">Infinity Gift Box <i class="fa-solid fa-gift"></i></a>
-                </div>
-                <div class="nav-bar__btn__right row">
-                  <a class= " row btn btn_outline" href="www.google.com">Đăng nhập</a>
-                  <a class= " row btn btn_filled" href="">Đăng ký</a>
-                  <a class= " row btn btn_dark" href="">Đăng tyển & tìm hồ sơ</a>
-                </div>
-          </div>
-          <div class="nav-bar__icon">
-            <i class="fa-regular fa-user fa-1x"></i>
-          </div>
+
+<head>
+  <meta charset="UTF-8">
+  <title>TopCV Replica</title>
+  <link rel="icon" href="https://www.topcv.vn/v3/images/new/favicon.ico" type="image/x-icon">
+  <style>
+    @import url("./css/about-us.css");
+    @import url("./css/app-download.css");
+    @import url("./css/btn.css");
+    @import url("./css/career.css");
+    @import url("./css/cv-making.css");
+    @import url("./css/jobs.css");
+    @import url("./css/main.css");
+    @import url("./css/nav-bar.css");
+    @import url("./css/search-bar.css");
+    @import url("./css/top-occupations.css");
+    
+    @import url("css/dropdown.css");
+  </style>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <base href="" target="_blank">
+  <script src="https://kit.fontawesome.com/49551556eb.js" crossorigin="anonymous"></script>
+  <script src="js/dropdown.js"></script>
+</head>
+
+<body class="column">
+  <div class="nav-bar container-inline column">
+    <div class="navbar__top-row row">
+
+      <a class="nav-bar__img" href="https://www.topcv.vn?ref=you"> <img
+          src="https://www.topcv.vn/v3/images/topcv-logo-4.png?v=1.0.1" alt="TopCV tuyen dung tai TopCV"
+          title="TopCV tuyển dụng tại TopCV"> </a>
+
+      <button onclick="" class="navbar__user-icon">
+        <i class="fa-regular fa-user fa-1x"></i>
+      </button>
     </div>
     
-      <article class="search-box-bg ">
-        <div class="page-inline container-block search-box">
-          <section class="column">
-            <h1>Tìm việc phù hợp với bạn</h1>
-            <div class="search-bar">
-              <div class="search-bar__input">
-                <div class="input__mag-glass">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                </div>
-                <div class="input__input">
-                  <input type="text" placeholder="Tên công việc vị trí ứng tuyển">
-                </div>
-              </div>
-              <div class="btn btn_filled search-bar__btn">
-                  <i class="fa-solid fa-magnifying-glass"></i>
-              </div>
-                <p class="btn btn_filled search-bar__btn_big">Tìm việc ngay</p>
-            </div>
-            <h1>Các công ty tuyển dụng hàng đầu  </h1>
-            <div class="content__imgs img-responsive">
-              <div>
-                <img src="https://www.topcv.vn/v4/image/welcome/companies/onemoutn.png">
-              </div>
-              <div>
-                <img src="https://www.topcv.vn/v4/image/welcome/companies/prudential.png">
-              </div>
-              <div>
-                <img src="https://www.topcv.vn/v4/image/welcome/companies/fpt.png">
-              </div>
-            </div>
-          </section>
-          <section>
-            <img src="https://www.topcv.vn/v4/image/welcome/image_topcv.png?v=1.0.0" alt="Random guy" class="img-responsive">
-          </section>
-        </div>
-      </article>
-      <article class="page_inline container-block two-cards">
-          <section class="container-inline container-block row">
-            <div class="two-cards__content column">
-                  <div class="two-cards__txt column">
-                    <h1>Tạo CV ấn tượng </h1>
-                    <p> TopCV hiện có 50+ mẫu CV chuyên nghiệp, độc đáo phù hợp với mọi ngành nghề </p>
-                  </div>
-                  <a class="btn btn_filled">Tạo CV ngay</a>
-            </div>
-            <div class="two-cards__img">
-              <img src="https://www.topcv.vn/v4/image/welcome/mau_cv.png?v=1.0.0" alt="Tao CV an tuong" class="img-responsive">
-            </div>
-          </section>
-          <section class=" container-inline container-block row">
-            <div class="two-cards__content column">
-              <div class="two-cards__txt column">
-                <h1> Sự dụng CV sẵn có để tìm việc <label>Mới</label> </h1>
-                <p> Cách đơn giản để bắt đầu tìm việc tại TopCV, Nhà tuyển dụng sẽ nhìn thấy CV bạn đã tải lên </p>   
-              </div>
-              <a class="btn btn_filled">Upload CV ngay </a>
-            </div> 
-            <div class="two-cards__img">
-              <img src="https://www.topcv.vn/v4/image/welcome/upload-cv.png?v=1.0.0" alt="Tao CV an tuong" class="img-responsive box-img">
-            </div>
-        </section>
-      </article>
-      <article class="container-block overlap jobs">
-        <div class="overlap_left">
-              <span class="fa-stack fa-1x">
-                <i class="fa-solid fa-circle fa-stack-2x"></i>
-                <i class="fa-solid fa-arrow-left fa-stack-1x fa-inverse"></i>
-              </span>
-        </div>
-        <div class="jobs-box overlap_content container-block container-inline column">
-          <header class="column">
+    <div class="navbar__bottom-row dropdown">
+      <div class="navbar-buttons column">
 
-              <p class="txt-tag txt-tag_primary_light">Để xuất bởi AI</p>
-                <div class="jobs-box__second-heading">
-                <h1>Tin tuyển dụng, việc làm tốt nhất</h1>
-                <p class="jobs-box__content__tag">xem tất cả <i class="fa-solid fa-arrow-right"></i></p>
-                </div>
-            <section class="jobs-box__locations row">
-              <div>
-                <p class="txt-tag txt-tag_primary">Ngẫu nhiên</p>
-              </div>
-              <div>
-                <p class="txt-tag txt-tag_neutral">Hà Nội</p>
-              </div>
-              <div>
-                <p class="txt-tag txt-tag_neutral">Thành phố Hồ Chí Minh</p>
-              </div>
-              
-            </section>
-          </header>
-          <section class="column jobs-box__jobs-list">
-              <div class="column container-block container-inline card">
-                <div class="row">
-                  <div class="row">
-                    <div>
-                      <img src="https://cdn.topcv.vn/44/company_logos/cong-ty-co-phan-scots-english-australia-61bab8c11b571.jpg">
-                    </div>
-                    <div class="column">
-                      <h1>Công Việc 
-                    </h1>
-                      <p>Chi tiết
-                    </p>
-                    </div>
-                  </div>
-                  <div class="job-follow">
-                    <i class="fa-regular fa-heart "></i>
-                  </div>
-                </div>
-                <div class="single-job__details row">
-                  <P class="txt-tag txt-tag_neutral">Mức lương</P>
-                  <p class="txt-tag txt-tag_neutral">Địa điểm</p>
-                </div>
-              </div>
-              <div class="column container-block container-inline card">
-                  <div class="row">
-                    <div class="row">
-                      <div>
-                        <img src="https://cdn.topcv.vn/44/company_logos/cong-ty-co-phan-scots-english-australia-61bab8c11b571.jpg">
-                      </div>
-                      <div class="column">
-                        <h1>Công Việc 
-                      </h1>
-                        <p>Chi tiết
-                      </p>
-                      </div>
-                    </div>
-                    <div class="job-follow">
-                      <i class="fa-regular fa-heart "></i>
-                    </div>
-                  </div>
-                      <div class=" single-job__details row">
-                          <P class="txt-tag txt-tag_neutral">Mức lương</P>
-                          <p class="txt-tag txt-tag_neutral">Địa điểm</p>
-                      </div>
-                  </div>  
-              <div class="column container-block container-inline card">
-                  <div class="row">
-                      <img src="https://cdn.topcv.vn/44/company_logos/cong-ty-co-phan-scots-english-australia-61bab8c11b571.jpg">
-                    <div class="column">
-                      <h1>Công Việc </h1>
-                      <p>Chi tiết </p>
-                    </div>
-                  <div class="job-follow">
-                    <i class="fa-regular fa-heart "></i>
-                  </div>
-                </div>
-                    <div class="single-job__details row">
-                        <P class="txt-tag txt-tag_neutral">Mức lương</P>
-                        <p class="txt-tag txt-tag_neutral">Địa điểm</p>
-                    </div>
-                  </div>
-      
-          </section>
+        <div class="navbar-buttons__top-row column">
+          <a class="btn card container-block container-inline" href="https://www.topcv.vn/">việc làm</a>
+          <a class="btn card container-block container-inline" href="https://www.topcv.vn/">hồ sơ &cv</a>
+          <a class="btn card container-block container-inline" href="https://www.topcv.vn/">công ty</a>
+          <a class="btn card container-block container-inline" href="https://www.topcv.vn/">phát triển sư nghiệp</a>
+          <a class="btn card container-block container-inline" href="https://www.topcv.vn/">công cụ</a>
+          <a class="btn card container-block container-inline" href="https://www.topcv.vn/">infinity gift box <i class="fa-solid fa-gift"></i></a>
         </div>
-        <div class="overlap_right">
-                  <span class="fa-stack fa-1x">
-                    <i class="fa-solid fa-circle fa-stack-2x"></i>
-                    <i class="fa-solid fa-arrow-right fa-stack-1x fa-inverse"></i>
-                  </span>
-        </div>
-      </article>
-      <article class="overlap container-block">
-          <div class="overlap_left">
-              <span class="fa-stack fa-1x">
-                <i class="fa-solid fa-circle fa-stack-2x"></i>
-                <i class="fa-solid fa-arrow-left fa-stack-1x fa-inverse"></i>
-              </span>
-          </div>
-          <div class="column overlap_content">
-          <div>
-              <h1 >Top ngành nghề nổi bật
-                </h1>
-          </div>
-          <div class="top-occupations__list">
-            <div class=" row card container-inline container-block">
-                <div><i class="fa-solid fa-house fa-2x"></i></div>
-                <div>
-                  <h1>Bất động sản</h1>
-                  <p>132,733 việc làm</p>
-                </div>
-              </div>
-            <div class=" container-inline container-block row card">
-                  <div><i class="fa-solid fa-cart-shopping fa-2x"></i></div>
-                <div>
-                  <h1>Kinh doanh/ Bán hàng</h1>
-                  <p>132,733 việc làm</p>
-                </div>
-              </div>
-            <div class="container-inline container-block row card">
-                  <div><i class="fa-regular fa-credit-card fa-2x"></i></div>
-              <div>
-                <h1>Ngân hàng/ Tài chính</h1>
-                <p>132,733 việc làm</p>
-              </div>
-            </div>
-          </div>
-          </div>
-          <div class="overlap_right">
-              <span class="fa-stack fa-1x">
-                <i class="fa-solid fa-circle fa-stack-2x"></i>
-                <i class="fa-solid fa-arrow-right fa-stack-1x fa-inverse"></i>
-              </span>
-          </div>
-      </article>
-      <article class="career page_inline container-block column">
-        <div><h1>Phát triển bản thân và sự nghiệp</h1></div>
-        <div class="column">
-          <div class="container-block container-inline row card">
-            <div class="career__icon">
-              <div>
-                <span class="fa-stack fa-2x">
-                  <i class="fa-solid fa-circle fa-stack-2x"></i>
-                  <i class="fa-solid fa-magnifying-glass-chart fa-stack-1x fa-inverse"></i>
-                </span>
-              </div>
-            </div>
-            <div class="career__card__text column">
-              <div>
-                <h1>
-                  Khám phá tính cách và năng lực bản thân
-                </h1>
-              </div>
-                <p> Lựa chọn nghề nghiệp chính xác hơn thông qua bài trắc nghiệm về tính cách, khả năng giải quyết vấn đề, trí thông minh,...  </p>
-              <div class="career__first-card">
-                <a class="txt-tag txt-tag_primary_light">Tìm hiểu thêm</a>
-                <a class="txt-tag txt-tag_primary_light">Trắc nghiệm MBTI</a>
-                <a class="txt-tag txt-tag_primary_light">Trắc nghiệm MI</a>
-              </div>
-            </div>
-          </div>
-          <div class="container-block container-inline row card"> 
-            <div class="career__icon">
-              <div>
-                <span class="fa-stack fa-2x">
-                  <i class="fa-solid fa-circle fa-stack-2x"></i>
-                  <i class="fa-solid fa-handshake fa-stack-1x fa-inverse"></i>
-                </span>
-              </div>
-            </div>
-            <div class="career__card__text column">
-              <div>
-                <h1>
-                  Quỹ ý tưởng phát triển nghề nghiêp TopCareer
-                </h1>
-              </div>
-                <p> Giúp học sinh, sinh viên hiểu thêm về tầm quan trọng của giáo dục hướng nghiệp </p>
-                <a class="txt-tag txt-tag_primary_light" >Tìm hiểu thêm</a>
-            </div>
-          </div>
-        </div>
-        
-      </article>
-      <article class="page_inline container-block app-download">
 
-        <div class="column">
-          <h1>Cơ hội vàng nằm gọn trong tay bạn</h1>
-            <div class="column">
-              <p>
-                <i class="fa-solid fa-circle-check"></i>
-                Tạo CV, Profile ngay trên điệt thoại 
-              </p>
-              <p>
-                <i class="fa-solid fa-circle-check"></i>
-                Tạo CV, Profile ngay trên điệt thoại 
-              </p>
-              <p>
-                <i class="fa-solid fa-circle-check"></i>
-                Tạo CV, Profile ngay trên điệt thoại 
-              </p>
-            </div>
-            <h1>Tải ứng dụng tìm việc ngay</h1>
-            <div class="app-download__img_app">
-              <img class="img-responsive" src="https://www.topcv.vn/v4/image/welcome/download/app_store.png?v=1.0.0" alt="Tai app TopCV tai App Store" title="Tải app TopCV tại App Store">
-              <img class="img-responsive" src="https://www.topcv.vn/v4/image/welcome/download/chplay.png?v=1.0.0" alt="Tai app TopCV tai Google Play" title="Tải app TopCV tại Google Play">
-            </div>
-        </div>
-        <img src="https://www.topcv.vn/v4/image/welcome/app-download.png" class="app-download__img_main" alt="Tai app TopCV tai App Store va Google Play" title="Tải app TopCV tại App Store và Google Play">
-      </article>
-      <article class="about-us-box">
-      <div class="about-us column page_inline container-block">
-        <h1>
-           Về chúng tôi
-        </h1>
-        <p>
-          TopCV là công ty công nghệ nhân sự (HR Tech) hàng đầu Việt Nam. Với năng lực lõi là công nghệ, đặc biệt là trí tuệ nhân tạo (AI), sứ mệnh của TopCV đặt ra cho mình là thay đổi thị trường tuyển dụng - nhân sự ngày một hiệu quả hơn. Bằng công nghệ, chúng tôi tạo ra nền tảng cho phép người lao động tạo CV, phát triển được các kỹ năng cá nhân, xây dựng hình ảnh chuyên nghiệp trong mắt nhà tuyển dụng và tiếp cận với các cơ hội việc làm phù hợp.
-        </p>
-        <div class="column card container-block container-inline">
-          <div>
-            <h1>Impressive number</h1>
-            <p>Details</p>
-          </div>
-          <div>
-            <h1>Impressive number</h1>
-            <p>Details</p>
-          </div>
-          <div>
-            <h1>Impressive number</h1>
-            <p>Details</p>
+        <div class="nav-bar__btn__right column">
+          <button class="row btn btn_outlined container-block container-inline">Tài khoản</button>
+          <div class="dropdown column">
+          
+            <a class=" row btn btn_outline container-block container-inline" href="www.google.com">đăng nhập</a>
+            <a class=" row btn btn_filled container-block container-inline" href="">đăng ký</a>
+            <a class=" row btn btn_dark container-block container-inline" href="">đăng tyển & tìm hồ sơ</a>
           </div>
         </div>
       </div>
-      </article>
+    </div>
   </div>
-  </body>
+  
+
+  <article class="search-box-bg ">
+    <div class="page-inline container-block search-box">
+      <section class="column">
+        <h1>Tìm việc phù hợp với bạn</h1>
+        <div class="search-bar">
+          <div class="search-bar__input">
+            <div class="input__mag-glass">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <div class="input__input">
+              <input type="text" placeholder="Tên công việc vị trí ứng tuyển">
+            </div>
+          </div>
+          <div class="btn btn_filled search-bar__btn">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+          <p class="btn btn_filled search-bar__btn_big">Tìm việc ngay</p>
+        </div>
+        <h1>Các công ty tuyển dụng hàng đầu </h1>
+        <div class="content__imgs img-responsive">
+          <div>
+            <img src="https://www.topcv.vn/v4/image/welcome/companies/onemoutn.png">
+          </div>
+          <div>
+            <img src="https://www.topcv.vn/v4/image/welcome/companies/prudential.png">
+          </div>
+          <div>
+            <img src="https://www.topcv.vn/v4/image/welcome/companies/fpt.png">
+          </div>
+        </div>
+      </section>
+      <section>
+        <img src="https://www.topcv.vn/v4/image/welcome/image_topcv.png?v=1.0.0" alt="Random guy"
+          class="img-responsive">
+      </section>
+    </div>
+  </article>
+  <article class="page_inline container-block two-cards">
+    <section class="container-inline container-block row">
+      <div class="two-cards__content column">
+        <div class="two-cards__txt column">
+          <h1>Tạo CV ấn tượng </h1>
+          <p> TopCV hiện có 50+ mẫu CV chuyên nghiệp, độc đáo phù hợp với mọi ngành nghề </p>
+        </div>
+        <a class="btn btn_filled">Tạo CV ngay</a>
+      </div>
+      <div class="two-cards__img">
+        <img src="https://www.topcv.vn/v4/image/welcome/mau_cv.png?v=1.0.0" alt="Tao CV an tuong"
+          class="img-responsive">
+      </div>
+    </section>
+    <section class=" container-inline container-block row">
+      <div class="two-cards__content column">
+        <div class="two-cards__txt column">
+          <h1> Sự dụng CV sẵn có để tìm việc <label>Mới</label> </h1>
+          <p> Cách đơn giản để bắt đầu tìm việc tại TopCV, Nhà tuyển dụng sẽ nhìn thấy CV bạn đã tải lên </p>
+        </div>
+        <a class="btn btn_filled">Upload CV ngay </a>
+      </div>
+      <div class="two-cards__img">
+        <img src="https://www.topcv.vn/v4/image/welcome/upload-cv.png?v=1.0.0" alt="Tao CV an tuong"
+          class="img-responsive box-img">
+      </div>
+    </section>
+  </article>
+  <article class="container-block overlap jobs">
+    <div class="overlap_left">
+      <span class="fa-stack fa-1x">
+        <i class="fa-solid fa-circle fa-stack-2x"></i>
+        <i class="fa-solid fa-arrow-left fa-stack-1x fa-inverse"></i>
+      </span>
+    </div>
+    <div class="jobs-box overlap_content container-block container-inline column">
+      <header class="column">
+
+        <p class="txt-tag txt-tag_primary_light">Để xuất bởi AI</p>
+        <div class="jobs-box__second-heading">
+          <h1>Tin tuyển dụng, việc làm tốt nhất</h1>
+          <p class="jobs-box__content__tag">xem tất cả <i class="fa-solid fa-arrow-right"></i></p>
+        </div>
+        <section class="jobs-box__locations row">
+          <div>
+            <p class="txt-tag txt-tag_primary">Ngẫu nhiên</p>
+          </div>
+          <div>
+            <p class="txt-tag txt-tag_neutral">Hà Nội</p>
+          </div>
+          <div>
+            <p class="txt-tag txt-tag_neutral">Thành phố Hồ Chí Minh</p>
+          </div>
+
+        </section>
+      </header>
+      <section class="column jobs-box__jobs-list">
+        <div class="column container-block container-inline card">
+          <div class="row">
+            <div class="row">
+              <div>
+                <img
+                  src="https://cdn.topcv.vn/44/company_logos/cong-ty-co-phan-scots-english-australia-61bab8c11b571.jpg">
+              </div>
+              <div class="column">
+                <h1>Công Việc
+                </h1>
+                <p>Chi tiết
+                </p>
+              </div>
+            </div>
+            <div class="job-follow">
+              <i class="fa-regular fa-heart "></i>
+            </div>
+          </div>
+          <div class="single-job__details row">
+            <P class="txt-tag txt-tag_neutral">Mức lương</P>
+            <p class="txt-tag txt-tag_neutral">Địa điểm</p>
+          </div>
+        </div>
+        <div class="column container-block container-inline card">
+          <div class="row">
+            <div class="row">
+              <div>
+                <img
+                  src="https://cdn.topcv.vn/44/company_logos/cong-ty-co-phan-scots-english-australia-61bab8c11b571.jpg">
+              </div>
+              <div class="column">
+                <h1>Công Việc
+                </h1>
+                <p>Chi tiết
+                </p>
+              </div>
+            </div>
+            <div class="job-follow">
+              <i class="fa-regular fa-heart "></i>
+            </div>
+          </div>
+          <div class=" single-job__details row">
+            <P class="txt-tag txt-tag_neutral">Mức lương</P>
+            <p class="txt-tag txt-tag_neutral">Địa điểm</p>
+          </div>
+        </div>
+        <div class="column container-block container-inline card">
+          <div class="row">
+            <img src="https://cdn.topcv.vn/44/company_logos/cong-ty-co-phan-scots-english-australia-61bab8c11b571.jpg">
+            <div class="column">
+              <h1>Công Việc </h1>
+              <p>Chi tiết </p>
+            </div>
+            <div class="job-follow">
+              <i class="fa-regular fa-heart "></i>
+            </div>
+          </div>
+          <div class="single-job__details row">
+            <P class="txt-tag txt-tag_neutral">Mức lương</P>
+            <p class="txt-tag txt-tag_neutral">Địa điểm</p>
+          </div>
+        </div>
+
+      </section>
+    </div>
+    <div class="overlap_right">
+      <span class="fa-stack fa-1x">
+        <i class="fa-solid fa-circle fa-stack-2x"></i>
+        <i class="fa-solid fa-arrow-right fa-stack-1x fa-inverse"></i>
+      </span>
+    </div>
+  </article>
+  <article class="overlap container-block">
+    <div class="overlap_left">
+      <span class="fa-stack fa-1x">
+        <i class="fa-solid fa-circle fa-stack-2x"></i>
+        <i class="fa-solid fa-arrow-left fa-stack-1x fa-inverse"></i>
+      </span>
+    </div>
+    <div class="column overlap_content">
+      <div>
+        <h1>Top ngành nghề nổi bật
+        </h1>
+      </div>
+      <div class="top-occupations__list">
+        <div class=" row card container-inline container-block">
+          <div><i class="fa-solid fa-house fa-2x"></i></div>
+          <div>
+            <h1>Bất động sản</h1>
+            <p>132,733 việc làm</p>
+          </div>
+        </div>
+        <div class=" container-inline container-block row card">
+          <div><i class="fa-solid fa-cart-shopping fa-2x"></i></div>
+          <div>
+            <h1>Kinh doanh/ Bán hàng</h1>
+            <p>132,733 việc làm</p>
+          </div>
+        </div>
+        <div class="container-inline container-block row card">
+          <div><i class="fa-regular fa-credit-card fa-2x"></i></div>
+          <div>
+            <h1>Ngân hàng/ Tài chính</h1>
+            <p>132,733 việc làm</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="overlap_right">
+      <span class="fa-stack fa-1x">
+        <i class="fa-solid fa-circle fa-stack-2x"></i>
+        <i class="fa-solid fa-arrow-right fa-stack-1x fa-inverse"></i>
+      </span>
+    </div>
+  </article>
+  <article class="career page_inline container-block column">
+    <div>
+      <h1>Phát triển bản thân và sự nghiệp</h1>
+    </div>
+    <div class="column">
+      <div class="container-block container-inline row card">
+        <div class="career__icon">
+          <div>
+            <span class="fa-stack fa-2x">
+              <i class="fa-solid fa-circle fa-stack-2x"></i>
+              <i class="fa-solid fa-magnifying-glass-chart fa-stack-1x fa-inverse"></i>
+            </span>
+          </div>
+        </div>
+        <div class="career__card__text column">
+          <div>
+            <h1>
+              Khám phá tính cách và năng lực bản thân
+            </h1>
+          </div>
+          <p> Lựa chọn nghề nghiệp chính xác hơn thông qua bài trắc nghiệm về tính cách, khả năng giải quyết vấn đề, trí
+            thông minh,... </p>
+          <div class="career__first-card">
+            <a class="txt-tag txt-tag_primary_light">Tìm hiểu thêm</a>
+            <a class="txt-tag txt-tag_primary_light">Trắc nghiệm MBTI</a>
+            <a class="txt-tag txt-tag_primary_light">Trắc nghiệm MI</a>
+          </div>
+        </div>
+      </div>
+      <div class="container-block container-inline row card">
+        <div class="career__icon">
+          <div>
+            <span class="fa-stack fa-2x">
+              <i class="fa-solid fa-circle fa-stack-2x"></i>
+              <i class="fa-solid fa-handshake fa-stack-1x fa-inverse"></i>
+            </span>
+          </div>
+        </div>
+        <div class="career__card__text column">
+          <div>
+            <h1>
+              Quỹ ý tưởng phát triển nghề nghiêp TopCareer
+            </h1>
+          </div>
+          <p> Giúp học sinh, sinh viên hiểu thêm về tầm quan trọng của giáo dục hướng nghiệp </p>
+          <a class="txt-tag txt-tag_primary_light">Tìm hiểu thêm</a>
+        </div>
+      </div>
+    </div>
+
+  </article>
+  <article class="page_inline container-block app-download">
+
+    <div class="column">
+      <h1>Cơ hội vàng nằm gọn trong tay bạn</h1>
+      <div class="column">
+        <p>
+          <i class="fa-solid fa-circle-check"></i>
+          Tạo CV, Profile ngay trên điệt thoại
+        </p>
+        <p>
+          <i class="fa-solid fa-circle-check"></i>
+          Tạo CV, Profile ngay trên điệt thoại
+        </p>
+        <p>
+          <i class="fa-solid fa-circle-check"></i>
+          Tạo CV, Profile ngay trên điệt thoại
+        </p>
+      </div>
+      <h1>Tải ứng dụng tìm việc ngay</h1>
+      <div class="app-download__img_app">
+        <img class="img-responsive" src="https://www.topcv.vn/v4/image/welcome/download/app_store.png?v=1.0.0"
+          alt="Tai app TopCV tai App Store" title="Tải app TopCV tại App Store">
+        <img class="img-responsive" src="https://www.topcv.vn/v4/image/welcome/download/chplay.png?v=1.0.0"
+          alt="Tai app TopCV tai Google Play" title="Tải app TopCV tại Google Play">
+      </div>
+    </div>
+    <img src="https://www.topcv.vn/v4/image/welcome/app-download.png" class="app-download__img_main"
+      alt="Tai app TopCV tai App Store va Google Play" title="Tải app TopCV tại App Store và Google Play">
+  </article>
+  <article class="about-us-box">
+    <div class="about-us column page_inline container-block">
+      <h1>
+        Về chúng tôi
+      </h1>
+      <p>
+        TopCV là công ty công nghệ nhân sự (HR Tech) hàng đầu Việt Nam. Với năng lực lõi là công nghệ, đặc biệt là trí
+        tuệ nhân tạo (AI), sứ mệnh của TopCV đặt ra cho mình là thay đổi thị trường tuyển dụng - nhân sự ngày một hiệu
+        quả hơn. Bằng công nghệ, chúng tôi tạo ra nền tảng cho phép người lao động tạo CV, phát triển được các kỹ năng
+        cá nhân, xây dựng hình ảnh chuyên nghiệp trong mắt nhà tuyển dụng và tiếp cận với các cơ hội việc làm phù hợp.
+      </p>
+      <div class="column card container-block container-inline">
+        <div>
+          <h1>Impressive number</h1>
+          <p>Details</p>
+        </div>
+        <div>
+          <h1>Impressive number</h1>
+          <p>Details</p>
+        </div>
+        <div>
+          <h1>Impressive number</h1>
+          <p>Details</p>
+        </div>
+      </div>
+    </div>
+  </article>
+  </div>
+</body>
+
 </html>

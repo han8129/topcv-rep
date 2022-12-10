@@ -48,13 +48,13 @@ a, p {
 .column {
   display: flex;
   flex-direction: column;
-  gap: clamp(7px,2vw, 15px);
+  gap: clamp(1rem,2vw, 15px);
 }
 
 .row {
   display: flex;
   align-items: center;    
-  gap: clamp(7px, 2vw, 15px);
+  gap: clamp(10px, 2vw, 15px);
 }
 
 .card {
