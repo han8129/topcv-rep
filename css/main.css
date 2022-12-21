@@ -55,15 +55,46 @@ a, p {
   gap: clamp(1rem,2vw, 15px);
 }
 
+.column_split_single {
+  max-width: 65%;
+}
+
 .row {
   display: flex;
-  align-items: center;    
   gap: clamp(10px, 2vw, 15px);
+}
+
+.align-items_center {
+  align-items: center;
+}
+
+.justify-content_center {
+  justify-content: center;
+}
+
+.justify-content_space-between {
+  justify-content: space-between;
 }
 
 .card {
   border-radius: 10px;
   box-shadow: -1px 1px 4px rgba(0,0,0,0.3);
+}
+
+.text_font-weight_bold {
+  font-weight: bold;
+}
+
+.text_color_primary {
+  color:  var(--color_primary);
+}
+
+.text_color_neutral {
+  color: var(--color_neutral);
+}
+
+.text_color_secondary {
+  color: var(--color_secondary);
 }
 
 .txt-tag {
@@ -123,7 +154,9 @@ a, p {
   z-index: 1;
 }
 
-.overlap_content, .overlap_left, .overlap_right {
+.overlap_content
+, .overlap_left
+, .overlap_right {
   grid-row: 1;
 }
  

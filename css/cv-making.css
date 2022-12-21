@@ -52,7 +52,7 @@
     grid-column: 4 / span 2;
   }
 
-  .two-cards__content .btn {
+  .two-cards__content .button {
     align-self: flex-start;
     padding: clamp(7px, 2.5vw, 15px);
   }

@@ -1,5 +1,5 @@
-.btn{
-  border-radius: 7px;
+.button{
+  border-radius: 0.3rem;
   font-weight: bold; 
   font-size: clamp(7px, 3.5vw, 16px);
   
@@ -9,24 +9,41 @@
 
   cursor: pointer;
   padding: clamp(7px, 2vw, 15px);
+
+  border-style: none;
 }
 
-.btn_outline{
+.button_outline{
   background-color: white;
   color: var(--color_primary);
   border: 1px solid var(--color_primary);
 }
 
-.btn_filled{
+.button_filled{
   color: white;
   background-color: var(--color_primary);
 }
 
-.btn_dark{
+.button_dark{
   color: white;
   background-color: var(--color_secondary);
 }
 
-.btn a:visited{
+.button a:visited{
   color: black;
+}
+
+.button_brand{
+  background-color: white;
+  cursor: pointer;
+
+  border-style: none;
+  border: 0rem;
+}
+.button_facebook {
+  color: #0d6efd;
+}
+
+.button_google {
+  color: #ea4335;
 }
