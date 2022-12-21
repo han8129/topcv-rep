@@ -15,11 +15,11 @@
   flex-wrap: wrap;
   gap: 15px;
 }
-.career__first-card > .txt-tag{
+.career__first-card > .tag{
   display: none;
 }
 
-.career__first-card > .txt-tag:first-child {
+.career__first-card > .tag:first-child {
   display: flex;
 }
 
@@ -31,11 +31,11 @@
     gap: 15px;
   }
 
-  .career__first-card > .txt-tag {
+  .career__first-card > .tag {
     display: flex;
   }
 
-  .career__first-card > .txt-tag:first-child{
+  .career__first-card > .tag:first-child{
     display: none;
   }
 

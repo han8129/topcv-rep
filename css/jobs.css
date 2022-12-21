@@ -14,7 +14,7 @@
   gap: clamp(15px, 2.5vw, 35px);
 }
 
-.column .txt-tag{
+.column .tag{
   width: fit-content;
 }
 
