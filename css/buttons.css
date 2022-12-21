@@ -1,9 +1,9 @@
-.button{
+.button {
   border-radius: 0.3rem;
-  font-weight: bold; 
+  font-weight: bold;
   font-size: clamp(7px, 3.5vw, 16px);
-  
-  display: flex; 
+
+  display: flex;
   align-items: center;
   justify-content: center;
 
@@ -13,27 +13,27 @@
   border-style: none;
 }
 
-.button_outline{
+.button_outline {
   background-color: white;
   color: var(--color_primary);
   border: 1px solid var(--color_primary);
 }
 
-.button_filled{
+.button_filled {
   color: white;
   background-color: var(--color_primary);
 }
 
-.button_dark{
+.button_dark {
   color: white;
   background-color: var(--color_secondary);
 }
 
-.button a:visited{
+.button a:visited {
   color: black;
 }
 
-.button_brand{
+.button_brand {
   background-color: white;
   cursor: pointer;
 

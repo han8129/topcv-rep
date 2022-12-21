@@ -1,16 +1,16 @@
 :root {
-  font-size: 16px; 
+  font-size: 16px;
   font-family: Arial, Helvetica, sans-serif;
-  --color_primary: #00b14f;  
-  --color_secondary:#212f3f;
-  --color_primary_light: #e9f7ef;  
+  --color_primary: #00b14f;
+  --color_secondary: #212f3f;
+  --color_primary_light: #e9f7ef;
   --color_neutral: #999;
   --color_neutral_light: #eee;
 }
 
 * {
   box-sizing: border-box;
-  margin:  0px;
+  margin: 0px;
   padding: 0px;
 }
 
@@ -19,7 +19,6 @@ a {
   font-family: arial;
 }
 
- 
 img {
   max-width: 100%;
   height: auto;
@@ -29,18 +28,25 @@ h1 {
   font-size: clamp(13px, 2.5vw, 18px);
 }
 
-a, p {
+a,
+p {
   font-size: clamp(10px, 2vw, 14px);
 }
 
+button {
+  border: none;
+  padding: 0rem;
+
+  background-color: transparent;
+}
 .padding_inline_large {
-  padding-inline: max(15px, 7vw);
+  padding-inline: max(1rem, 12.5vw);
 }
 
 .padding_block_large {
-  padding-block: max(15px, 7vw);
+  padding-block: max(0.7rem, 10vw);
 }
- 
+
 .padding_inline {
   padding-inline: clamp(7px, 4vw, 15px);
 }
@@ -52,11 +58,7 @@ a, p {
 .column {
   display: flex;
   flex-direction: column;
-  gap: clamp(1rem,2vw, 15px);
-}
-
-.column_split_single {
-  max-width: 65%;
+  gap: clamp(1rem, 2vw, 15px);
 }
 
 .row {
@@ -78,7 +80,7 @@ a, p {
 
 .card {
   border-radius: 10px;
-  box-shadow: -1px 1px 4px rgba(0,0,0,0.3);
+  box-shadow: -1px 1px 4px rgba(0, 0, 0, 0.3);
 }
 
 .text_font-weight_bold {
@@ -86,7 +88,7 @@ a, p {
 }
 
 .text_color_primary {
-  color:  var(--color_primary);
+  color: var(--color_primary);
 }
 
 .text_color_neutral {
@@ -126,7 +128,7 @@ a, p {
   grid-template-columns: max(15px, 7vw) repeat(4, 1fr) max(15px, 7vw);
 }
 
-.overlap_content{
+.overlap_content {
   grid-column: 2 / span 4;
 }
 
@@ -141,7 +143,8 @@ a, p {
   justify-self: flex-end;
 }
 
-.overlap_left, .overlap_right {
+.overlap_left,
+.overlap_right {
   height: 80%;
   width: 40%;
   align-self: flex-end;
@@ -154,40 +157,34 @@ a, p {
   z-index: 1;
 }
 
-.overlap_content
-, .overlap_left
-, .overlap_right {
+.overlap_content,
+.overlap_left,
+.overlap_right {
   grid-row: 1;
 }
- 
+
 @media (min-width: 700px) {
   .padding_inline_large {
-    padding-inline: 17.5vw;
+    padding-inline: calc(50vw - 225px);
   }
-  
+
   .overlap {
     grid-template-columns: 17.5vw repeat(4, 1fr) 17.5vw;
   }
 
-  .overlap_left, .overlap_right {
+  .overlap_left,
+  .overlap_right {
     height: 77%;
     width: 20vw;
   }
 }
 
 @media (min-width: 1000px) {
-  .padding_inline_large {
-    padding-inline: 0px;
-    width: min(1000px, 65vw);
-    align-self: center;
-
-  }
   .overlap {
     grid-template-columns: 1fr repeat(4, min(250px, 16.25vw)) 1fr;
   }
-  .overlap_left, .overlap_right {
+  .overlap_left,
+  .overlap_right {
     width: max(calc(17.5vw + 15px), calc(50vw - 488px));
   }
 }
-
-

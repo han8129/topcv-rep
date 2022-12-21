@@ -15,6 +15,7 @@
 
 .input-text_overlap_left
 , .input-text_overlap_right {
+      position: relative;;
       z-index: 1;
 }
 
