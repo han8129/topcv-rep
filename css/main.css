@@ -33,15 +33,19 @@ a, p {
   font-size: clamp(10px, 2vw, 14px);
 }
 
-.page_inline {
+.padding_inline_large {
   padding-inline: max(15px, 7vw);
 }
+
+.padding_block_large {
+  padding-block: max(15px, 7vw);
+}
  
-.container-inline {
+.padding_inline {
   padding-inline: clamp(7px, 4vw, 15px);
 }
 
-.container-block {
+.padding_block {
   padding-block: clamp(7px, 4vw, 15px);
 }
 
@@ -124,7 +128,7 @@ a, p {
 }
  
 @media (min-width: 700px) {
-  .page_inline {
+  .padding_inline_large {
     padding-inline: 17.5vw;
   }
   
@@ -139,7 +143,7 @@ a, p {
 }
 
 @media (min-width: 1000px) {
-  .page_inline {
+  .padding_inline_large {
     padding-inline: 0px;
     width: min(1000px, 65vw);
     align-self: center;

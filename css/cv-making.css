@@ -23,7 +23,7 @@
   border-radius: 10px;
 }
 
-.two-cards > .container-inline{
+.two-cards > .padding_inline{
     padding-right: 0px;
 }
 
@@ -67,8 +67,8 @@
     
   }
 
-  .two-cards > .container-inline{
+  .two-cards > .padding_inline{
     padding-right: 0px;
-    padding-block: clamp(15px, 4vw, 25px);
+    padding__block: clamp(15px, 4vw, 25px);
   }
 }

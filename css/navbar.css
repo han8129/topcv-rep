@@ -11,7 +11,7 @@
   display: none;
 }
 
-.nav-bar__img {
+.navbar__img {
   width: clamp(75px, 13vw, 100px);
 }
 
