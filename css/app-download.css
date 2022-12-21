@@ -1,15 +1,14 @@
-
 .app-download {
-    display: grid;
-    gap: clamp(15px, 2.5vw, 35px);
-    padding-inline: max(15px, 7vw);
+  display: grid;
+  gap: clamp(15px, 2.5vw, 35px);
+  padding-inline: max(15px, 7vw);
 }
 
 .app-download > .column {
   justify-self: center;
 }
 
-.app-download > .column > h1{
+.app-download > .column > h1 {
   color: var(--color_primary);
 }
 
@@ -17,7 +16,7 @@
   margin-top: clamp(30px, 5vw, 55px);
   align-self: center;
 }
-.app-download i{
+.app-download i {
   color: var(--color_primary);
 }
 .app-download__img_app {
@@ -28,7 +27,7 @@
   max-width: 125px;
   align-self: center;
 }
-@media (min-width:700px) {
+@media (min-width: 700px) {
   .app-download {
     grid-template-columns: repeat(2, 1fr);
     gap: clamp(15px, 2.5vw, 35px);
