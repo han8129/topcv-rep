@@ -1,6 +1,10 @@
-.nav-bar {
+.image__topcv-for-business {
+  max-width: max(9rem, 15vw);
+}
+
+.navbar {
   justify-content: space-between;
-  padding-block: 15px;
+  padding-top: clamp(0.5rem, 4vw, 1rem);
 }
 
 .navbar__top-row {
@@ -16,7 +20,7 @@
 }
 
 .navbar__user-icon i {
-  font-size: clamp(16px, 7vw, 28px);
+  font-size: clamp(0.7rem, 7vw, 2rem);
   color: var(--color_primary);
 
   display: flex;
@@ -24,7 +28,6 @@
   justify-content: center;
 }
 
- 
 .navbar-buttons__top-row a:visited {
   color: var(--color_secondary);
 }

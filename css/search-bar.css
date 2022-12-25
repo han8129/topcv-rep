@@ -2,7 +2,6 @@
   background-image: url("../images/linear_web.png");
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  padding-inline: max(15px, 7vw)
 }
 
 .search-box > *:last-child {
@@ -13,6 +12,9 @@
   display: grid;
   gap: clamp(7px, 2.5vw, 25px);
   grid-template-columns: 55% 1fr;
+}
+
+.search-bar > *{
 }
 
 .search-bar__button_big{

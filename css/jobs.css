@@ -8,12 +8,6 @@
   background-color: white;
 }
 
-.jobs-box__second-heading {
-  display: flex;
-  flex-direction: column;
-  gap: clamp(15px, 2.5vw, 35px);
-}
-
 .column .tag{
   width: fit-content;
 }

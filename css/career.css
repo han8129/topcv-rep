@@ -10,16 +10,16 @@
 .career__icon {
   color: var(--color_primary)
 }
-.career__first-card {
+.career__first-border-radius {
   display: flex;
   flex-wrap: wrap;
   gap: 15px;
 }
-.career__first-card > .tag{
+.career__first-border-radius > .tag{
   display: none;
 }
 
-.career__first-card > .tag:first-child {
+.career__first-border-radius > .tag:first-child {
   display: flex;
 }
 
@@ -31,11 +31,11 @@
     gap: 15px;
   }
 
-  .career__first-card > .tag {
+  .career__first-border-radius > .tag {
     display: flex;
   }
 
-  .career__first-card > .tag:first-child{
+  .career__first-border-radius > .tag:first-child{
     display: none;
   }
 

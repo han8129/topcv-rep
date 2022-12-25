@@ -4,7 +4,7 @@
   --color_primary: #00b14f;
   --color_primary_light: #e5fff1;
   --color_secondary: #212f3f;
-  --color_neutral_light: hsla(135, 4%, 78%, 0.905);
+  --color_neutral_light: #efefef;
   --color_neutral: #999;
 }
 
@@ -24,14 +24,19 @@ img {
   height: auto;
 }
 
+.topcv-for-business__opening {
+  background-image: url(https://static.topcv.vn/srp/website/images/home_page/introduction/background_header.png);
+  background-position: center;
+}
+
 h1 {
-  font-size: clamp(0.7rem, 2.5vw, 1.5rem);
+  font-size: clamp(1rem, 2.5vw, 1.5rem);
   font-weight: normal;;
 }
 
 a,
 p {
-  font-size: clamp(10px, 2vw, 14px);
+  font-size: clamp(0.7rem, 2vw, 1.2rem);
 }
 
 button {
@@ -40,31 +45,62 @@ button {
 
   background-color: transparent;
 }
+
+.font-size_medium{
+  font-size: clamp(1rem, 4vw, 2rem);
+}
+
+.font-size_large{
+  font-size: clamp(1.5rem, 5vw, 2.5rem);
+}
+
+.letter-spacing_medium {
+  letter-spacing: 0.3rem;
+}
+
+.text-align_center {
+  text-align: center;
+}
+
+.text-align_justify {
+  text-align: justify;;
+}
+
+.background-color_primary_light{
+  background-color: var(--color_primary_light);
+}
+
 .padding_inline_large {
   padding-inline: max(1rem, 12.5vw);
 }
 
 .padding_block_large {
-  padding-block: max(0.7rem, 10vw);
+  padding-block: max(1rem, 12.5vw);
 }
 
 .padding_inline {
-  padding-inline: clamp(7px, 4vw, 15px);
+  padding-inline: clamp(00.5rem, 4vw, 1rem);
 }
 
 .padding_block {
-  padding-block: clamp(7px, 4vw, 15px);
+  padding-block: clamp(00.5rem, 4vw, 1rem);
 }
+
+
 
 .column {
   display: flex;
   flex-direction: column;
-  gap: clamp(1rem, 2vw, 15px);
+  gap: clamp(1rem, 2vw, 2rem);
 }
 
 .row {
   display: flex;
-  gap: clamp(10px, 2vw, 15px);
+  gap: clamp(1rem, 2vw, 2rem);
+}
+
+.gap_large {
+  gap: clamp(1.5rem, 2.5vw, 3rem);
 }
 
 .align-items_center {
@@ -79,11 +115,13 @@ button {
   justify-content: space-between;
 }
 
-.card {
-  border-radius: 10px;
-  box-shadow: -1px 1px 4px rgba(0, 0, 0, 0.3);
+.box-shadow {
+  box-shadow: -0.07rem 0.07rem 0.25rem rgba(0, 0, 0, 0.3);
 }
 
+.border-radius {
+  border-radius: 0.3rem;
+}
 .text_font-weight_bold {
   font-weight: bold;
 }
@@ -111,9 +149,7 @@ button {
   justify-content: center;
 
   padding: 10px 15px;
-  border-radius: 18px;
-}
-
+  border-radius: 1.5rem;
 }
 
 .tag_primary {
@@ -125,9 +161,14 @@ button {
   background-color: var(--color_primary_light);
   color: var(--color_primary);
 }
+
+.tag_neutral {
+  background-color: var(--color_neutral_light);
+  color: var(--color_neutral);
+}
 .overlap {
   display: grid;
-  grid-template-columns: max(15px, 7vw) repeat(4, 1fr) max(15px, 7vw);
+  grid-template-columns: max(1rem, 12.5vw) repeat(4, 1fr) max(1rem, 12.5vw);
 }
 
 .overlap_content {
@@ -165,6 +206,13 @@ button {
   grid-row: 1;
 }
 
+.border_left {
+  border-left: 0.2rem solid black;
+}
+
+.border-color_primary {
+  border-color: var(--color_primary);
+}
 @media (min-width: 700px) {
   .overlap {
     grid-template-columns: 17.5vw repeat(4, 1fr) 17.5vw;
