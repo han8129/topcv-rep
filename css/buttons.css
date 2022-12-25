@@ -1,48 +1,48 @@
 .button {
-  border-radius: 0.2rem;
-  font-size: clamp(7px, 3.5vw, 16px);
+       border-radius: 0.2rem;
+       font-size: clamp(7px, 3.5vw, 16px);
 
-  display: flex;
-  align-items: center;
-  justify-content: center;
+       display: flex;
+       align-items: center;
+       justify-content: center;
 
-  cursor: pointer;
-  padding: clamp(7px, 2vw, 15px);
+       cursor: pointer;
+       padding: clamp(7px, 2vw, 15px);
 
-  border-style: none;
+       border-style: none;
 }
 
 .button_outline {
-  background-color: white;
-  color: var(--color_primary);
-  border: 1px solid var(--color_primary);
+       background-color: white;
+       color: var(--color_primary);
+       border: 1px solid var(--color_primary);
 }
 
 .button_filled {
-  color: white;
-  background-color: var(--color_primary);
+       color: white;
+       background-color: var(--color_primary);
 }
 
 .button_dark {
-  color: white;
-  background-color: var(--color_secondary);
+       color: white;
+       background-color: var(--color_secondary);
 }
 
 .button a:visited {
-  color: black;
+       color: black;
 }
 
 .button_brand {
-  background-color: white;
-  cursor: pointer;
+       background-color: white;
+       cursor: pointer;
 
-  border-style: none;
-  border: 0rem;
+       border-style: none;
+       border: 0rem;
 }
 .button_facebook {
-  color: #0d6efd;
+       color: #0d6efd;
 }
 
 .button_google {
-  color: #ea4335;
+       color: #ea4335;
 }

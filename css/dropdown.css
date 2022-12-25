@@ -1,11 +1,11 @@
 .dropdown {
-      max-height: 0rem;
-      overflow: hidden;
+                     max-height: 0rem;
+                     overflow: hidden;
 }
 
 .dropdown:hover {
-      background-color: blue;
+                     background-color: blue;
 }
 .show {
-      display: block;
+                     display: block;
 }

@@ -1,55 +1,55 @@
 .app-download {
-  display: grid;
-  gap: clamp(15px, 2.5vw, 35px);
-  padding-inline: max(15px, 7vw);
+       display: grid;
+       gap: clamp(15px, 2.5vw, 35px);
+       padding-inline: max(15px, 7vw);
 }
 
 .app-download > .column {
-  justify-self: center;
+       justify-self: center;
 }
 
 .app-download > .column > h1 {
-  color: var(--color_primary);
+       color: var(--color_primary);
 }
 
 .app-download > .column > h1:nth-child(3) {
-  margin-top: clamp(30px, 5vw, 55px);
-  align-self: center;
+       margin-top: clamp(30px, 5vw, 55px);
+       align-self: center;
 }
 .app-download i {
-  color: var(--color_primary);
+       color: var(--color_primary);
 }
 .app-download__img_app {
-  display: flex;
-  flex-direction: column;
-  gap: clamp(15px, 2.5vw, 35px);
+       display: flex;
+       flex-direction: column;
+       gap: clamp(15px, 2.5vw, 35px);
 
-  max-width: 125px;
-  align-self: center;
+       max-width: 125px;
+       align-self: center;
 }
 @media (min-width: 700px) {
-  .app-download {
-    grid-template-columns: repeat(2, 1fr);
-    gap: clamp(15px, 2.5vw, 35px);
-  }
+       .app-download {
+              grid-template-columns: repeat(2, 1fr);
+              gap: clamp(15px, 2.5vw, 35px);
+       }
 
-  .app-download__img_main {
-    width: 35vw;
-  }
+       .app-download__img_main {
+              width: 35vw;
+       }
 
-  .app-download > .column > h1:nth-child(3) {
-    margin-top: clamp(30px, 5vw, 55px);
-    align-self: flex-start;
-  }
+       .app-download > .column > h1:nth-child(3) {
+              margin-top: clamp(30px, 5vw, 55px);
+              align-self: flex-start;
+       }
 
-  .app-download__img_app {
-    flex-direction: row;
-    align-self: flex-start;
-  }
+       .app-download__img_app {
+              flex-direction: row;
+              align-self: flex-start;
+       }
 }
 
 @media (min-width: 1000px) {
-  .app-download {
-    align-items: center;
-  }
+       .app-download {
+              align-items: center;
+       }
 }

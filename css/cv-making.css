@@ -1,74 +1,74 @@
 .two-border-radiuss {
-  display: grid;
-  gap: clamp(15px, 2.5vw, 35px);
+       display: grid;
+       gap: clamp(15px, 2.5vw, 35px);
 }
 
 .two-border-radiuss label {
-  padding: 1px 5px;
-  display: inline;
-  vertical-align: middle;
+       padding: 1px 5px;
+       display: inline;
+       vertical-align: middle;
 
-  color: white;
-  background: #de4637;
-  font-weight: normal;
+       color: white;
+       background: #de4637;
+       font-weight: normal;
 
-  border-radius: 2.5px;
+       border-radius: 2.5px;
 }
 
 .two-border-radiuss > .row {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+       display: grid;
+       grid-template-columns: repeat(2, 1fr);
 
-  background: transparent
-    linear-gradient(67deg, var(--color_primary_light), #f5f2ff) 0 0 no-repeat
-    padding-box;
-  border-radius: 10px;
+       background: transparent
+              linear-gradient(67deg, var(--color_primary_light), #f5f2ff) 0 0 no-repeat
+              padding-box;
+       border-radius: 10px;
 }
 
 .two-border-radiuss > .padding_inline {
-  padding-right: 0px;
+       padding-right: 0px;
 }
 
 .two-border-radiuss__content > .column {
-  display: none;
+       display: none;
 }
 
 @media (min-width: 700px) {
-  .two-border-radiuss__content > .column {
-    display: flex;
-  }
+       .two-border-radiuss__content > .column {
+              display: flex;
+       }
 
-  .two-border-radiuss > .row {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
+       .two-border-radiuss > .row {
+              display: grid;
+              grid-template-columns: repeat(5, 1fr);
 
-    gap: 0px;
-  }
+              gap: 0px;
+       }
 
-  .two-border-radiuss__content {
-    grid-column: 1 / span 3;
-    z-index: 1;
-  }
+       .two-border-radiuss__content {
+              grid-column: 1 / span 3;
+              z-index: 1;
+       }
 
-  .two-border-radiuss__img {
-    grid-column: 4 / span 2;
-  }
+       .two-border-radiuss__img {
+              grid-column: 4 / span 2;
+       }
 
-  .two-border-radiuss__content .button {
-    align-self: flex-start;
-    padding: clamp(7px, 2.5vw, 15px);
-  }
+       .two-border-radiuss__content .button {
+              align-self: flex-start;
+              padding: clamp(7px, 2.5vw, 15px);
+       }
 }
 
 @media (min-width: 1000px) {
-  .two-border-radiuss {
-    gap: 15px;
-    grid-template-columns: repeat(2, 1fr);
-    padding-inline: 0px;
-  }
+       .two-border-radiuss {
+              gap: 15px;
+              grid-template-columns: repeat(2, 1fr);
+              padding-inline: 0px;
+       }
 
-  .two-border-radiuss > .padding_inline {
-    padding-right: 0px;
-    padding__block: clamp(15px, 4vw, 25px);
-  }
+       .two-border-radiuss > .padding_inline {
+              padding-right: 0px;
+              padding__block: clamp(15px, 4vw, 25px);
+       }
 }

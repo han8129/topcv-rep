@@ -1,45 +1,45 @@
 .about-us-box {
-  background-color: var(--color_primary_light);
+       background-color: var(--color_primary_light);
 }
 .about-us {
-  margin-bottom: 25px;
-  align-items: center;
+       margin-bottom: 25px;
+       align-items: center;
 }
 
 .about-us > * {
-  font-size: 16px;
-  color: var(--color_primary);
+       font-size: 16px;
+       color: var(--color_primary);
 }
 
 .about-us p {
-  font-size: 14px;
-  color: black;
+       font-size: 14px;
+       color: black;
 }
 .about-us .column{
-  justify-content: center;
-  background-color: white;
-  border-radius: 15px;
+       justify-content: center;
+       background-color: white;
+       border-radius: 15px;
 
-  color: var(--color_secondary);
+       color: var(--color_secondary);
 }
 
 .about-us-text-box > * {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
+       display: flex;
+       flex-direction: column;
+       gap: 15px;
 
-  color: var(--color_secondary);
+       color: var(--color_secondary);
 
-  
+       
 }
 
 @media (min-width: 700px) {
-  .about-us-box {
-    display: flex;
-    justify-content: center;
-  }
+       .about-us-box {
+              display: flex;
+              justify-content: center;
+       }
  
-  .about-us .column {
-    flex-direction: row;
-  }
+       .about-us .column {
+              flex-direction: row;
+       }
 }

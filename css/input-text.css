@@ -1,30 +1,30 @@
 .input-text_overlap {
-      display: grid;
-      grid-template-columns: min(15%, 2.5rem) repeat(1, 1fr) min(15%, 2.5rem);
+                     display: grid;
+                     grid-template-columns: min(25%, 2.5rem) repeat(1, 1fr) min(25%, 2.5rem);
 
-      align-items: center;
+                     align-items: center;
 }
 
 .input-text_overlap_left {
-      grid-column: 1;
+                     grid-column: 1;
 }
 
 .input-text_overlap_right {
-      grid-column: 3;
+                     grid-column: 3;
 }
 
 .input-text_overlap_left
 , .input-text_overlap_right {
-      position: relative;;
-      z-index: 1;
+                     position: relative;;
+                     z-index: 1;
 }
 
 .input-text_overlap_content {
-      grid-column: 1 / span 3;
+                     grid-column: 1 / span 3;
 }
 
 .input-text_overlap_left
 , .input-text_overlap_content
 , .input-text_overlap_right {
-      grid-row: 1;
+                     grid-row: 1;
 }
