@@ -1,11 +1,11 @@
-.dropdown {
-                     max-height: 0rem;
-                     overflow: hidden;
+.dropdown__content {
+      display: none;
 }
 
-.dropdown:hover {
-                     background-color: blue;
+.submenu-content {
+      display: none;
 }
+
 .show {
-                     display: block;
+      display: block;
 }

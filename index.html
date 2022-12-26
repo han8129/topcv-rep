@@ -34,41 +34,49 @@
                                    src="https://www.topcv.vn/v3/images/topcv-logo-4.png?v=1.0.1" alt="TopCV tuyen dung tai TopCV"
                                    title="TopCV tuyển dụng tại TopCV"> </a>
 
-                     <button onclick="dropdown()" class="navbar__user-icon dropdown-button">
-                            <i class="fa-regular fa-user fa-1x"></i>
+                     <button onclick='dropdown("navbar__dropdown-menu")' class="navbar__user-icon">
+                            <i class="dropdown__button fa-regular fa-user fa-1x"></i>
                      </button>
               </div>
 
-              <div id="myDropdown" class="navbar__bottom-row dropdown__content">
+              <div id="navbar__dropdown-menu" class="navbar__bottom-row dropdown__content">
                      <div class="navbar-buttons column">
-
-                            <div class="navbar-buttons__top-row column">
-                                   <a class="button border-radius padding_block padding_inline" href="https://www.topcv.vn/">việc làm</a>
-                                   <a class="button border-radius padding_block padding_inline" href="https://www.topcv.vn/">hồ sơ &cv</a>
-                                   <a class="button border-radius padding_block padding_inline" href="https://www.topcv.vn/">công ty</a>
-                                   <a class="button border-radius padding_block padding_inline" href="https://www.topcv.vn/">phát triển sư nghiệp</a>
-
-                                   <a class="button border-radius padding_block padding_inline" href="https://www.topcv.vn/">infinity gift box <i
-                                                 class="fa-solid fa-gift"></i></a>
+                            <div class="navbar-buttons__top-row column box-shadow border-radius">
+                                   <a class="button border-radius padding_block padding_inline" href="https://www.topcv.vn/">Việc làm</a>
                             </div>
 
-                            <div class="navbar__button__right column">
+                            <div class="navbar__button__right column dropdown-menu">
                                    <button
-                                          onclick="dropdown()"
-                                          class="row button button_outlined padding_block padding_inline dropdown-button">
-                                                 Tài khoản
+                                          onclick=""
+                                          class="row box-shadow border-radius font-weight_bold button button_outlined padding_block padding_inline submenu-button dropdown__button">
+                                                 Tài khoản 1
                                    </button>
-                                   <div class="dropdown__content column">
+                                   <div id="" class="dropdown__content">
+                                          <div class="column padding_inline_large">
+                                          <a class=" row button button_outline padding_block padding_inline" href="login.html">Đăng nhập</a>
+                                          <a class=" row button button_filled padding_block padding_inline" href="signup.html">Đăng ký</a>
+                                          <a class=" row button button_dark padding_block padding_inline" href="for_business.html">Đăng tuyển & tìm hồ sơ</a>
+                                          </div>
+                                   </div>
+                            </div>
 
-                                          <a class=" row button button_outline padding_block padding_inline" href="login.html">đăng nhập</a>
-                                          <a class=" row button button_filled padding_block padding_inline" href="signup.html">đăng ký</a>
-                                          <a class=" row button button_dark padding_block padding_inline" href="for_business.html">đăng tyển & tìm hồ sơ</a>
+                            <div class="navbar__button__right column dropdown-menu">
+                                   <button
+                                          onclick=""
+                                          class="row box-shadow border-radius font-weight_bold button button_outlined padding_block padding_inline submenu-button dropdown__button">
+                                                 Tài khoản 2
+                                   </button>
+                                   <div id="" class="dropdown__content">
+                                          <div class="column padding_inline_large">
+                                          <a class=" row button button_outline padding_block padding_inline" href="login.html">Đăng nhập</a>
+                                          <a class=" row button button_filled padding_block padding_inline" href="signup.html">Đăng ký</a>
+                                          <a class=" row button button_dark padding_block padding_inline" href="for_business.html">Đăng tuyển & tìm hồ sơ</a>
+                                          </div>
                                    </div>
                             </div>
                      </div>
               </div>
        </div>
-
 
        <article class="search-box-bg padding_inline_large ">
               <div class="search-box">
