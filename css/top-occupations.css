@@ -1,18 +1,5 @@
-.top-occupations__list > .row > *:first-child {
-       color: var(--color_primary);
-}
-
-.top-occupations__list {
-       display: grid;
-       gap: clamp(7px, 2.5vw, 15px);
-}
-
-.top-occupations__list .row {
-       min-height: 100px;
-
-       background-color: var(--color_primary_light);
-       color: var(--color_secondary);
-
+.top-occupations__list > * {
+       min-height: 7rem;
 }
 
 @media (min-width: 700px) {

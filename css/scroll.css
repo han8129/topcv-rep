@@ -10,3 +10,11 @@
 .snaps-inline > * {
        scroll-snap-align: start;
 }
+
+.scroll__container {
+       display: grid;
+       grid-auto-flow: column;
+       grid-auto-columns: 90%;
+
+       gap: var(--gap);
+}

@@ -4,15 +4,6 @@
        gap: 0rem;
 }
 
-.jobs__scroll {
-       display: grid;
-       grid-auto-flow: column;
-       grid-auto-columns: 90%;
-
-       gap: var(--gap);
-
-}
-
 .column .tag{
        width: fit-content;
 }

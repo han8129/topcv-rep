@@ -7,9 +7,6 @@
        display: none;
 }
 
-.career__icon {
-       color: var(--color_primary)
-}
 .career__first-border-radius {
        display: flex;
        flex-wrap: wrap;
