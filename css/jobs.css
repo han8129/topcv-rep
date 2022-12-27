@@ -1,11 +1,16 @@
-.jobs {
-       background: var(--color_primary_light);
+.jobs-box {
+       display: grid;
+       background-color: white;
+       gap: 0rem;
 }
 
-.jobs-box {
+.jobs__scroll {
+       display: grid;
+       grid-auto-flow: column;
+       grid-auto-columns: 90%;
 
-       border-radius: 15px;
-       background-color: white;
+       gap: var(--gap);
+
 }
 
 .column .tag{
@@ -46,7 +51,7 @@
               display: grid;
               grid-template-columns: repeat(2, 1fr);
        }
-       
+
        .jobs-box__jobs-list > *:last-child {
               display: none;
        }
