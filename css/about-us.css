@@ -1,12 +1,13 @@
 .about-us-box {
        background-color: var(--color_primary_light);
 }
+
 .about-us {
        margin-bottom: 25px;
        align-items: center;
 }
 
-.about-us > * {
+.about-us>* {
        font-size: 16px;
        color: var(--color_primary);
 }
@@ -15,7 +16,8 @@
        font-size: 14px;
        color: black;
 }
-.about-us .column{
+
+.about-us .column {
        justify-content: center;
        background-color: white;
        border-radius: 15px;
@@ -23,14 +25,14 @@
        color: var(--color_secondary);
 }
 
-.about-us-text-box > * {
+.about-us-text-box>* {
        display: flex;
        flex-direction: column;
        gap: 15px;
 
        color: var(--color_secondary);
 
-       
+
 }
 
 @media (min-width: 700px) {
@@ -38,7 +40,7 @@
               display: flex;
               justify-content: center;
        }
- 
+
        .about-us .column {
               flex-direction: row;
        }

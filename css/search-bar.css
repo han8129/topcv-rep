@@ -56,7 +56,7 @@
        grid-row: 1;
 }
 
-input[type=text]{
+input[type=text], input[type=password] {
        padding-left: min(25%, 2.5rem);
        text-align: left;
 
@@ -69,7 +69,7 @@ input[type=text]{
        box-sizing: border-box;
 }
 
-input[type=text]:focus {
+input[type=text]:focus, input[type=password]:focus, select {
        border: 0.1rem solid black;
        box-shadow: 0 0.3rem 0.5rem 0 rgba(0, 0, 0, 0.19), 0 0.3rem 1rem 0 rgba(0, 0, 0, 0.19);
 }
