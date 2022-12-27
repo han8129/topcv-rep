@@ -1,8 +1,5 @@
 function dropdown(name) {
 	document.getElementById(name).classList.toggle("show");
-
-	let dropDownIsTrue;
-
 }
 
 window.onload = function () {
