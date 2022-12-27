@@ -28,7 +28,7 @@
        background-color: var(--color_secondary);
 }
 
-.button a:visited {
+.button a:visited, a:link, a:hover, a:active {
        color: black;
 }
 
