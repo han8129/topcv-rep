@@ -180,27 +180,20 @@ button {
 
 .overlap_left {
        grid-column: 1 / span 2;
-
-       justify-content: flex-end;
 }
-
 .overlap_right {
        grid-column: 5 / span 2;
-       justify-self: flex-end;
 }
 
 .overlap_left,
 .overlap_right {
        height: 80%;
-       width: 40%;
-       align-self: flex-end;
-
-       display: flex;
-       align-items: center;
 
        color: var(--color_primary);
-
        z-index: 1;
+       align-self: flex-end;
+       justify-self: center;
+       justify-content: center;
 }
 
 .overlap_content,
@@ -225,7 +218,6 @@ button {
        .overlap_left,
        .overlap_right {
               height: 77%;
-              width: 20vw;
        }
 }
 
