@@ -1,0 +1,13 @@
+.carousel__track-container {
+       background-color: hotpink;
+}
+
+.carousel {
+}
+
+.carousel__slide {
+}
+
+.carousel__button {
+       z-index: 99999;
+}

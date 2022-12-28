@@ -9,7 +9,6 @@
 }
 
 .jobs-box__content__tag {
-       color: var(--color_primary);
 }
 
 .jobs-box__locations > *:last-child {
@@ -21,13 +20,8 @@
 }
 
 .job-follow {
-       color: var(--color_neutral);
-       margin-left: auto;
        align-self: flex-start;
 
-}
-
-.job-follow > * {
        padding: 5px;
        border-radius: 5px;
        box-shadow: -1px 1px 4px rgba(0,0,0,0.3);
