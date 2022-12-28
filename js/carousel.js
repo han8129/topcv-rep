@@ -7,12 +7,13 @@ const rightButton = carousel.querySelector(".carousel__button_right");
 const leftButton = carousel.querySelector(".carousel__button_left");
 
 const singleSlideWidth = slidesArray[0].getBoundingClientRect().width;
+const gapWidth = window.getComputedStyle(track).getPropertyValue("gap")
+const amountToMove = singleSlideWidth + parseFloat(gapWidth);
 
 rightButton.addEventListener("click", e => {
-       const currentSlide = track.querySelector(".current-slide");
-       const nextSlide = currentSlide.nextElementSibling;
+       track.scrollBy({top: 0, left: amountToMove, behavior: "smooth"})
+})
 
-       const amountToMove = currentSlide.style.left;
-       currentSlide.style.transform = "translateX(" + amountToMove + ")";
-       console.log(nextSlide);
+leftButton.addEventListener("click",e => {
+       track.scrollBy({top: 0, left: - amountToMove, behavior: "smooth"})
 })
