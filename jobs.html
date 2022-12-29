@@ -2,118 +2,132 @@
 <html lang="en">
 
 <head>
-	<meta charset="UTF-8">
-	<title>TopCV Tìm Việc</title>
-	<link rel="icon" href="https://www.topcv.vn/v3/images/new/favicon.ico" type="image/x-icon">
-	<style>
-		@import url("./css/about-us.css");
-		@import url("./css/app-download.css");
-		@import url("./css/buttons.css");
-		@import url("./css/career.css");
-		@import url("./css/cv-making.css");
-		@import url("./css/jobs.css");
-		@import url("./css/main.css");
-		@import url("./css/navbar.css");
-		@import url("./css/search-bar.css");
-		@import url("./css/top-occupations.css");
-		@import url("css/input-text.css");
+       <meta charset="UTF-8">
+       <title>TopCV Tìm Việc</title>
+       <link rel="icon" href="https://www.topcv.vn/v3/images/new/favicon.ico" type="image/x-icon">
+       <style>
+              @import url("./css/about-us.css");
+              @import url("./css/app-download.css");
+              @import url("./css/buttons.css");
+              @import url("./css/career.css");
+              @import url("./css/cv-making.css");
+              @import url("./css/jobs.css");
+              @import url("./css/main.css");
+              @import url("./css/navbar.css");
+              @import url("./css/search-bar.css");
+              @import url("./css/top-occupations.css");
+              @import url("css/input-text.css");
 
-		@import url("css/dropdown.css");
-		@import url("css/carousel.css");
-		@import url("css/scroll.css");
+              @import url("css/dropdown.css");
+              @import url("css/carousel.css");
+              @import url("css/scroll.css");
               @import url("css/filters.css");
-	</style>
+       </style>
 
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<base href="" target="_blank">
-	<script src="https://kit.fontawesome.com/49551556eb.js" crossorigin="anonymous"></script>
-	<script src="js/dropdown.js"></script>
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <base href="" target="_blank">
+       <script src="https://kit.fontawesome.com/49551556eb.js" crossorigin="anonymous"></script>
+       <script src="js/dropdown.js"></script>
 </head>
 
 <body class="column">
-	<div class="navbar padding_inline column">
-		<div class="navbar__top-row row">
+       <div class="navbar padding_inline column">
+              <div class="navbar__top-row row">
 
-			<a class="navbar__img" href="https://www.topcv.vn?ref=you"> <img
-					src="https://www.topcv.vn/v3/images/topcv-logo-4.png?v=1.0.1"
-					alt="TopCV tuyen dung tai TopCV" title="TopCV tuyển dụng tại TopCV"> </a>
+                     <a class="navbar__img" href="https://www.topcv.vn?ref=you"> <img
+                                   src="https://www.topcv.vn/v3/images/topcv-logo-4.png?v=1.0.1"
+                                   alt="TopCV tuyen dung tai TopCV" title="TopCV tuyển dụng tại TopCV"> </a>
 
-			<button onclick="dropdown()" class="navbar__user-icon dropdown-button">
-				<i class="fa-regular fa-user fa-1x"></i>
-			</button>
-		</div>
+                     <button onclick='dropdown("navbar__dropdown-menu")' class="navbar__user-icon">
+                            <i class="dropdown__button fa-regular fa-user fa-1x"></i>
+                     </button>
+              </div>
 
-		<div id="myDropdown" class="navbar__bottom-row dropdown__content">
-			<div class="navbar-buttons column">
+              <div id="navbar__dropdown-menu" class="navbar__bottom-row dropdown__content">
+                     <div class="navbar-buttons column">
+                            <div class="navbar-buttons__top-row column box-shadow border-radius">
+                                   <a class="button border-radius padding_block padding_inline" href="jobs.html">Việc
+                                          làm</a>
+                            </div>
 
-				<div class="navbar-buttons__top-row column">
-					<a class="button border-radius padding_block padding_inline"
-						href="https://www.topcv.vn/">việc làm</a>
-					<a class="button border-radius padding_block padding_inline"
-						href="https://www.topcv.vn/">hồ sơ &cv</a>
-					<a class="button border-radius padding_block padding_inline"
-						href="https://www.topcv.vn/">công ty</a>
-					<a class="button border-radius padding_block padding_inline"
-						href="https://www.topcv.vn/">phát triển sư
-						nghiệp</a>
+                            <div class="navbar__button__right column dropdown-menu">
+                                   <button onclick=""
+                                          class="row box-shadow border-radius font-weight_bold button button_outlined padding_block padding_inline submenu-button dropdown__button">
+                                          Tài khoản 1
+                                   </button>
+                                   <div id="" class="dropdown__content">
+                                          <div class="column padding_inline_large">
+                                                 <a class=" row button button_outline padding_block padding_inline"
+                                                        href="login.html">Đăng nhập</a>
+                                                 <a class=" row button button_filled padding_block padding_inline"
+                                                        href="signup.html">Đăng ký</a>
+                                                 <a class=" row button button_dark padding_block padding_inline"
+                                                        href="for_business.html">Đăng tuyển & tìm hồ sơ</a>
+                                          </div>
+                                   </div>
+                            </div>
 
-					<a class="button border-radius padding_block padding_inline"
-						href="https://www.topcv.vn/">infinity gift box <i
-							class="fa-solid fa-gift"></i></a>
-				</div>
+                            <div class="navbar__button__right column dropdown-menu">
+                                   <button onclick=""
+                                          class="row box-shadow border-radius font-weight_bold button button_outlined padding_block padding_inline submenu-button dropdown__button">
+                                          Tài khoản 2
+                                   </button>
+                                   <div id="" class="dropdown__content">
+                                          <div class="column padding_inline_large">
+                                                 <a class=" row button button_outline padding_block padding_inline"
+                                                        href="login.html">Đăng nhập</a>
+                                                 <a class=" row button button_filled padding_block padding_inline"
+                                                        href="signup.html">Đăng ký</a>
+                                                 <a class=" row button button_dark padding_block padding_inline"
+                                                        href="for_business.html">Đăng tuyển & tìm hồ sơ</a>
+                                          </div>
+                                   </div>
+                            </div>
+                     </div>
+              </div>
+       </div>
 
-				<div class="navbar__button__right column">
-					<button onclick="dropdown()"
-						class="row button button_outlined padding_block padding_inline dropdown-button">
-						Tài khoản
-					</button>
-					<div class="dropdown__content column">
+       <article class="padding_inline_large padding_block two-border-radiuss">
+              <h1 class="color_secondary font-weight_bold">Tìm việc làm nhanh 24h, việc làm mới nhất trên toàn quốc</h1>
+       </article>
 
-						<a class=" row button button_outline padding_block padding_inline"
-							href="login.html">đăng nhập</a>
-						<a class=" row button button_filled padding_block padding_inline"
-							href="signup.html">đăng ký</a>
-						<a class=" row button button_dark padding_block padding_inline"
-							href="for_business.html">đăng tyển & tìm hồ
-							sơ</a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+       <!-- Search bar -->
+       <article class="column padding_inline_large padding_block">
+              <div class="search-bar">
+                     <div class="input-text_overlap">
+                            <div class="input-text_overlap_left row align-items_center justify-content_center">
+                                   <i class="color_neutral fa-solid fa-magnifying-glass"></i>
+                            </div>
 
-	<article class="padding_inline_large padding_block two-border-radiuss">
-		<h1 class="color_secondary font-weight_bold">Tìm việc làm nhanh 24h, việc làm mới nhất trên toàn quốc</h1>
-	</article>
+                            <div class="input-text_overlap_content">
+                                   <input type="text" placeholder="Tên công việc vị trí  ">
+                            </div>
 
-	<!-- Search bar -->
-	<article class="column padding_inline_large padding_block">
-		<div class="search-bar">
-			<div class="input-text_overlap">
-				<div class="input-text_overlap_left row align-items_center justify-content_center">
-					<i class="color_neutral fa-solid fa-magnifying-glass"></i>
-				</div>
+                            <div class="input-text_overlap_right row align-items_center justify-content_center">
+                                   <i class="color_neutral fa-solid fa-filter"></i>
+                            </div>
+                     </div>
 
-				<div class="input-text_overlap_content">
-					<input type="text" placeholder="Tên công việc vị trí  ">
-				</div>
-
-				<div class="input-text_overlap_right row align-items_center justify-content_center">
-					<i class="color_neutral fa-solid fa-filter"></i>
-				</div>
-			</div>
-
-			<div class="button button_filled search-bar__button">
-				<i class="fa-solid fa-magnifying-glass"></i>
-			</div>
-		</div>
-	</article>
+                     <div class="button button_filled search-bar__button">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                     </div>
+              </div>
+       </article>
 
        <section class="filters padding_inline_large padding_block">
-              
-              <i class="exit-filters color primary fa-solid fa-xmark fa-2x"></i>
+              <i class="exit-filters color_primary fa-solid fa-xmark fa-2x"></i>
+
               <div class="search-properties column">
-                     <select name="" id="">
+                     <select class="padding_inline border-radius button button_outline" name="" id="">
+                            <option value="">Lorem, ipsum.</option>
+                            <option value="">Lorem, ipsum dolor.</option>
+                            <option value="">Lorem ipsum dolor sit.</option>
+                            <option value="">Lorem ipsum dolor sit amet.</option>
+                            <option value="">Opiion 1</option>
+                            <option value="">Opiion 1</option>
+                     </select>
+
+                     <select name="" id="" class=" padding_inline border-radius button button_outline">
                             <option value="">Option 1</option>
                             <option value="">Option 1</option>
                             <option value="">Option 1</option>
@@ -121,15 +135,8 @@
                             <option value="">Option 1</option>
                             <option value="">Option 1</option>
                      </select>
-                     <select name="" id="">
-                            <option value="">Option 1</option>
-                            <option value="">Option 1</option>
-                            <option value="">Option 1</option>
-                            <option value="">Option 1</option>
-                            <option value="">Option 1</option>
-                            <option value="">Option 1</option>
-                     </select>
-                     <select name="" id="">
+
+                     <select name="" id="" class="padding_inline border-radius button button_outline">
                             <option value="">Option 1</option>
                             <option value="">Option 1</option>
                             <option value="">Option 1</option>
@@ -144,20 +151,21 @@
               <div class="row align-items_center overlap_left">
                      <span class="carousel__button carousel__button_left color_primary fa-stack fa-1x">
                             <i class="fa-solid fa-circle fa-stack-2x"></i>
+
                             <i class="fa-solid fa-arrow-left fa-stack-1x fa-inverse"></i>
                      </span>
               </div>
-       
+
               <div class="row align-items_center overlap_right">
                      <span class="carousel__button carousel__button_right color_primary fa-stack fa-1x">
                             <i class="fa-solid fa-circle fa-stack-2x"></i>
                             <i class="fa-solid fa-arrow-right fa-stack-1x fa-inverse"></i>
                      </span>
               </div>
-     
+
               <section class="jobs-box border-radius overlap_content">
                      <header class="column padding_block padding_inline">
-       
+
                             <p class="tag tag_primary_light">Để xuất bởi AI</p>
                             <div class="column jobs-box__second-heading">
                                    <h1 class="font-size_medium color_primary">Tin tuyển dụng, việc làm tốt nhất</h1>
@@ -174,11 +182,12 @@
                                    <div>
                                           <p class="tag tag_neutral">Thành phố Hồ Chí Minh</p>
                                    </div>
-       
+
                             </section>
                      </header>
-       
-                     <section class="carousel__track scroll__container scroll snaps-inline padding_inline padding_block">
+
+                     <section
+                            class="carousel__track scroll__container scroll snaps-inline padding_inline padding_block">
                             <section class="current-slide carousel__slide column jobs-box__jobs-list">
                                    <div class="column padding_block padding_inline border-radius box-shadow">
                                           <div class="row justify-content_space-between">
@@ -244,7 +253,7 @@
                                           </div>
                                    </div>
                             </section>
-       
+
                             <section class="carousel__slide column jobs-box__jobs-list">
                                    <div class="column padding_block padding_inline border-radius box-shadow">
                                           <div class="row justify-content_space-between">
@@ -310,7 +319,7 @@
                                           </div>
                                    </div>
                             </section>
-       
+
                             <section class="carousel__slide column jobs-box__jobs-list">
                                    <div class="column padding_block padding_inline border-radius box-shadow">
                                           <div class="row justify-content_space-between">
@@ -378,7 +387,7 @@
                             </section>
                      </section>
               </section>
-       
+
        </article>
 
        <article class="carousel overlap padding_block">

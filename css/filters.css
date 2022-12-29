@@ -15,6 +15,9 @@
        transition: transform 200ms ease-in-out;
 }
 
+.filters option {
+       overflow: auto;
+}
 .exit-filters {
        align-self: flex-start ;
 }
