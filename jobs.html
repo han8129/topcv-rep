@@ -19,6 +19,8 @@
 		@import url("css/input-text.css");
 
 		@import url("css/dropdown.css");
+		@import url("css/carousel.css");
+		@import url("css/scroll.css");
 	</style>
 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -96,7 +98,7 @@
 				</div>
 
 				<div class="filters input-text_overlap_right row align-items_center justify-content_center">
-					<i class="fa-solid fa-filter"></i>
+					<i class="color_neutral fa-solid fa-filter"></i>
 				</div>
 			</div>
 
@@ -106,270 +108,475 @@
 		</div>
 	</article>
 
-	<article class="padding_block overlap jobs">
-		<div class="overlap_left">
-			<span class="fa-stack fa-1x">
-				<i class="fa-solid fa-circle fa-stack-2x"></i>
-				<i class="fa-solid fa-arrow-left fa-stack-1x fa-inverse"></i>
-			</span>
-		</div>
-		<div class="jobs-box overlap_content padding_block padding_inline column">
-			<header class="column">
+       <article class="carousel overlap padding_block jobs border-radius background-color_primary_light">
+              <div class="row align-items_center overlap_left">
+                     <span class="carousel__button carousel__button_left color_primary fa-stack fa-1x">
+                            <i class="fa-solid fa-circle fa-stack-2x"></i>
+                            <i class="fa-solid fa-arrow-left fa-stack-1x fa-inverse"></i>
+                     </span>
+              </div>
+       
+              <div class="row align-items_center overlap_right">
+                     <span class="carousel__button carousel__button_right color_primary fa-stack fa-1x">
+                            <i class="fa-solid fa-circle fa-stack-2x"></i>
+                            <i class="fa-solid fa-arrow-right fa-stack-1x fa-inverse"></i>
+                     </span>
+              </div>
+     
+              <section class="jobs-box border-radius overlap_content">
+                     <header class="column padding_block padding_inline">
+       
+                            <p class="tag tag_primary_light">Để xuất bởi AI</p>
+                            <div class="column jobs-box__second-heading">
+                                   <h1 class="font-size_medium color_primary">Tin tuyển dụng, việc làm tốt nhất</h1>
+                                   <p class="color_primary">xem tất cả <i class="fa-solid fa-arrow-right"></i>
+                                   </p>
+                            </div>
+                            <section class="jobs-box__locations row">
+                                   <div>
+                                          <p class="tag tag_primary">Ngẫu nhiên</p>
+                                   </div>
+                                   <div>
+                                          <p class="tag tag_neutral">Hà Nội</p>
+                                   </div>
+                                   <div>
+                                          <p class="tag tag_neutral">Thành phố Hồ Chí Minh</p>
+                                   </div>
+       
+                            </section>
+                     </header>
+       
+                     <section class="carousel__track scroll__container scroll snaps-inline padding_inline padding_block">
+                            <section class="current-slide carousel__slide column jobs-box__jobs-list">
+                                   <div class="column padding_block padding_inline border-radius box-shadow">
+                                          <div class="row justify-content_space-between">
+                                                 <div class="row">
+                                                        <div class="row justify-content_center align-items_center">
+                                                               <img
+                                                                      src="https://cdn.topcv.vn/44/company_logos/cong-ty-co-phan-scots-english-australia-61bab8c11b571.jpg">
+                                                        </div>
+                                                        <div class="column">
+                                                               <h1>Công Việc
+                                                               </h1>
+                                                               <p>Chi tiết
+                                                               </p>
+                                                        </div>
+                                                 </div>
+                                                 <div class="">
+                                                        <i class="job-follow color_neutral fa-regular fa-heart "></i>
+                                                 </div>
+                                          </div>
+                                          <div class="single-job__details row">
+                                                 <P class="tag tag_neutral">Mức lương</P>
+                                                 <p class="tag tag_neutral">Địa điểm</p>
+                                          </div>
+                                   </div>
+                                   <div class="column padding_block padding_inline border-radius box-shadow">
+                                          <div class="row justify-content_space-between">
+                                                 <div class="row">
+                                                        <div class="row justify-content_center align-items_center">
+                                                               <img
+                                                                      src="https://cdn.topcv.vn/44/company_logos/cong-ty-co-phan-scots-english-australia-61bab8c11b571.jpg">
+                                                        </div>
+                                                        <div class="column">
+                                                               <h1>Công Việc
+                                                               </h1>
+                                                               <p>Chi tiết
+                                                               </p>
+                                                        </div>
+                                                 </div>
+                                                 <i class="job-follow color_neutral fa-regular fa-heart "></i>
+                                          </div>
+                                          <div class=" single-job__details row">
+                                                 <P class="tag tag_neutral">Mức lương</P>
+                                                 <p class="tag tag_neutral">Địa điểm</p>
+                                          </div>
+                                   </div>
+                                   <div class="column padding_block padding_inline border-radius box-shadow">
+                                          <div class="row justify-content_space-between">
+                                                 <div class="row ">
+                                                        <div class="row justify-content_center align-items_center">
+                                                               <img
+                                                                      src="https://cdn.topcv.vn/44/company_logos/cong-ty-co-phan-scots-english-australia-61bab8c11b571.jpg">
+                                                        </div>
+                                                        <div class="column">
+                                                               <h1>Công Việc </h1>
+                                                               <p>Chi tiết </p>
+                                                        </div>
+                                                 </div>
+                                                 <i class="job-follow color_neutral fa-regular fa-heart "></i>
+                                          </div>
+                                          <div class="single-job__details row">
+                                                 <P class="tag tag_neutral">Mức lương</P>
+                                                 <p class="tag tag_neutral">Địa điểm</p>
+                                          </div>
+                                   </div>
+                            </section>
+       
+                            <section class="carousel__slide column jobs-box__jobs-list">
+                                   <div class="column padding_block padding_inline border-radius box-shadow">
+                                          <div class="row justify-content_space-between">
+                                                 <div class="row">
+                                                        <div class="row justify-content_center align-items_center">
+                                                               <img
+                                                                      src="https://cdn.topcv.vn/44/company_logos/cong-ty-co-phan-scots-english-australia-61bab8c11b571.jpg">
+                                                        </div>
+                                                        <div class="column">
+                                                               <h1>Công Việc
+                                                               </h1>
+                                                               <p>Chi tiết
+                                                               </p>
+                                                        </div>
+                                                 </div>
+                                                 <div class="">
+                                                        <i class="job-follow color_neutral fa-regular fa-heart "></i>
+                                                 </div>
+                                          </div>
+                                          <div class="single-job__details row">
+                                                 <P class="tag tag_neutral">Mức lương</P>
+                                                 <p class="tag tag_neutral">Địa điểm</p>
+                                          </div>
+                                   </div>
+                                   <div class="column padding_block padding_inline border-radius box-shadow">
+                                          <div class="row justify-content_space-between">
+                                                 <div class="row">
+                                                        <div class="row justify-content_center align-items_center">
+                                                               <img
+                                                                      src="https://cdn.topcv.vn/44/company_logos/cong-ty-co-phan-scots-english-australia-61bab8c11b571.jpg">
+                                                        </div>
+                                                        <div class="column">
+                                                               <h1>Công Việc
+                                                               </h1>
+                                                               <p>Chi tiết
+                                                               </p>
+                                                        </div>
+                                                 </div>
+                                                 <i class="job-follow color_neutral fa-regular fa-heart "></i>
+                                          </div>
+                                          <div class=" single-job__details row">
+                                                 <P class="tag tag_neutral">Mức lương</P>
+                                                 <p class="tag tag_neutral">Địa điểm</p>
+                                          </div>
+                                   </div>
+                                   <div class="column padding_block padding_inline border-radius box-shadow">
+                                          <div class="row justify-content_space-between">
+                                                 <div class="row ">
+                                                        <div class="row justify-content_center align-items_center">
+                                                               <img
+                                                                      src="https://cdn.topcv.vn/44/company_logos/cong-ty-co-phan-scots-english-australia-61bab8c11b571.jpg">
+                                                        </div>
+                                                        <div class="column">
+                                                               <h1>Công Việc </h1>
+                                                               <p>Chi tiết </p>
+                                                        </div>
+                                                 </div>
+                                                 <i class="job-follow color_neutral fa-regular fa-heart "></i>
+                                          </div>
+                                          <div class="single-job__details row">
+                                                 <P class="tag tag_neutral">Mức lương</P>
+                                                 <p class="tag tag_neutral">Địa điểm</p>
+                                          </div>
+                                   </div>
+                            </section>
+       
+                            <section class="carousel__slide column jobs-box__jobs-list">
+                                   <div class="column padding_block padding_inline border-radius box-shadow">
+                                          <div class="row justify-content_space-between">
+                                                 <div class="row">
+                                                        <div class="row justify-content_center align-items_center">
+                                                               <img
+                                                                      src="https://cdn.topcv.vn/44/company_logos/cong-ty-co-phan-scots-english-australia-61bab8c11b571.jpg">
+                                                        </div>
+                                                        <div class="column">
+                                                               <h1>Công Việc
+                                                               </h1>
+                                                               <p>Chi tiết
+                                                               </p>
+                                                        </div>
+                                                 </div>
+                                                 <div class="">
+                                                        <i class="job-follow color_neutral fa-regular fa-heart "></i>
+                                                 </div>
+                                          </div>
+                                          <div class="single-job__details row">
+                                                 <P class="tag tag_neutral">Mức lương</P>
+                                                 <p class="tag tag_neutral">Địa điểm</p>
+                                          </div>
+                                   </div>
+                                   <div class="column padding_block padding_inline border-radius box-shadow">
+                                          <div class="row justify-content_space-between">
+                                                 <div class="row">
+                                                        <div class="row justify-content_center align-items_center">
+                                                               <img
+                                                                      src="https://cdn.topcv.vn/44/company_logos/cong-ty-co-phan-scots-english-australia-61bab8c11b571.jpg">
+                                                        </div>
+                                                        <div class="column">
+                                                               <h1>Công Việc
+                                                               </h1>
+                                                               <p>Chi tiết
+                                                               </p>
+                                                        </div>
+                                                 </div>
+                                                 <i class="job-follow color_neutral fa-regular fa-heart "></i>
+                                          </div>
+                                          <div class=" single-job__details row">
+                                                 <P class="tag tag_neutral">Mức lương</P>
+                                                 <p class="tag tag_neutral">Địa điểm</p>
+                                          </div>
+                                   </div>
+                                   <div class="column padding_block padding_inline border-radius box-shadow">
+                                          <div class="row justify-content_space-between">
+                                                 <div class="row ">
+                                                        <div class="row justify-content_center align-items_center">
+                                                               <img
+                                                                      src="https://cdn.topcv.vn/44/company_logos/cong-ty-co-phan-scots-english-australia-61bab8c11b571.jpg">
+                                                        </div>
+                                                        <div class="column">
+                                                               <h1>Công Việc </h1>
+                                                               <p>Chi tiết </p>
+                                                        </div>
+                                                 </div>
+                                                 <i class="job-follow color_neutral fa-regular fa-heart "></i>
+                                          </div>
+                                          <div class="single-job__details row">
+                                                 <P class="tag tag_neutral">Mức lương</P>
+                                                 <p class="tag tag_neutral">Địa điểm</p>
+                                          </div>
+                                   </div>
+                            </section>
+                     </section>
+              </section>
+       
+       </article>
 
-				<p class="tag tag_primary_light">Để xuất bởi AI</p>
-				<div class="column jobs-box__second-heading">
-					<h1 class="font-size_medium color_primary">Tin tuyển dụng, việc làm tốt nhất</h1>
-					<p class="jobs-box__content__tag">xem tất cả <i class="fa-solid fa-arrow-right"></i>
-					</p>
-				</div>
-				<section class="jobs-box__locations row">
-					<div>
-						<p class="tag tag_primary">Ngẫu nhiên</p>
-					</div>
-					<div>
-						<p class="tag tag_neutral">Hà Nội</p>
-					</div>
-					<div>
-						<p class="tag tag_neutral">Thành phố Hồ Chí Minh</p>
-					</div>
+       <article class="carousel overlap padding_block">
+              <div class="row align-items_center overlap_left">
+                     <span class="carousel__button_left fa-stack fa-1x">
+                            <i class="fa-solid fa-circle fa-stack-2x"></i>
+                            <i class="fa-solid fa-arrow-left fa-stack-1x fa-inverse"></i>
+                     </span>
+              </div>
+              <div class="row align-items_center overlap_right">
+                     <span class="carousel__button_right fa-stack fa-1x">
+                            <i class="fa-solid fa-circle fa-stack-2x"></i>
+                            <i class="fa-solid fa-arrow-right fa-stack-1x fa-inverse"></i>
+                     </span>
+              </div>
 
-				</section>
-			</header>
-			<section class="column jobs-box__jobs-list">
-				<div class="column padding_block padding_inline border-radius box-shadow">
-					<div class="row">
-						<div class="row">
-							<div>
-								<img
-									src="https://cdn.topcv.vn/44/company_logos/cong-ty-co-phan-scots-english-australia-61bab8c11b571.jpg">
-							</div>
-							<div class="column">
-								<h1>Công Việc
-								</h1>
-								<p>Chi tiết
-								</p>
-							</div>
-						</div>
-						<div class="job-follow">
-							<i class="fa-regular fa-heart "></i>
-						</div>
-					</div>
-					<div class="single-job__details row">
-						<P class="tag tag_neutral">Mức lương</P>
-						<p class="tag tag_neutral">Địa điểm</p>
-					</div>
-				</div>
-				<div class="column padding_block padding_inline border-radius box-shadow">
-					<div class="row">
-						<div class="row">
-							<div>
-								<img
-									src="https://cdn.topcv.vn/44/company_logos/cong-ty-co-phan-scots-english-australia-61bab8c11b571.jpg">
-							</div>
-							<div class="column">
-								<h1>Công Việc
-								</h1>
-								<p>Chi tiết
-								</p>
-							</div>
-						</div>
-						<div class="job-follow">
-							<i class="fa-regular fa-heart "></i>
-						</div>
-					</div>
-					<div class=" single-job__details row">
-						<P class="tag tag_neutral">Mức lương</P>
-						<p class="tag tag_neutral">Địa điểm</p>
-					</div>
-				</div>
-				<div class="column padding_block padding_inline border-radius box-shadow">
-					<div class="row">
-						<img
-							src="https://cdn.topcv.vn/44/company_logos/cong-ty-co-phan-scots-english-australia-61bab8c11b571.jpg">
-						<div class="column">
-							<h1>Công Việc </h1>
-							<p>Chi tiết </p>
-						</div>
-						<div class="job-follow">
-							<i class="fa-regular fa-heart "></i>
-						</div>
-					</div>
-					<div class="single-job__details row">
-						<P class="tag tag_neutral">Mức lương</P>
-						<p class="tag tag_neutral">Địa điểm</p>
-					</div>
-				</div>
+              <div class="column overlap_content">
+                     <div>
+                            <h1 class="font-weight_bold">Top ngành nghề nổi bật
+                            </h1>
+                     </div>
+                     <div class="carousel__track scroll__container scroll snaps-inline padding_inline padding_block">
+                            <div class="carousel__slide column top-occupations__list">
+                                   <div
+                                          class=" row align-items_center border-radius box-shadow padding_inline padding_block background-color_primary_light">
+                                          <div><i class="color_primary fa-solid fa-house fa-2x"></i></div>
+                                          <div>
+                                                 <h1>Bất động sản</h1>
+                                                 <p>132,733 việc làm</p>
+                                          </div>
+                                   </div>
+                                   <div
+                                          class=" padding_inline padding_block row align-items_center border-radius box-shadow background-color_primary_light">
+                                          <div><i class="color_primary fa-solid fa-cart-shopping fa-2x"></i></div>
+                                          <div>
+                                                 <h1>Kinh doanh/ Bán hàng</h1>
+                                                 <p>132,733 việc làm</p>
+                                          </div>
+                                   </div>
+                                   <div
+                                          class="padding_inline padding_block row align-items_center border-radius box-shadow background-color_primary_light">
+                                          <div><i class="color_primary fa-regular fa-credit-card fa-2x"></i></div>
+                                          <div>
+                                                 <h1 class="">Ngân hàng/ Tài chính</h1>
+                                                 <p>132,733 việc làm</p>
+                                          </div>
+                                   </div>
+                            </div>
 
-			</section>
-		</div>
-		<div class="overlap_right">
-			<span class="fa-stack fa-1x">
-				<i class="fa-solid fa-circle fa-stack-2x"></i>
-				<i class="fa-solid fa-arrow-right fa-stack-1x fa-inverse"></i>
-			</span>
-		</div>
-	</article>
-	<article class="overlap padding_block">
-		<div class="overlap_left">
-			<span class="fa-stack fa-1x">
-				<i class="fa-solid fa-circle fa-stack-2x"></i>
-				<i class="fa-solid fa-arrow-left fa-stack-1x fa-inverse"></i>
-			</span>
-		</div>
-		<div class="column overlap_content">
-			<div>
-				<h1 class="font-weight_bold">Top ngành nghề nổi bật
-				</h1>
-			</div>
-			<div class="top-occupations__list">
-				<div class=" row align-items_center border-radius box-shadow padding_inline padding_block">
-					<div><i class="fa-solid fa-house fa-2x"></i></div>
-					<div>
-						<h1>Bất động sản</h1>
-						<p>132,733 việc làm</p>
-					</div>
-				</div>
-				<div class=" padding_inline padding_block row align-items_center border-radius box-shadow">
-					<div><i class="fa-solid fa-cart-shopping fa-2x"></i></div>
-					<div>
-						<h1>Kinh doanh/ Bán hàng</h1>
-						<p>132,733 việc làm</p>
-					</div>
-				</div>
-				<div class="padding_inline padding_block row align-items_center border-radius box-shadow">
-					<div><i class="fa-regular fa-credit-card fa-2x"></i></div>
-					<div>
-						<h1>Ngân hàng/ Tài chính</h1>
-						<p>132,733 việc làm</p>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="overlap_right">
-			<span class="fa-stack fa-1x">
-				<i class="fa-solid fa-circle fa-stack-2x"></i>
-				<i class="fa-solid fa-arrow-right fa-stack-1x fa-inverse"></i>
-			</span>
-		</div>
-	</article>
-	<article class="career padding_inline_large padding_block column">
-		<div>
-			<h1 class="font-weight_bold">Phát triển bản thân và sự nghiệp</h1>
-		</div>
-		<div class="column">
-			<div class="padding_block padding_inline row align-items_center border-radius box-shadow">
-				<div class="career__icon">
-					<div>
-						<span class="fa-stack fa-2x">
-							<i class="fa-solid fa-circle fa-stack-2x"></i>
-							<i
-								class="fa-solid fa-magnifying-glass-chart fa-stack-1x fa-inverse"></i>
-						</span>
-					</div>
-				</div>
-				<div class="career__border-radius__text column">
-					<div>
-						<h1>
-							Khám phá tính cách và năng lực bản thân
-						</h1>
-					</div>
-					<p> Lựa chọn nghề nghiệp chính xác hơn thông qua bài trắc nghiệm về tính cách, khả
-						năng giải quyết vấn đề, trí
-						thông minh,... </p>
-					<div class="career__first-border-radius">
-						<a class="tag tag_primary_light">Tìm hiểu thêm</a>
-						<a class="tag tag_primary_light">Trắc nghiệm MBTI</a>
-						<a class="tag tag_primary_light">Trắc nghiệm MI</a>
-					</div>
-				</div>
-			</div>
-			<div class="padding_block padding_inline row align-items_center border-radius box-shadow">
-				<div class="career__icon">
-					<div>
-						<span class="fa-stack fa-2x">
-							<i class="fa-solid fa-circle fa-stack-2x"></i>
-							<i class="fa-solid fa-handshake fa-stack-1x fa-inverse"></i>
-						</span>
-					</div>
-				</div>
-				<div class="career__border-radius__text column">
-					<div>
-						<h1>
-							Quỹ ý tưởng phát triển nghề nghiêp TopCareer
-						</h1>
-					</div>
-					<p> Giúp học sinh, sinh viên hiểu thêm về tầm quan trọng của giáo dục hướng nghiệp
-					</p>
-					<a class="tag tag_primary_light">Tìm hiểu thêm</a>
-				</div>
-			</div>
-		</div>
+                            <div class="carousel__slide column top-occupations__list">
+                                   <div
+                                          class=" row align-items_center border-radius box-shadow padding_inline padding_block background-color_primary_light">
+                                          <div><i class="color_primary fa-solid fa-house fa-2x"></i></div>
+                                          <div>
+                                                 <h1>Bất động sản</h1>
+                                                 <p>132,733 việc làm</p>
+                                          </div>
+                                   </div>
+                                   <div
+                                          class=" padding_inline padding_block row align-items_center border-radius box-shadow background-color_primary_light">
+                                          <div><i class="color_primary fa-solid fa-cart-shopping fa-2x"></i></div>
+                                          <div>
+                                                 <h1>Kinh doanh/ Bán hàng</h1>
+                                                 <p>132,733 việc làm</p>
+                                          </div>
+                                   </div>
+                                   <div
+                                          class="padding_inline padding_block row align-items_center border-radius box-shadow background-color_primary_light">
+                                          <div><i class="color_primary fa-regular fa-credit-card fa-2x"></i></div>
+                                          <div>
+                                                 <h1 class="">Ngân hàng/ Tài chính</h1>
+                                                 <p>132,733 việc làm</p>
+                                          </div>
+                                   </div>
+                            </div>
 
-	</article>
-	<article class="padding_inline_large padding_block app-download">
+                            <div class="carousel__slide column top-occupations__list">
+                                   <div
+                                          class=" row align-items_center border-radius box-shadow padding_inline padding_block background-color_primary_light">
+                                          <div><i class="color_primary fa-solid fa-house fa-2x"></i></div>
+                                          <div>
+                                                 <h1>Bất động sản</h1>
+                                                 <p>132,733 việc làm</p>
+                                          </div>
+                                   </div>
+                                   <div
+                                          class=" padding_inline padding_block row align-items_center border-radius box-shadow background-color_primary_light">
+                                          <div><i class="color_primary fa-solid fa-cart-shopping fa-2x"></i></div>
+                                          <div>
+                                                 <h1>Kinh doanh/ Bán hàng</h1>
+                                                 <p>132,733 việc làm</p>
+                                          </div>
+                                   </div>
+                                   <div
+                                          class="padding_inline padding_block row align-items_center border-radius box-shadow background-color_primary_light">
+                                          <div><i class="color_primary fa-regular fa-credit-card fa-2x"></i></div>
+                                          <div>
+                                                 <h1 class="">Ngân hàng/ Tài chính</h1>
+                                                 <p>132,733 việc làm</p>
+                                          </div>
+                                   </div>
+                            </div>
+                     </div>
+              </div>
+       </article>
 
-		<div class="column">
-			<h1>Cơ hội vàng nằm gọn trong tay bạn</h1>
-			<div class="column">
-				<p>
-					<i class="fa-solid fa-circle-check"></i>
-					Tạo CV, Profile ngay trên điệt thoại
-				</p>
-				<p>
-					<i class="fa-solid fa-circle-check"></i>
-					Tạo CV, Profile ngay trên điệt thoại
-				</p>
-				<p>
-					<i class="fa-solid fa-circle-check"></i>
-					Tạo CV, Profile ngay trên điệt thoại
-				</p>
-			</div>
-			<h1>Tải ứng dụng tìm việc ngay</h1>
-			<div class="app-download__img_app">
-				<img class="img-responsive"
-					src="https://www.topcv.vn/v4/image/welcome/download/app_store.png?v=1.0.0"
-					alt="Tai app TopCV tai App Store" title="Tải app TopCV tại App Store">
-				<img class="img-responsive"
-					src="https://www.topcv.vn/v4/image/welcome/download/chplay.png?v=1.0.0"
-					alt="Tai app TopCV tai Google Play" title="Tải app TopCV tại Google Play">
-			</div>
-		</div>
-		<img src="https://www.topcv.vn/v4/image/welcome/app-download.png" class="app-download__img_main"
-			alt="Tai app TopCV tai App Store va Google Play"
-			title="Tải app TopCV tại App Store và Google Play">
-	</article>
-	<article class="about-us-box">
-		<div class="about-us column padding_inline_large padding_block">
-			<h1>
-				Về chúng tôi
-			</h1>
-			<p>
-				TopCV là công ty công nghệ nhân sự (HR Tech) hàng đầu Việt Nam. Với năng lực lõi là công
-				nghệ, đặc biệt là trí
-				tuệ nhân tạo (AI), sứ mệnh của TopCV đặt ra cho mình là thay đổi thị trường tuyển dụng -
-				nhân sự ngày một hiệu
-				quả hơn. Bằng công nghệ, chúng tôi tạo ra nền tảng cho phép người lao động tạo CV, phát
-				triển được các kỹ năng
-				cá nhân, xây dựng hình ảnh chuyên nghiệp trong mắt nhà tuyển dụng và tiếp cận với các cơ hội
-				việc làm phù hợp.
-			</p>
-			<div class="column border-radius padding_block padding_inline">
-				<div>
-					<h1>Impressive number</h1>
-					<p>Details</p>
-				</div>
-				<div>
-					<h1>Impressive number</h1>
-					<p>Details</p>
-				</div>
-				<div>
-					<h1>Impressive number</h1>
-					<p>Details</p>
-				</div>
-			</div>
-		</div>
-	</article>
-	</div>
+       <article class="career padding_inline_large padding_block column">
+              <div>
+                     <h1 class="font-weight_bold">Phát triển bản thân và sự nghiệp</h1>
+              </div>
+              <div class="column">
+                     <div class="padding_block padding_inline row align-items_center border-radius box-shadow">
+                            <div class="career__icon">
+                                   <div>
+                                          <span class="color_primary fa-stack fa-2x">
+                                                 <i class="fa-solid fa-circle fa-stack-2x"></i>
+                                                 <i
+                                                        class="fa-solid fa-magnifying-glass-chart fa-stack-1x fa-inverse"></i>
+                                          </span>
+                                   </div>
+                            </div>
+                            <div class="career__border-radius__text column">
+                                   <div>
+                                          <h1>
+                                                 Khám phá tính cách và năng lực bản thân
+                                          </h1>
+                                   </div>
+                                   <p> Lựa chọn nghề nghiệp chính xác hơn thông qua bài trắc nghiệm về tính cách, khả
+                                          năng giải quyết vấn đề, trí
+                                          thông minh,... </p>
+                                   <div class="career__first-border-radius">
+                                          <a class="tag tag_primary_light">Tìm hiểu thêm</a>
+                                          <a class="tag tag_primary_light">Trắc nghiệm MBTI</a>
+                                          <a class="tag tag_primary_light">Trắc nghiệm MI</a>
+                                   </div>
+                            </div>
+                     </div>
+                     <div class="padding_block padding_inline row align-items_center border-radius box-shadow">
+                            <div class="career__icon">
+                                   <div>
+                                          <span class="color_primary fa-stack fa-2x">
+                                                 <i class="fa-solid fa-circle fa-stack-2x"></i>
+                                                 <i class="fa-solid fa-handshake fa-stack-1x fa-inverse"></i>
+                                          </span>
+                                   </div>
+                            </div>
+                            <div class="career__border-radius__text column">
+                                   <div>
+                                          <h1>
+                                                 Quỹ ý tưởng phát triển nghề nghiêp TopCareer
+                                          </h1>
+                                   </div>
+                                   <p> Giúp học sinh, sinh viên hiểu thêm về tầm quan trọng của giáo dục hướng nghiệp
+                                   </p>
+                                   <a class="tag tag_primary_light">Tìm hiểu thêm</a>
+                            </div>
+                     </div>
+              </div>
+
+       </article>
+
+       <article class="padding_inline_large padding_block app-download">
+              <div class="column">
+                     <h1 class="color_primary">Cơ hội vàng nằm gọn trong tay bạn</h1>
+                     <div class="column">
+                            <p>
+                                   <i class="color_primary fa-solid fa-circle-check"></i>
+                                   Tạo CV, Profile ngay trên điệt thoại
+                            </p>
+                            <p>
+                                   <i class="color_primary fa-solid fa-circle-check"></i>
+                                   Tạo CV, Profile ngay trên điệt thoại
+                            </p>
+                            <p>
+                                   <i class="color_primary fa-solid fa-circle-check"></i>
+                                   Tạo CV, Profile ngay trên điệt thoại
+                            </p>
+                     </div>
+                     <h1 class="color_primary">Tải ứng dụng tìm việc ngay</h1>
+                     <div class="app-download__img_app">
+                            <img class="img-responsive"
+                                   src="https://www.topcv.vn/v4/image/welcome/download/app_store.png?v=1.0.0"
+                                   alt="Tai app TopCV tai App Store" title="Tải app TopCV tại App Store">
+                            <img class="img-responsive"
+                                   src="https://www.topcv.vn/v4/image/welcome/download/chplay.png?v=1.0.0"
+                                   alt="Tai app TopCV tai Google Play" title="Tải app TopCV tại Google Play">
+                     </div>
+              </div>
+              <img src="https://www.topcv.vn/v4/image/welcome/app-download.png" class="app-download__img_main"
+                     alt="Tai app TopCV tai App Store va Google Play"
+                     title="Tải app TopCV tại App Store và Google Play">
+       </article>
+
+       <article class="about-us-box">
+              <div class="about-us column padding_inline_large padding_block">
+                     <h1>
+                            Về chúng tôi
+                     </h1>
+                     <p>
+                            TopCV là công ty công nghệ nhân sự (HR Tech) hàng đầu Việt Nam. Với năng lực lõi là công
+                            nghệ, đặc biệt là trí
+                            tuệ nhân tạo (AI), sứ mệnh của TopCV đặt ra cho mình là thay đổi thị trường tuyển dụng -
+                            nhân sự ngày một hiệu
+                            quả hơn. Bằng công nghệ, chúng tôi tạo ra nền tảng cho phép người lao động tạo CV, phát
+                            triển được các kỹ năng
+                            cá nhân, xây dựng hình ảnh chuyên nghiệp trong mắt nhà tuyển dụng và tiếp cận với các cơ hội
+                            việc làm phù hợp.
+                     </p>
+                     <div class="column border-radius padding_block padding_inline">
+                            <div>
+                                   <h1>Impressive number</h1>
+                                   <p>Details</p>
+                            </div>
+                            <div>
+                                   <h1>Impressive number</h1>
+                                   <p>Details</p>
+                            </div>
+                            <div>
+                                   <h1>Impressive number</h1>
+                                   <p>Details</p>
+                            </div>
+                     </div>
+              </div>
+       </article>
+
+       <script src="https://kit.fontawesome.com/49551556eb.js" crossorigin="anonymous"></script>
+       <script src="js/dropdown.js"></script>
+       <script src="js/carousel.js"></script>
+
+
 </body>
 
 </html>

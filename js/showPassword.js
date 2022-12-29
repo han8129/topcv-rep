@@ -1,14 +1,20 @@
-const showPasswordButton = document.querySelector('#show-password');
-const showPasswordIcon = showPasswordButton.querySelector('.fa-eye');
-const passwordInput = document.querySelector('#password');
+const passwordBoxes = document.querySelectorAll('.show-password');
+passwordBoxes.forEach(showPassword)
 
-showPasswordButton.onclick = () => {
-       passwordInput.type = passwordInput.type === 'password'
-              ? 'text'
-              : 'password';
+function showPassword(passwordBox) {
+       const showPasswordButton = passwordBox.querySelector('.fa-eye');
+       const passwordInput = passwordBox.querySelector('.password');
 
-       let showPasswordIconToken = showPasswordIcon.classList;
-       showPasswordIconToken.contains('fa-eye-slash')
-              ? showPasswordIconToken.replace('fa-eye-slash', 'fa-eye')
-              : showPasswordIcon.classList.replace('fa-eye', 'fa-eye-slash');
+       console.log(showPasswordButton)
+
+       showPasswordButton.onclick = () => {
+              passwordInput.type = passwordInput.type === 'password'
+                     ? 'text'
+                     : 'password';
+
+              let buttonIcon = showPasswordButton.classList;
+              buttonIcon.contains('fa-eye-slash')
+                     ? buttonIcon.replace('fa-eye-slash', 'fa-eye')
+                     : buttonIcon.replace('fa-eye', 'fa-eye-slash');
+       }
 }
