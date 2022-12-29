@@ -1,0 +1,27 @@
+.filters {
+       width: 60vw;
+       height: 100vh;
+
+       display: grid;
+       
+       align-self: flex-end;
+       justify-content: start;
+       background-color: hsl(0, 0%, 100%, .7);
+       
+       position: fixed;
+
+       z-index: 100;
+       transform: translateX(100%);
+       transition: transform 200ms ease-in-out;
+}
+
+.exit-filters {
+       align-self: flex-start ;
+}
+
+.filters-is-out {
+       transform: translateX(0%);
+}
+.search-properties {
+       width: fit-content;
+}
