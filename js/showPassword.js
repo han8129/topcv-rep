@@ -1,11 +1,9 @@
-const passwordBoxes = document.querySelectorAll('.show-password');
+const passwordBoxes = document.querySelectorAll('.password__box');
 passwordBoxes.forEach(showPassword)
 
 function showPassword(passwordBox) {
        const showPasswordButton = passwordBox.querySelector('.fa-eye');
        const passwordInput = passwordBox.querySelector('.password');
-
-       console.log(showPasswordButton)
 
        showPasswordButton.onclick = () => {
               passwordInput.type = passwordInput.type === 'password'
