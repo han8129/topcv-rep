@@ -16,3 +16,23 @@ function showPassword(passwordBox) {
                      : buttonIcon.replace('fa-eye', 'fa-eye-slash');
        }
 }
+
+const password = passwordBoxes[0].querySelector(".password");
+const passwordRetype = passwordBoxes[1].querySelector(".password");
+const submitButton = document.querySelector(".button__signup")
+
+
+function validatePassword () {
+       if (password.innerHTML == passwordRetype.innerHTML) {
+              alert("Password not match!");
+              return true
+       }
+       return false
+};
+
+passwordRetype.addEventListener("focus", function () {
+       submitButton.classList.remove("button__signup")
+       submitButton.disabled = "false"
+});
+
+submitButton.addEventListener("click", validatePassword)
